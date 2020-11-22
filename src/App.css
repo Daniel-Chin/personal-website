@@ -69,10 +69,36 @@ span {
   color: white;
 }
 
-.tag-span {
-  background-color: black;
-  color: white;
+.smol-pad {
   padding: 0 4px 2px;
-  cursor: pointer;
+}
+
+.tag-span {
+  color: white;
+  position: relative;
+}
+.tag-middle {
   transition: .2s;
+  background-color: black;
+} .tag-middle:hover {
+  background-color: #444;
+}
+.tag-positive {
+  transition: .2s;
+  background-color: #0a0;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+} .tag-positive:hover {
+  background-color: #0b0;
+}
+.tag-negative {
+  transition: .2s;
+  background-color: #a00;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+} .tag-negative:hover {
+  background-color: #c00;
 }
