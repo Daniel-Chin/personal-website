@@ -1,5 +1,5 @@
-Title,Year,Pride,Tags,Source code,Demo,Description,img,paper,attached,internal doc
-Project Portfolio,2020,4,html; js; frontend,,,,,,,
+title,year,pride,tags,source,demo,description,img,paper,attached,site_doc
+Project Portfolio,2020,4,html; js; frontend,,__egg__,,,,,
 Small Strange AdvenTure (SSAT),2015,6,vb; game; high_school,https://github.com/Daniel-Chin/SSAT,,,,,,
 Poster for dorm,2018,6,art; processing; math; python,https://github.com/Daniel-Chin/Processing/blob/master/PosterForDorm/PosterForDorm_pde/PosterForDorm_pde.pyde,,,PosterFor1608.png,,,
 WhereDitGo,2019,5,html; js; forsaken; frontend; backend,https://github.com/Daniel-Chin/WhereDitGo#where-ditgo,,,,,,
