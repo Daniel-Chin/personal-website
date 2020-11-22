@@ -6,6 +6,7 @@ const ProjectTag = ({
   set_positive_tags, set_negative_tags,
 }) => {
   const [ expanded, set_expanded ] = useState(false);
+  const highlight = filterable && positive_tags.includes(tag);
   let caption = tag;
   
   const clickTag = () => {
@@ -19,7 +20,11 @@ const ProjectTag = ({
     }
   }
   const clickPositive = () => {
-    set_positive_tags([ ...positive_tags, tag ]);
+    if (highlight) {
+      set_positive_tags(positive_tags.filter((t) => (t !== tag)));
+    } else {
+      set_positive_tags([ ...positive_tags, tag ]);
+    }
   };
   const clickNegative = () => {
     set_negative_tags([ ...negative_tags, tag ]);
@@ -49,19 +54,23 @@ const ProjectTag = ({
           cursor: expanded ? 'text' : (
             filterable ? 'pointer' : 'default'
           ),
+          color: highlight ? '#ff0' : 'white', 
+          fontWeight: highlight ? 'bold' : 'normal',
         }} onClick={clickTag} title={title}>
           {caption}
         </span>
         <span className='tag-positive smol-pad' 
           hidden={! expanded} onClick={clickPositive}
         >
-          filter
+          {highlight ? 'unfilter' : 'filter'}
         </span>
-        <span className='tag-negative smol-pad' 
-          hidden={! expanded} onClick={clickNegative}
-        >
-          exclude
-        </span>
+        {highlight ? null :
+          <span className='tag-negative smol-pad' 
+            hidden={! expanded} onClick={clickNegative}
+          >
+            exclude
+          </span>
+        }
       </span>
       <span>{' '}</span>
     </>
