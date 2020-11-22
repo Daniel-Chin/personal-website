@@ -28,7 +28,7 @@ const summarizeTags = (projects) => {
       }
     }
   }
-  tag_summary.sort((a, b) => (a.occurance - b.occurance));
+  tag_summary.sort((a, b) => (b.occurance - a.occurance));
   return tag_summary;
 };
 

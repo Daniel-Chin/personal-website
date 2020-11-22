@@ -9,9 +9,11 @@ const ProjectTag = ({
   const highlight = filterable && positive_tags.includes(tag);
   let caption = tag;
   
-  const clickTag = () => {
-    if (filterable && ! expanded) {
-      set_expanded(true);
+  const clickTag = (_, force) => {
+    if (filterable) {
+      if (force || ! expanded) {
+        set_expanded(! expanded);
+      }
     }
   };
   const onMouseLeave = () => {
@@ -50,24 +52,41 @@ const ProjectTag = ({
   return (
     <>
       <span className='tag-span' onMouseLeave={onMouseLeave}>
-        <span className='tag-middle smol-pad' style={{
-          cursor: expanded ? 'text' : (
-            filterable ? 'pointer' : 'default'
-          ),
-          color: highlight ? '#ff0' : 'white', 
-          fontWeight: highlight ? 'bold' : 'normal',
-        }} onClick={clickTag} title={title}>
+        <span 
+          className='tag-middle smol-pad' style={{
+            cursor: expanded ? 'text' : (
+              filterable ? 'pointer' : 'default'
+            ),
+            color: highlight ? '#ff0' : 'white', 
+            fontWeight: highlight ? 'bold' : 'normal',
+          }} onClick={clickTag} title={title} 
+          tabIndex={0} onKeyUp={(event) => {
+            if (event.key === 'Enter' || event.keyCode === 13) {
+              clickTag(null, true);
+            }
+          }}
+        > 
           {caption}
         </span>
         <span className='tag-positive smol-pad' 
           hidden={! expanded} onClick={clickPositive}
+          tabIndex={0} onKeyUp={(event) => {
+            if (event.key === 'Enter' || event.keyCode === 13) {
+              clickPositive();
+            }
+          }}
         >
           {highlight ? 'unfilter' : 'filter'}
         </span>
         {highlight ? null :
           <span className='tag-negative smol-pad' 
             hidden={! expanded} onClick={clickNegative}
-          >
+            tabIndex={0} onKeyUp={(event) => {
+              if (event.key === 'Enter' || event.keyCode === 13) {
+                clickNegative();
+              }
+            }}
+            >
             exclude
           </span>
         }
