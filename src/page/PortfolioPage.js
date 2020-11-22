@@ -34,6 +34,46 @@ const PortfolioPage = () => {
             ))}
           </div>
         </div>
+        <div className='portfolio-control-panel-row'>
+          <div className='portfolio-control-panel-row-left'>
+            Filtering for:
+          </div>
+          <div className='portfolio-control-panel-row-right'>
+            {tag_summary.map(({ tag, occurance }, i) => (
+              positive_tags.includes(tag)
+            ? 
+              <ProjectTag key={i} tag={tag} filterable 
+                positive_tags={positive_tags} 
+                negative_tags={negative_tags}
+                set_positive_tags={set_positive_tags}
+                set_negative_tags={set_negative_tags} 
+                occurance={occurance}
+              />
+            :
+              null
+            ))}
+          </div>
+        </div>
+        <div className='portfolio-control-panel-row'>
+          <div className='portfolio-control-panel-row-left'>
+            Excluding:
+          </div>
+          <div className='portfolio-control-panel-row-right'>
+            {tag_summary.map(({ tag, occurance }, i) => (
+              negative_tags.includes(tag) 
+            ? 
+              <ProjectTag key={i} tag={tag} filterable 
+                positive_tags={positive_tags} 
+                negative_tags={negative_tags}
+                set_positive_tags={set_positive_tags}
+                set_negative_tags={set_negative_tags} 
+                occurance={occurance}
+              />
+            :
+              null
+            ))}
+          </div>
+        </div>
       </div>
       <div>
         {projects.map((p, i) => (

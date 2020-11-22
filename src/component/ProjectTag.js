@@ -12,10 +12,10 @@ const ProjectTag = ({
   let color = 'white';
   let caption = tag;
   if (is_positive) {
-    color = '#ff0';
+    color = '#0e0';
   }
   if (is_negative) {
-    color = '#f00';
+    color = '#f77';
   }
   
   const clickTag = (_, force) => {
@@ -71,7 +71,7 @@ const ProjectTag = ({
               filterable ? 'pointer' : 'default'
             ),
             color, 
-            fontWeight: is_positive ? 'bold' : 'normal',
+            fontWeight: is_positive || is_negative ? 'bold' : 'normal',
           }} onClick={clickTag} title={title} 
           tabIndex={0} onKeyUp={(event) => {
             if (event.key === 'Enter' || event.keyCode === 13) {
