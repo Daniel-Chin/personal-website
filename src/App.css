@@ -83,6 +83,8 @@ span {
   background-color: black;
 } .tag-middle:hover {
   background-color: #444;
+} .tag-middle:focus {
+  background-color: #777;
 }
 .tag-positive {
   transition: .2s;
@@ -93,6 +95,8 @@ span {
   transform: translateX(-100%);
 } .tag-positive:hover {
   background-color: #0b0;
+} .tag-positive:focus {
+  background-color: #0d0;
 }
 .tag-negative {
   transition: .2s;
@@ -102,6 +106,8 @@ span {
   z-index: 1;
 } .tag-negative:hover {
   background-color: #c00;
+} .tag-negative:focus {
+  background-color: #f00;
 }
 
 .center-text {
