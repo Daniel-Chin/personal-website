@@ -14,7 +14,6 @@ const PortfolioCard = ({
   project, positive_tags, negative_tags, 
   set_positive_tags, set_negative_tags
 }) => {
-  console.log(positive_tags);
   if (
     (
       positive_tags.filter((t) => (! project.tags.includes(t))).length === 0
