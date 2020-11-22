@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 const ProjectTag = ({
   tag, year, pride, filterable, 
   positive_tags, negative_tags, 
-  set_positive_tags, set_negative_tags,
+  set_positive_tags, set_negative_tags, 
+  occurance, 
 }) => {
   const [ expanded, set_expanded ] = useState(false);
   const is_positive = filterable && positive_tags.includes(tag);
@@ -79,6 +80,7 @@ const ProjectTag = ({
           }}
         > 
           {caption}
+          {occurance && occurance > 1 ? ` (${occurance})` : null}
         </span>
         {is_negative ? null :
           <span className='tag-positive smol-pad' 
