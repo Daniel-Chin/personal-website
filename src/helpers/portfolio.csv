@@ -10,7 +10,7 @@ js Interactive Tester,2019,5,js; lib; vm; npm; dev_tool,https://github.com/Danie
 js Linked File List,2019,6,js; lib; npm; database,https://github.com/Daniel-Chin/LinkedFileList#double-linked-file-list,,"Each entry is a file, with id as its filename. A simple database solution, but highly scalable.",,,,
 Dice Simulation,2019,6,matlab; processing; simulation; colab; peskin; research,https://github.com/Daniel-Chin/DiceSim#dice-simulation,https://youtu.be/lm123dN5NC0,Colab with Michael Li,,,,
 NYU login page verify,2019,5,js; chrome_extension,https://github.com/Daniel-Chin/NYULoginPageVerify#nyu-login-page-verify,https://chrome.google.com/webstore/detail/nyu-login-page-verify/iocemmjdkjlfpnjdhofljbolljfeifdj,"Let this Chrome extension check whether the URL is ""https://shibboleth.nyu.edu/""",nyu_login_verify.png,,,
-Droplet on a wall,2020,6,research,,,Not public info yet,,,,
+Droplet on a wall,2020,6,research,,https://youtu.be/-dizYKs2uFI?t=5,Not public info yet,droplet_wall.png,,,
 World of Blogs,2019,6,html; js; frontend; backend; firebase; user_auth; security; express; react,https://github.com/Daniel-Chin/WorldOfBlogs#world-of-blogs,https://world-of-blogs.herokuapp.com/,A blog platform that fights the info cacoon effect. Supervised by James Ayres,worldOfBlog_singout.png,,,
 Nozomi.la AI,2020,6,ai; html; js; python; backend; frontend; recommendation_algo; user_preferences; hci,https://github.com/Daniel-Chin/nozomi.la-AI,,,,,,
 Shape of Chords,2020,6,p5.js; music; frontend; hci,https://github.com/daniel-chin/shape-of-chords#shape-of-chords,https://upbeat-volhard-31fdb8.netlify.app/,Visualize chords on the complex plane using Fourier transform at root frequency.,shape_of_chord.png,,,
