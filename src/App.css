@@ -20,7 +20,7 @@ span {
   width: 30%;
   height: calc(100% - 10px - 10px);
   position: absolute;
-  white-space: nowrap; /* This is required unless you put the helper span closely near the img */
+  white-space: nowrap;
 }
 .card-right {
   padding-left: 10px;
@@ -34,6 +34,7 @@ span {
   vertical-align: middle;
   display: inline-block;
   height: 100%;
+  position: relative;
 }
 .thumb-image {
   width: 100%;
@@ -42,10 +43,10 @@ span {
   transition: .2s;
   vertical-align: middle;
   transform-origin: left bottom;
-} .thumb-image:hover {
   position: absolute;
+} .thumb-image:hover {
+  object-fit: contain;
   z-index: 2;
-  max-height: none;
   transform: scale(2);
 }
 
