@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectTag from '../component/ProjectTag';
 import ProjectLink from '../component/ProjectLink';
+import { resolveInternalUri } from '../helpers/misc';
 
 const LINKS = [
   { id: 'source',   caption: 'Source Code', external: true }, 
@@ -23,7 +24,12 @@ const PortfolioCard = ({
     return (
       <div className='portfolio-card'>
         <div className='card-left'>
-          img
+          <span className='middle-helper'></span>
+          <img 
+            src={resolveInternalUri(project.img, 'portfolio')} 
+            alt={`A preview of ${project.img}`}
+            className='thumb-image'
+          />
         </div>
         <div className='card-right'>
           <h3 className='project-heading'>{project.title}</h3>

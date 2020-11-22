@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { resolveInternalUri } from '../helpers/misc';
 
 const ProjectLink = ({ caption, external, uri, context }) => {
   const [ easter_egg, set_easter_egg ] = useState(false);
@@ -19,7 +20,7 @@ const ProjectLink = ({ caption, external, uri, context }) => {
 
   return (
     <a className='button project-link' target='_blank'
-      href={external ? uri : `/heavy/${context}/${uri}`}
+      href={external ? uri : resolveInternalUri(uri, context)}
       rel='noreferrer'
     >
       {caption}

@@ -32,6 +32,10 @@ const summarizeTags = (projects) => {
   return tag_summary;
 };
 
+const resolveInternalUri = (uri, context) => (
+  `/heavy/${context}/${uri}`
+);
+
 export {
-  SORT, sortProjects, summarizeTags, 
+  SORT, sortProjects, summarizeTags, resolveInternalUri, 
 };

@@ -10,18 +10,43 @@ span {
   width: calc(min(100% - 30px, 800px));
   background-color: #eee;
   padding: 10px 15px 15px;
-  display: table;
   transition: .2s;
+  position: relative;
 } .portfolio-card:hover {
   transform: scale(1.03);
 }
 
 .card-left {
-  display: table-cell;
   width: 30%;
+  height: calc(100% - 10px - 10px);
+  position: absolute;
+  white-space: nowrap; /* This is required unless you put the helper span closely near the img */
 }
 .card-right {
   padding-left: 10px;
+  position: relative;
+  left: 30%;
+  width: 70%;
+  margin-left: 7px; /* i give up */
+}
+
+.middle-helper {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+}
+.thumb-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: .2s;
+  vertical-align: middle;
+  transform-origin: left bottom;
+} .thumb-image:hover {
+  position: absolute;
+  z-index: 2;
+  max-height: none;
+  transform: scale(2);
 }
 
 .project-heading {
