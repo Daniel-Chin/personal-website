@@ -11,7 +11,7 @@ def main():
       'tags': parseTags, 
     }
     transform = [transformDict.get(x, nop) for x in head]
-    with open('./src/helpers/portfolioRoot.js', 'w+') as f:
+    with open('./src/generated/portfolioRoot.js', 'w+', encoding='utf-8') as f:
       def p(*a, **b):
         print(*a, file = f, **b)
       indentor = IndentPrinter(p)
