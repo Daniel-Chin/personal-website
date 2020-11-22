@@ -1,0 +1,7 @@
+Pride:
+    1 - ignore
+    2 - useful but trivial
+    3 - 
+    4 - shows expertise, but is not eye-catching
+    5 - shows who I am
+    6 - check this out!
