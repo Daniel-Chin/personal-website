@@ -29,7 +29,7 @@ const ProjectTag = ({
     if (expanded) {
       set_expanded(false);
     }
-  }
+  };
   const clickPositive = () => {
     if (is_positive) {
       set_positive_tags(positive_tags.filter((t) => (t !== tag)));
