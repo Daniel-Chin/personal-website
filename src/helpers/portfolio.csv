@@ -1,5 +1,5 @@
 title,year,pride,tags,source,demo,description,img,paper,attached,site_doc
-Project Portfolio,2020,4,html; js; frontend; react,,__egg__,,,,,
+Project Portfolio,2020,4,html; js; frontend; react,https://github.com/Daniel-Chin/personal-website,__egg__,,,,,
 Small Strange AdvenTure (SSAT),2015,6,vb; game; high_school,https://github.com/Daniel-Chin/SSAT,,"Adventure game in VB. I implemented the 2D physics engine. My first OOP project (because there were an variable number of walls in a level). Many eastereggs... ",ssat.png,,,
 Poster for dorm,2018,6,art; processing; math; python,https://github.com/Daniel-Chin/Processing/blob/master/PosterForDorm/PosterForDorm_pde/PosterForDorm_pde.pyde,,"Visualization of the Collatz conjecture. I hanged it in my NYU Shanghai dorm room. ",PosterFor1608.png,,,
 WhereDitGo,2019,5,html; js; forsaken; frontend; backend,https://github.com/Daniel-Chin/WhereDitGo#where-ditgo,,,,,,
