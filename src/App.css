@@ -57,11 +57,12 @@ span {
 }
 
 .button {
+  font-size: 100%;
   transition: .2s;
   cursor: pointer;
   margin: auto;
   padding: 7px 50px 10px;
-  border-radius: 5px;
+  border-radius: 6px;
   display:inline-block;
   background-color: black;
   color: white;
@@ -156,10 +157,33 @@ span {
   text-align: right;
   padding-right: 10px;
   display: table-cell;
-  width: 150px;
+  width: 120px;
 }
 .portfolio-control-panel-row-right {
   display: table-cell;
   background-color: white;
   padding: 10px;
+}
+.portfolio-control-panel-row-right-blank {
+  display: table-cell;
+}
+
+.radio-button {
+  margin-right: 20px;
+  padding: 7px 20px;
+  font-size: 100%;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 6px;
+  display:inline-block;
+  background-color: black;
+  color: white;
+  border: solid 1px;
+  text-align: center;
+} .radio-button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+} .radio-button:focus {
+  text-decoration: underline;
 }

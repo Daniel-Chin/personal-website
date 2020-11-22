@@ -1,10 +1,32 @@
 const SORT = {
-  PRIDE: 'PRIDE', 
-  YEAR_A: 'YEAR_A', 
-  YEAR_D: 'YEAR_D', 
+  PRIDE: 'Pride', 
+  YEAR_D: 'Year, from recent to old', 
+  YEAR_A: 'Year, from old to recent', 
 };
 
 const sortProjects = (projects, method) => {
+  const sortPride = () => {
+    projects.sort((a, b) => (b.pride - a.pride));
+  }
+  const sortYear = (direction) => {
+    projects.sort((a, b) => ((b.year - a.year) * direction));
+  }
+  switch (method) {
+    case SORT.PRIDE:
+      sortYear(1);
+      sortPride();
+      break;
+    case SORT.YEAR_D:
+      sortPride();
+      sortYear(1);
+      break;
+    case SORT.YEAR_A:
+      sortPride();
+      sortYear(-1);
+      break;
+    default:
+      console.error('ERROR 73429864301');
+  }
   return projects;
 };
 

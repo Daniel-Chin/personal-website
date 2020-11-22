@@ -3,6 +3,7 @@ import portfolio_root from '../generated/portfolioRoot';
 import { SORT, sortProjects, summarizeTags } from '../helpers/misc';
 import PortfolioCard from '../component/PortfolioCard';
 import ProjectTag from '../component/ProjectTag';
+import RadioButton from '../component/RadioButton';
 
 const PortfolioPage = () => {
   const [sort_method, set_sort_method] = useState(SORT.PRIDE);
@@ -36,7 +37,7 @@ const PortfolioPage = () => {
         </div>
         <div className='portfolio-control-panel-row'>
           <div className='portfolio-control-panel-row-left'>
-            Filtering for:
+            Filter for:
           </div>
           <div className='portfolio-control-panel-row-right'>
             {tag_summary.map(({ tag, occurance }, i) => (
@@ -56,7 +57,7 @@ const PortfolioPage = () => {
         </div>
         <div className='portfolio-control-panel-row'>
           <div className='portfolio-control-panel-row-left'>
-            Excluding:
+            Exclude:
           </div>
           <div className='portfolio-control-panel-row-right'>
             {tag_summary.map(({ tag, occurance }, i) => (
@@ -72,6 +73,28 @@ const PortfolioPage = () => {
             :
               null
             ))}
+          </div>
+        </div>
+        <div className='portfolio-control-panel-row'>
+          <div className='portfolio-control-panel-row-left'>
+            Sort by:
+          </div>
+          <div className='portfolio-control-panel-row-right-blank'>
+          <RadioButton 
+              value={SORT.PRIDE}
+              active={sort_method} 
+              set_active={set_sort_method}
+            />
+            <RadioButton 
+              value={SORT.YEAR_D}
+              active={sort_method} 
+              set_active={set_sort_method}
+            />
+            <RadioButton 
+              value={SORT.YEAR_A}
+              active={sort_method} 
+              set_active={set_sort_method}
+            />
           </div>
         </div>
       </div>
