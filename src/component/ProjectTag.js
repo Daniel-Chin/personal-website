@@ -7,12 +7,10 @@ const ProjectTag = ({
   occurance, 
 }) => {
   const [ expanded, set_expanded ] = useState(false);
-  const [ caption_alt, set_caption_alt ] = useState(false);
   const is_positive = filterable && positive_tags.includes(tag);
   const is_negative = filterable && negative_tags.includes(tag);
   let color = 'white';
   let caption = tag;
-  let alt_caption = null;
   if (is_positive) {
     color = '#0e0';
   }
@@ -20,22 +18,6 @@ const ProjectTag = ({
     color = '#f77';
   }
   
-  if (year) {
-    alt_caption = `Age ${tag - 1999}`;
-  }
-  if (pride) {
-    caption = `Pride=${tag}`;
-    alt_caption = [
-      '0',
-      'Ignore this plz',
-      'Useful but trivial',
-      'Hmm...',
-      'shows expertise, but is not eye-catching',
-      'shows who I am',
-      'Check this out!',
-    ][tag];
-  }
-
   const clickTag = (_, force) => {
     if (filterable) {
       if (force || ! expanded) {
@@ -43,11 +25,7 @@ const ProjectTag = ({
       }
     }
   };
-  const onMouseEnter = () => {
-    set_caption_alt(true);
-  };
   const onMouseLeave = () => {
-    set_caption_alt(false);
     if (expanded) {
       set_expanded(false);
     }
@@ -67,6 +45,23 @@ const ProjectTag = ({
     }
   };
 
+  let title = null;
+  if (year) {
+    title = `Age ${tag - 1999}`;
+  }
+  if (pride) {
+    caption = `Pride=${tag}`;
+    title = [
+      '0',
+      'Ignore this plz',
+      'Useful but trivial',
+      'Hmm...',
+      'shows expertise, but is not eye-catching',
+      'shows who I am',
+      'Check this out!',
+    ][tag];
+  }
+
   return (
     <>
       <span className='tag-span' onMouseLeave={onMouseLeave}>
@@ -77,17 +72,14 @@ const ProjectTag = ({
             ),
             color, 
             fontWeight: is_positive || is_negative ? 'bold' : 'normal',
-          }} onClick={clickTag} 
+          }} onClick={clickTag} title={title} 
           tabIndex={0} onKeyUp={(event) => {
             if (event.key === 'Enter' || event.keyCode === 13) {
               clickTag(null, true);
             }
-          }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}
+          }}
         > 
-          {
-            caption_alt && alt_caption !== null 
-            ? `${caption}: ${alt_caption}` : caption
-          }
+          {caption}
           {occurance && occurance > 1 ? ` (${occurance})` : null}
         </span>
         {is_negative ? null :
