@@ -3,6 +3,8 @@
 public/heavy
 debug.log
 
+src/generated
+
 # dependencies
 /node_modules
 /.pnp
