@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-const ProjectTag = ({ tag, year, pride, filterable }) => {
+const ProjectTag = ({
+  tag, year, pride, filterable, 
+  positive_tags, negative_tags, 
+  set_positive_tags, set_negative_tags,
+}) => {
   const [ expanded, set_expanded ] = useState(false);
   let caption = tag;
   
@@ -15,10 +19,10 @@ const ProjectTag = ({ tag, year, pride, filterable }) => {
     }
   }
   const clickPositive = () => {
-
+    set_positive_tags([ ...positive_tags, tag ]);
   };
   const clickNegative = () => {
-
+    set_negative_tags([ ...negative_tags, tag ]);
   };
 
   let title = null;
