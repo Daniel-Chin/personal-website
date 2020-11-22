@@ -10,12 +10,19 @@ const ProjectTag = ({
   const is_positive = filterable && positive_tags.includes(tag);
   const is_negative = filterable && negative_tags.includes(tag);
   let color = 'white';
+  let backgroundColor = 'black';
   let caption = tag;
   if (is_positive) {
     color = '#0e0';
   }
   if (is_negative) {
     color = '#f77';
+  }
+  if (tag === 'middle_school') {
+    backgroundColor = '#853';
+  }
+  if (tag === 'high_school') {
+    backgroundColor = '#006';
   }
   
   const clickTag = (_, force) => {
@@ -72,6 +79,7 @@ const ProjectTag = ({
             ),
             color, 
             fontWeight: is_positive || is_negative ? 'bold' : 'normal',
+            backgroundColor, 
           }} onClick={clickTag} title={title} 
           tabIndex={0} onKeyUp={(event) => {
             if (event.key === 'Enter' || event.keyCode === 13) {
