@@ -27,7 +27,7 @@ const PortfolioCard = ({
           <span className='middle-helper'></span>
           <img 
             src={resolveInternalUri(project.img, 'portfolio')} 
-            alt={`A preview of ${project.img}`}
+            alt={project.img ? `A preview of ${project.img}` : ''}
             className='thumb-image'
           />
         </div>
