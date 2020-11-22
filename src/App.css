@@ -65,7 +65,7 @@ span {
   text-decoration: none;
 } .project-link:hover {
   transform: scale(1.2);
-  background-color: #00d;
+  background-color: #00b;
   color: white;
 }
 
@@ -101,4 +101,8 @@ span {
   z-index: 1;
 } .tag-negative:hover {
   background-color: #c00;
+}
+
+.center-text {
+  text-align: center;
 }
