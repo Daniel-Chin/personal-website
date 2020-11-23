@@ -1,5 +1,5 @@
 title,year,pride,tags,source,demo,description,img,paper,attached,site_doc
-Project Portfolio,2020,4,html; js; frontend; react,https://github.com/Daniel-Chin/personal-website,__egg__,,,,,
+Project Portfolio,2020,4,html; js; frontend; react,https://github.com/Daniel-Chin/personal-website,__egg__,"Lists my past projects. ",portfolio.png,,,
 Small Strange AdvenTure (SSAT),2015,6,vb; game; high_school,https://github.com/Daniel-Chin/SSAT,,"Adventure game in VB. I implemented the 2D physics engine. My first OOP project (because there were an variable number of walls in a level). Many eastereggs... ",ssat.png,,,
 Poster for dorm,2018,6,art; processing; math; python,https://github.com/Daniel-Chin/Processing/blob/master/PosterForDorm/PosterForDorm_pde/PosterForDorm_pde.pyde,,"Visualization of the Collatz conjecture. I hanged it in my NYU Shanghai dorm room. ",PosterFor1608.png,,,
 WhereDitGo,2019,5,html; js; forsaken; frontend; backend,https://github.com/Daniel-Chin/WhereDitGo#where-ditgo,,,,,,
@@ -19,7 +19,7 @@ Daniel's Funplex on Ice,2020,3,minecraft; not_coding; game,https://github.com/Da
 OPEC Auction Assistant,2020,2,html; hci; js,https://github.com/Daniel-Chin/opec/tree/master/auction_assistant,,,,,,
 Grandfather Paradox Solved with Mixed Strategy Equilibrium,2020,6,not_coding; game_theory; time_travel; paper,,,,,grandpa.pdf,,
 _December 2018,2018,1,game; python; under_construction; hci,https://github.com/Daniel-Chin/december2018,,,,,,
-SCP 294 NLP AI,2020,5,ai; nlp; scp; gpt-2; hci,https://github.com/Daniel-Chin/SCP-294-NLP-AI#predicting-the-result-of-consuming-liquid-from-scp-294-using-gpt-2,,Predicts the result of consuming liquid from SCP 294 using GPT-2,,,,
+SCP 294 NLP AI,2020,5,ai; nlp; scp; gpt-2; hci,https://github.com/Daniel-Chin/SCP-294-NLP-AI#predicting-the-result-of-consuming-liquid-from-scp-294-using-gpt-2,https://colab.research.google.com/drive/10DLgYVQYDVrTBjkcXWDrCAYmd3izelNJ?usp=sharing,"Predicts the result of consuming liquid from SCP 294 using GPT-2. ",drink_lava.png,,,
 Incubus M.D.,2019,4,game; game_maker_lang; colab; game_jam,https://github.com/Daniel-Chin/ok#incubus-md,,"Colab with Zane Fadul, Andrew Liu, Vera Zhong, Thomas Tai",,,,
 Wage Simulation,2019,6,matlab; econ; peskin; simulation; paper,https://github.com/Daniel-Chin/WageSim,,"Simulate an economy. Wages go up when Thanos snaps his fingers. Supervised by Charles Peskin. ",econ_thanos.png,wage_sim.pdf,,
 Tinder vs Bumble,2020,4,not_coding; video; colab,,https://www.youtube.com/watch?v=AgMrl5ueot0,"Colab with Alex Zhao, Brielle Albert, Doraian, Rosalane Chow, Yolanda Liu",,,,
