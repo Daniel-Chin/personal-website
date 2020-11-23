@@ -1,6 +1,6 @@
 import csv
 
-GITHUB = 'https://github.com/Daniel-Chin'
+GITHUB = 'https://github.com/Daniel-Chin'.lower()
 
 def main():
   with open('./src/helpers/portfolio.csv', 'r', encoding = 'utf-8') as fin:
@@ -13,7 +13,7 @@ def main():
       for line in cin:
         buffer = line[:4]
         source_original = line[4]
-        if source_original.startswith(GITHUB) and '#' in source_original:
+        if source_original.lower().startswith(GITHUB) and '#' in source_original:
           # split
           buffer.append(source_original.split('#', 2)[0])
           print(source_original.split('#', 2)[1:])
