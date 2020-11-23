@@ -5,6 +5,7 @@ import { resolveInternalUri } from '../helpers/misc';
 
 const LINKS = [
   { id: 'source',   caption: 'Source Code', external: true }, 
+  { id: 'readmore',   caption: 'Read More', external: true }, 
   { id: 'demo',     caption: 'Demo', external: true }, 
   { id: 'site_doc', caption: 'Documentation', external: false }, 
   { id: 'paper',    caption: 'Paper', external: false }, 
