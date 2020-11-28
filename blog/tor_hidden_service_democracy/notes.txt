@@ -1,0 +1,5 @@
+Take down child porn Tor hidden services democratically
+
+Modify Tor to support taking down an unwanted hidden service if >50% people (Tor nodes) wish so. Agreeable hidden services can still run anonimously. 
+
+I am not an expert of Tor. Please inform me whether the above proposal if viable. Give feedback and comments at __email__
