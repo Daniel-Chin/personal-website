@@ -75,7 +75,7 @@ const ProjectTag = ({
         <span 
           className='tag-middle smol-pad' style={{
             cursor: expanded ? 'text' : (
-              filterable ? 'pointer' : 'default'
+              filterable ? 'pointer' : 'help'
             ),
             color, 
             fontWeight: is_positive || is_negative ? 'bold' : 'normal',
