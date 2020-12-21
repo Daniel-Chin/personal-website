@@ -177,4 +177,5 @@ Summer bug,2015,2,not_coding; music,,,https://youtu.be/mY1fbKmzurI,,,,,
 Song for WCJ,2014,3,not_coding; music,,,https://youtu.be/Y4pmvQ_O0ac,,,,,
 His theme + the World Revolving,2018,2,not_coding; music; remix; undertale,,,https://youtu.be/js6Ix7vczis,,,,,
 Black Bamboo,2017,3,not_coding; music,,,https://youtu.be/M-KpYGP4gL8,,,,,
-Generating Mutually Trusted Randomness in P2P,2020,6,info_theory; game_theory,"","","","","",mutal_random.pdf,"",""
+Generating Mutually Trusted Randomness in P2P,2020,6,info_theory; game_theory,,,,,,mutal_random.pdf,,
+Real-time Benchmarking of Pitch Estimators,2020,2,music; python; jupyter_notebook; tensorflow; real-time,https://github.com/Daniel-Chin/Real-time-Benchmarking-of-Pitch-Estimators,,,"Modified YIN and Crepe to real-time. Proposed SFT (Slow Fourier Transform)-based cepstrum peak interpolation. Benchmarked the three. ",,,,
