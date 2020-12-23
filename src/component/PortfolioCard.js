@@ -3,15 +3,6 @@ import ProjectTag from '../component/ProjectTag';
 import ProjectLink from '../component/ProjectLink';
 import { resolveInternalUri } from '../helpers/misc';
 
-const LINKS = [
-  { id: 'source',   caption: 'Source Code', external: true }, 
-  { id: 'readmore',   caption: 'Read More', external: true }, 
-  { id: 'demo',     caption: 'Demo', external: true }, 
-  { id: 'site_doc', caption: 'Documentation', external: false }, 
-  { id: 'paper',    caption: 'Paper', external: false }, 
-  { id: 'attached', caption: 'Attachment', external: false }, 
-];
-
 const PortfolioCard = ({
   project, positive_tags, negative_tags, 
   set_positive_tags, set_negative_tags
@@ -52,15 +43,12 @@ const PortfolioCard = ({
             {project.description}
           </p>
           <div>
-            {LINKS.map(({ id, caption, external }, i) => {
-              if (project[id]) {
-                return <ProjectLink 
-                  key={i} caption={caption} external={external}
-                  uri={project[id]} context='portfolio'
-                />;
-              } else {
-                return null;
-              }
+            {project.links.map(([ caption, type, uri ], i) => {
+              return <ProjectLink 
+                key={i} caption={caption} 
+                external={type === 'external'}
+                uri={uri} context='portfolio'
+              />;
             })}
           </div>
         </div>

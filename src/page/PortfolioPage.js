@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import portfolio_root from '../generated/portfolioRoot';
+import portfolio_root from '../helpers/portfolioRoot';
 import { SORT, sortProjects, summarizeTags } from '../helpers/misc';
 import PortfolioCard from '../component/PortfolioCard';
 import ProjectTag from '../component/ProjectTag';

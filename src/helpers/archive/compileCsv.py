@@ -1,6 +1,16 @@
 import csv
 from indentprinter import IndentPrinter
 
+NON_BUTT = ['title','year','pride','tags','description','img']
+CAPTION = {
+  'source': 'Source Code',
+  'readmore': 'Read More',
+  'demo': 'Demo',
+  'site_doc': 'Documentation',
+  'paper': 'Paper',
+  'attached': 'Attachment', 
+}
+
 def main():
   with open('./src/helpers/portfolio.csv', 'r', encoding = 'utf-8') as csvF:
     c = csv.reader(csvF)
@@ -19,9 +29,20 @@ def main():
       with indentor as p:
         for line in c:
           p('{')
+          buttons = []
           with indentor as p:
             for key, value, trans in zip(head, line, transform):
-              p(key, ':', repr(trans(value)), ', ')
+              if key in NON_BUTT:
+                p(key, ':', repr(trans(value)) + ', ')
+              else:
+                if value:
+                  buttons.append((key, value))
+            p('links: [')
+            with indentor as p:
+              for key, value in buttons:
+                in_ex = 'internal' if key in 'site_docpaperattached' else 'external'
+                p(f'[ "{CAPTION[key]}", "{in_ex}", "{value}" ], ')
+            p('], ')
           p('}, ')
       p('];\n')
       p('export default portfolio_root;')
