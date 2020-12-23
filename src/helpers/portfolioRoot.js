@@ -1,3 +1,8 @@
+const visualization = 'visualization';
+const processing = 'processing';
+const dsp = 'dsp';
+const inquiry = 'inquiry';
+
 const portfolio_root = [
   {
     title : 'Project Portfolio', 
@@ -26,7 +31,7 @@ const portfolio_root = [
     title : 'Poster for dorm', 
     year : 2018, 
     pride : 6, 
-    tags : ['art', 'visualization', 'processing', 'math', 'python'], 
+    tags : ['art', visualization, processing, 'math', 'python'], 
     description : 'Visualization of the Collatz conjecture. I hanged it in my NYU Shanghai dorm room. ', 
     img : 'PosterFor1608.png', 
     links: [
@@ -109,7 +114,7 @@ const portfolio_root = [
     title : 'Dice Simulation', 
     year : 2019, 
     pride : 6, 
-    tags : ['matlab', 'physics', 'processing', 'visualization', 'simulation', 'colab', 'peskin', 'inquiry'], 
+    tags : ['matlab', 'physics', processing, visualization, 'simulation', 'colab', 'peskin', inquiry], 
     description : 'Can human cheat with perfect dice? I simulated dice rolls in Matlab and colored the initial condition space according to roll outcome. Colab with Michael Li. Supervise by Charles Peskin. ', 
     img : 'dice_sim.png', 
     links: [
@@ -135,7 +140,7 @@ const portfolio_root = [
     title : 'Droplet on a wall', 
     year : 2020, 
     pride : 6, 
-    tags : ['inquiry', 'physics'], 
+    tags : [inquiry, 'physics'], 
     description : 'Not public info yet', 
     img : 'droplet_wall.png', 
     links: [
@@ -172,7 +177,7 @@ const portfolio_root = [
     title : 'Shape of Chords', 
     year : 2020, 
     pride : 6, 
-    tags : ['p5.js', 'music', 'visualization', 'frontend', 'hci', 'math'], 
+    tags : ['p5.js', 'music', visualization, 'frontend', 'hci', 'math'], 
     description : 'Visualize chords on the complex plane using Fourier transform at root frequency.', 
     img : 'shape_of_chord.png', 
     links: [
@@ -346,7 +351,7 @@ const portfolio_root = [
     title : 'Simplinstrument', 
     year : 2019, 
     pride : 6, 
-    tags : ['colab', 'music', 'arduino', 'computer_music', 'processing', 'python', 'distributed_app', 'gui_2_api', '3d_print', 'hci', 'real-time'], 
+    tags : ['colab', 'music', 'arduino', 'computer_music', processing, 'python', 'distributed_app', 'gui_2_api', '3d_print', 'hci', 'real-time'], 
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
@@ -358,7 +363,7 @@ const portfolio_root = [
     title : 'Rotating Huskies', 
     year : 2019, 
     pride : 3, 
-    tags : ['processing', 'dog', 'joke'], 
+    tags : [processing, 'dog', 'joke'], 
     description : '', 
     img : '', 
     links: [
@@ -369,7 +374,7 @@ const portfolio_root = [
     title : 'Heat-sensitive webcam', 
     year : 2019, 
     pride : 3, 
-    tags : ['processing', 'joke', 'arduino', 'hci'], 
+    tags : [processing, 'joke', 'arduino', 'hci'], 
     description : '', 
     img : 'heat_cam.jpg', 
     links: [
@@ -380,7 +385,7 @@ const portfolio_root = [
     title : 'laser arcade', 
     year : 2019, 
     pride : 6, 
-    tags : ['colab', 'arduino', 'processing', 'distributed_app', '3d_print', 'fusion_360', 'audacity', 'game', 'hci'], 
+    tags : ['colab', 'arduino', processing, 'distributed_app', '3d_print', 'fusion_360', 'audacity', 'game', 'hci'], 
     description : 'An arcade machine. Do watch all videos in the demo. Colab with Tristan Murdoch. ', 
     img : 'laser_arcade.jpg', 
     links: [
@@ -392,7 +397,7 @@ const portfolio_root = [
     title : 'Ink leak', 
     year : 2019, 
     pride : 5, 
-    tags : ['processing', 'animation', 'art', 'lib'], 
+    tags : [processing, 'animation', 'art', 'lib'], 
     description : 'The GIF does not do justice. Run it yourself for HD 60 FPS. ', 
     img : 'ink_leak.gif', 
     links: [
@@ -438,7 +443,7 @@ const portfolio_root = [
     title : 'Digital Rapper', 
     year : 2018, 
     pride : 4, 
-    tags : ['python', 'music', 'computer_music', 'jupyter_notebook', 'colab', 'dsp'], 
+    tags : ['python', 'music', 'computer_music', 'jupyter_notebook', 'colab', dsp], 
     description : 'Colab with Matthew, supervised by Gus Xia', 
     img : '', 
     links: [
@@ -521,7 +526,7 @@ const portfolio_root = [
     title : 'Processing GUI Tree', 
     year : 2018, 
     pride : 6, 
-    tags : ['processing', 'gui', 'frontend', 'lib'], 
+    tags : [processing, 'gui', 'frontend', 'lib'], 
     description : 'A GUI framework. A tree of GUI elements that renders recursively. Comes with 3 gadgets for free, too. ', 
     img : 'proc_gui_tree.png', 
     links: [
@@ -532,7 +537,7 @@ const portfolio_root = [
     title : 'Processing Routine Throttle', 
     year : 2019, 
     pride : 2, 
-    tags : ['processing', 'lib'], 
+    tags : [processing, 'lib'], 
     description : '', 
     img : '', 
     links: [
@@ -1627,7 +1632,7 @@ const portfolio_root = [
     title : 'Generalized Sierpinski triangles', 
     year : 2013, 
     pride : 6, 
-    tags : ['vb', 'middle_school', 'visualization', 'math'], 
+    tags : ['vb', 'middle_school', visualization, 'math'], 
     description : "I tried Pascal's triangle MOD n. At that time I didn't know it was Sierpinski's triangle. But hey, here is a family of them. ", 
     img : 'sir_triangle.png', 
     links: [
@@ -1816,7 +1821,7 @@ const portfolio_root = [
     title : 'Inquiry into linear transformation', 
     year : 2015, 
     pride : 4, 
-    tags : ['vb', 'high_school', 'inquiry', 'math', 'visualization'], 
+    tags : ['vb', 'high_school', inquiry, 'math', visualization], 
     description : 'User can transform a shape in real-time by manipulating a matrix. I wrote it to help me get the intuition of linear tranformation. ', 
     img : '', 
     links: [
@@ -1849,7 +1854,7 @@ const portfolio_root = [
     title : 'Imaginary plotter', 
     year : 2016, 
     pride : 1, 
-    tags : ['vb', 'high_school', 'math', 'visualization'], 
+    tags : ['vb', 'high_school', 'math', visualization], 
     description : '', 
     img : '', 
     links: [
@@ -1860,7 +1865,7 @@ const portfolio_root = [
     title : 'Mate selection simulation', 
     year : 2016, 
     pride : 5, 
-    tags : ['vb', 'high_school', 'simulation', 'evolution', 'inquiry'], 
+    tags : ['vb', 'high_school', 'simulation', 'evolution', inquiry], 
     description : 'Simulate a bi-sexual world evolution with sexual traits and sexual orientation traits inheritable. ', 
     img : 'bi_sex_evo.png', 
     links: [
@@ -1928,7 +1933,7 @@ const portfolio_root = [
     title : 'Audio puzzles', 
     year : 2017, 
     pride : 3, 
-    tags : ['dsp', 'matlab', 'puzzle'], 
+    tags : [dsp, 'matlab', 'puzzle'], 
     description : 'Can you find the secret message? ', 
     img : '', 
     links: [
@@ -2027,7 +2032,7 @@ const portfolio_root = [
     title : 'Interactive Visualization of Spectral Leakage', 
     year : 2020, 
     pride : 4, 
-    tags : ['processing', 'visualization', 'dsp', 'math', 'inquiry'], 
+    tags : [processing, visualization, dsp, 'math', inquiry], 
     description : '', 
     img : 'spectral_leak.gif', 
     links: [
@@ -2044,6 +2049,18 @@ const portfolio_root = [
     links: [
       [ "Read More", "external", "https://github.com/Daniel-Chin/python_lib#blinddescendpy" ], 
       [ "Source Code", "external", "https://github.com/Daniel-Chin/Python_Lib/blob/master/blindDescend.py" ], 
+    ], 
+  }, 
+  {
+    title : 'Cepstrogram: Microphone Short-time Cepstrum', 
+    year : 2020, 
+    pride : 3, 
+    tags : [processing, visualization, dsp, inquiry], 
+    description : 'Real-time Cepstrogram visualization in Processing 3. ', 
+    img : '', 
+    links: [
+      [ "YouTube", "external", "https://youtu.be/aEuAKBlFn0w" ], 
+      [ "Source Code", "external", "https://github.com/Daniel-Chin/Cepstrogram-Microphone-Short-time-Cepstrum" ], 
     ], 
   }, 
 ];
