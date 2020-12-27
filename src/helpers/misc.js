@@ -62,7 +62,22 @@ const blogId2Url = (blog_id) => (
   '/blog/' + blog_id
 );
 
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const formatTime = (UNIX_timestamp) => {
+  const myDate = new Date(UNIX_timestamp * 1000);
+  const year = myDate.getFullYear();
+  const month = MONTHS[myDate.getMonth()];
+  const date = myDate.getDate();
+  // const hour = myDate.getHours();
+  // const min = myDate.getMinutes();
+  // const sec = myDate.getSeconds();
+  // var min = a.getMinutes() < 10 ? '0' + a.getMinutes() : a.getMinutes(); 
+  // var sec = a.getSeconds() < 10 ? '0' + a.getSeconds() : a.getSeconds();
+  // const time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+  return date + ' ' + month + ' ' + year;
+};
+
 export {
   SORT, sortProjects, summarizeTags, resolveInternalUri, 
-  blogId2Url, 
+  blogId2Url, formatTime, 
 };

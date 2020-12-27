@@ -223,3 +223,20 @@ span {
 .margin-8px {
   margin: 8px;
 }
+
+.margin-hori-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zebra:nth-child(even) {
+  background-color: #eee;
+}
+
+th {
+  text-align: left;
+  padding: .5em;
+}
+td {
+  padding: .5em;
+}
