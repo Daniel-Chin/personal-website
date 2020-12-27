@@ -8,7 +8,10 @@ import json
 from time import time
 from indentprinter import indentPrinter
 
-EXCLUDE_EXT = ['py', 'json', 'css', '__pycache__']
+EXCLUDE_EXT = [
+    'py', 'json', 'css', '__pycache__', 
+    'gitignore', 
+]
 
 HASH_FILENAME = 'hash.txt'
 ROOT_FILENAME = 'root.json'
