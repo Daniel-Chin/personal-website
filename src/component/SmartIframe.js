@@ -18,7 +18,7 @@ const SmartIframe = ({ target, title }) => {
   const expand = useCallback(() => {
     setIframeHeight(
       iFrame.current.contentWindow.document.body
-      .scrollHeight + 0
+      .scrollHeight + 16
     );
     setShrunk(false);
     // console.log('expand', iFrame.current.contentWindow.document.body.scrollHeight);
