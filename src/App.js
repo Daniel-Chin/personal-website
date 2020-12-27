@@ -2,14 +2,16 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
-import TempPage      from './page/TempPage';
-import LandingPage   from './page/LandingPage';
-import PortfolioPage from './page/PortfolioPage';
-import BlogPage      from './page/BlogPage';
-import BlogListPage  from './page/BlogListPage';
-import WhoamiPage    from './page/WhoamiPage';
-import Hat           from './component/Hat';
-
+import TempPage         from './page/TempPage';
+import LandingPage      from './page/LandingPage';
+import PortfolioPage    from './page/PortfolioPage';
+import BlogPage         from './page/BlogPage';
+import BlogListPage     from './page/BlogListPage';
+import NovelListPage    from './page/NovelListPage';
+import QuestionListPage from './page/QuestionListPage';
+import AboutMePage      from './page/AboutMePage';
+import WhoamiPage       from './page/WhoamiPage';
+import Hat              from './component/Hat';
 const App = () => {
   return (
     <>
@@ -26,6 +28,15 @@ const App = () => {
         </Route>
         <Route exact path='/blog/:id'>
           <BlogPage />
+        </Route>
+        <Route exact path='/novels'>
+          <NovelListPage />
+        </Route>
+        <Route exact path='/questions'>
+          <QuestionListPage />
+        </Route>
+        <Route exact path='/about'>
+          <AboutMePage />
         </Route>
         <Route exact path='/whoami'>
           <WhoamiPage />
