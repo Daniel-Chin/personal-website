@@ -188,3 +188,28 @@ span {
 } .radio-button:focus {
   text-decoration: underline;
 }
+
+.landing-page {
+  margin: 1em;
+}
+
+.hat {
+  box-shadow: #bbb 0 0px 5px 5px;
+}
+.hat ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+.hat li {
+  float: left;
+  padding: .5em 1em;
+  transition: .3s;
+} .hat li:hover {
+  background-color: #e8e8e8;
+}
+.hat a {
+  text-decoration: none;
+  color: black;
+}
