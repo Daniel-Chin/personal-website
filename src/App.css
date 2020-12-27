@@ -198,7 +198,7 @@ span {
 }
 .hat ul {
   list-style-type: none;
-  overflow: auto;
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -208,6 +208,7 @@ span {
   transition: .3s;
 } .hat li:hover {
   background-color: #e8e8e8;
+  transform: scale(1.1);
 }
 .hat a {
   text-decoration: none;
