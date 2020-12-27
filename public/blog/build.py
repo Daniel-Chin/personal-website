@@ -14,7 +14,7 @@ EXCLUDE_EXT = [
 ]
 
 HASH_FILENAME = 'hash.txt'
-ROOT_FILENAME = 'root.json'
+ROOT_FILENAME = '../../src/helpers/blogRoot.json'
 
 def main(ignore_hash = False):
     with ChdirAlongside(__file__):
