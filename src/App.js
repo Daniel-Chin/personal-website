@@ -7,6 +7,7 @@ import LandingPage   from './page/LandingPage';
 import PortfolioPage from './page/PortfolioPage';
 import BlogPage      from './page/BlogPage';
 import BlogListPage  from './page/BlogListPage';
+import WhoamiPage    from './page/WhoamiPage';
 import Hat           from './component/Hat';
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
         </Route>
         <Route exact path='/blog/:id'>
           <BlogPage />
+        </Route>
+        <Route exact path='/whoami'>
+          <WhoamiPage />
         </Route>
         <Route exact path='/temp'>
           <TempPage />

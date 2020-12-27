@@ -10,7 +10,7 @@ const Hat = () => {
         <Link to='/blogs'><li>Blogs</li></Link>
         <Link to='/novels'><li>Novels</li></Link>
         <Link to='/questions'><li>Questions</li></Link>
-        <Link to='/whoami'><li>About Me</li></Link>
+        <Link to='/about'><li>About Me</li></Link>
       </ul>
     </div>
   );

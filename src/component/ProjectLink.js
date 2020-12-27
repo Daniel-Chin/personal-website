@@ -19,9 +19,9 @@ const ProjectLink = ({ caption, external, uri, context }) => {
   }
 
   return (
-    <a className='button project-link' target='_blank'
+    <a className='button project-link' 
       href={external ? uri : resolveInternalUri(uri, context)}
-      rel='noreferrer'
+      rel='noreferrer' target='_blank'
     >
       {caption}
     </a>

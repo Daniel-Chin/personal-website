@@ -1,29 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { blogId2Url } from '../helpers/misc'
+import blogRoot from '../helpers/blogRoot';
 
 const LandingPage = () => {
+  const sticky_ids = [
+    'carbon_accounting', 
+    'tor_hidden_service_democracy', 
+  ];
+  const sticky_blogs = blogRoot.filter(({ id }) => (
+    sticky_ids.includes(id)
+  ));
   return (
-    <div className='landing-page'>
+    <div className='margin-1em'>
       <h1 className='center-text'>Daniel Chin</h1>
       <p className='center-text'>Legally known as NanFeng Qin</p>
       <p>This is my personal website.</p>
       <p>It is <b>under construction</b>.</p>
       <p>
-        For the nerds among you: The URL looks weird. 
-        How do you know it's actually me? Go to {' '}
-        <a href="https://github.com/daniel-chin">
-          https://github.com/daniel-chin
-        </a>. 
-        <br />
-        I put a public key there. You can verify that 
-        your current HTTPS connection uses the same 
-        public key. 
-        <br />
-        If it actually does not, Netlify may have changed 
-        key without asking me. 
-        In that case, please open an issue at {' '}
-        <a href="https://github.com/Daniel-Chin/daniel-chin/issues">
-          https://github.com/Daniel-Chin/daniel-chin/issues
-        </a> {' '} if you will. 
+        Sticky blogs: 
+        {sticky_blogs.map(({ id, title }, i) => (
+          <span key={i}>
+            <br />
+            <Link to={blogId2Url(id)}>{title}</Link>
+          </span>
+        ))}
+      </p>
+      <p>
+        Also, <Link to='/whoami'>Why is my URL so weird?</Link>
       </p>
     </div>
   );
