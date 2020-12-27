@@ -13,9 +13,9 @@ const PortfolioPage = () => {
   const tag_summary = summarizeTags(projects);
   return (
     <>
-      <h2 className='center-text'>
+      <h1 className='center-text'>
         Project Portfolio
-      </h2>
+      </h1>
       <div className='portfolio-control-panel'>
         <div className='portfolio-control-panel-row'>
           <div className='portfolio-control-panel-row-left'>
