@@ -16,6 +16,7 @@ The Bitcoin blockchain is susceptible to "51% attack". Similarly, if the majorit
 The idea is still vague. I am thinking that each Tor node can publishe a list of hidden services it is willing to take down. Then we will need a decentralized way to verify that >50% nodes share a same idea. 
 
 Challenges: 
+
 * What if the critical threshold turns out to be way below 50%? 
 * What if it is not a stable equilibrium - Tor nodes quickly dissolve into hostile parties with disagreeing protocols and we lose Tor? 
 * Is it even possible? 
