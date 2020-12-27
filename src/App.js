@@ -2,9 +2,11 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
+import TempPage      from './page/TempPage';
 import LandingPage   from './page/LandingPage';
 import PortfolioPage from './page/PortfolioPage';
-import TempPage      from './page/TempPage';
+import BlogPage      from './page/BlogPage';
+import BlogListPage  from './page/BlogListPage';
 import Hat           from './component/Hat';
 
 const App = () => {
@@ -17,6 +19,12 @@ const App = () => {
         </Route>
         <Route exact path='/portfolio'>
           <PortfolioPage />
+        </Route>
+        <Route exact path='/blogs'>
+          <BlogListPage />
+        </Route>
+        <Route exact path='/blog/:id'>
+          <BlogPage />
         </Route>
         <Route exact path='/temp'>
           <TempPage />

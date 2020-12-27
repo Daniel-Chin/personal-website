@@ -58,6 +58,11 @@ const resolveInternalUri = (uri, context) => (
   `/heavy/${context}/${uri}`
 );
 
+const blogId2Url = (blog_id) => (
+  '/blog/' + blog_id
+);
+
 export {
   SORT, sortProjects, summarizeTags, resolveInternalUri, 
+  blogId2Url, 
 };
