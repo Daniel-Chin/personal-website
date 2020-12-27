@@ -2,6 +2,7 @@
 
 public/heavy
 debug.log
+*.pyc
 
 # dependencies
 /node_modules
