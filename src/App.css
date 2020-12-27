@@ -213,3 +213,12 @@ span {
   text-decoration: none;
   color: black;
 }
+
+.smart-iframe {
+  width: 100%;
+  border: none;
+}
+
+.margin-8px {
+  margin: 8px;
+}
