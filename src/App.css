@@ -8,7 +8,7 @@ span {
 .portfolio-card {
   margin: 20px auto 20px;
   width: calc(min(100% - 30px, 800px));
-  background-color: #eee;
+  background-color: #f2f2f2;
   padding: 10px 15px 15px;
   transition: .2s;
   position: relative;
