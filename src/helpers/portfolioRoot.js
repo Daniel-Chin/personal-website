@@ -5,14 +5,14 @@ const inquiry = 'inquiry';
 
 const portfolio_root = [
   {
-    title : 'Project Portfolio', 
+    title : 'Personal Website', 
     year : 2020, 
     pride : 4, 
     tags : ['html', 'js', 'frontend', 'react'], 
-    description : 'Lists my past projects. ', 
+    description : 'I have a project portfolio on there, did you know? ', 
     img : 'portfolio.png', 
     links: [
-      [ "Go!", "external", "__egg__" ], 
+      [ "Demo", "external", "__egg__" ], 
       [ "Source Code", "external", "https://github.com/Daniel-Chin/personal-website" ], 
     ], 
   }, 
