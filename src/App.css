@@ -204,11 +204,16 @@ span {
 }
 .hat li {
   float: left;
-  padding: .5em 1em;
+  padding: .5em .7em;
+  /* change together q3p984fhp2 */
   transition: .3s;
 } .hat li:hover {
   background-color: #e8e8e8;
   transform: scale(1.1);
+}
+.hat .ma-left-07em {
+  margin-left: .7em;
+  /* change together q3p984fhp2 */
 }
 .hat a {
   text-decoration: none;
