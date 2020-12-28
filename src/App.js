@@ -11,6 +11,7 @@ import NovelListPage    from './page/NovelListPage';
 import QuestionListPage from './page/QuestionListPage';
 import AboutMePage      from './page/AboutMePage';
 import WhoamiPage       from './page/WhoamiPage';
+import IndieIframePage  from './page/IndieIframePage';
 import Hat              from './component/Hat';
 const App = () => {
   return (
@@ -40,6 +41,9 @@ const App = () => {
         </Route>
         <Route exact path='/whoami'>
           <WhoamiPage />
+        </Route>
+        <Route exact path='/indie/:uri'>
+          <IndieIframePage />
         </Route>
         <Route exact path='/temp'>
           <TempPage />
