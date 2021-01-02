@@ -1,4 +1,4 @@
-# Take down child porn Tor hidden services democratically
+# A way to take down child porn Tor hidden services 
 ## Abstract
 Proposal: Extend the Tor protocol to support taking down an unwanted hidden service if >50% people (Tor nodes) wish so. Agreeable hidden services can still run anonymously. 
 
