@@ -137,7 +137,7 @@ const portfolio_root = [
     ], 
   }, 
   {
-    title : 'Droplet on a wall', 
+    title : 'Moving contact lines with Immersed Boundary method', 
     year : 2020, 
     pride : 6, 
     tags : [inquiry, 'physics'], 
@@ -145,7 +145,7 @@ const portfolio_root = [
     img : 'ib.gif', 
     links: [
       [ "Short Video Demo", "external", "https://youtu.be/lbv9AeI2el4" ], 
-      [ "APS DFD 2020 Presentation", "external", "https://youtu.be/-dizYKs2uFI?t=5" ], 
+      [ "Presentation", "external", "https://youtu.be/-dizYKs2uFI?t=5" ], 
       [ "Source Code", "external", "https://github.com/Daniel-Chin/droplet" ], 
     ], 
   }, 
