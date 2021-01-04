@@ -44,6 +44,7 @@ span {
   vertical-align: middle;
   transform-origin: left bottom;
   position: absolute;
+  image-rendering: pixelated;
 } .thumb-image:hover {
   object-fit: contain;
   z-index: 2;
