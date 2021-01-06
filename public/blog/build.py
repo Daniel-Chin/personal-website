@@ -18,7 +18,7 @@ ROOT_FILENAME = '../../src/helpers/blogRoot.json'
 
 def main(ignore_hash = False):
     with ChdirAlongside(__file__):
-        with open(ROOT_FILENAME, 'r') as f:
+        with open(ROOT_FILENAME, 'r', encoding='utf-8') as f:
             prev_root = json.load(f)
         blog_ids = [
             x for x in os.listdir() if not any([
@@ -29,6 +29,8 @@ def main(ignore_hash = False):
         for blog_id in blog_ids:
             with ChdirContext(blog_id):
                 src_name = getSrcName()
+                if src_name is None:
+                    continue
                 src, meta = extract(blog_id, src_name, prev_root)
                 modified = handleFolder(
                     src_name, src, meta, ignore_hash
@@ -36,7 +38,8 @@ def main(ignore_hash = False):
                 if modified:
                     meta['time'] = time()
                 root.append(meta)
-        with open(ROOT_FILENAME, 'w') as f:
+        root.sort(key=lambda x:x['time'])
+        with open(ROOT_FILENAME, 'w', encoding='utf-8') as f:
             json.dump(root, f, indent=2)
 
 def getSrcName():
@@ -45,16 +48,22 @@ def getSrcName():
         x.lower() for x in list_dir 
         if x.lower().startswith('src')
     ]
-    assert len(srcs) == 1
-    return srcs[0]
+    if srcs:
+        return srcs[0]
+    if 'build.html' in list_dir:
+        return 'build.html'
+    return None
 
 def extract(blog_id, src_name, prev_root):
-    with open(src_name, 'r') as f:
+    with open(src_name, 'r', encoding='utf-8') as f:
         src = f.read()
     if src_name.endswith('.md'):
         line_0 = src.split('\n', 1)[0].strip()
         assert line_0.startswith('# ')
         title = line_0.lstrip('# ')
+    elif src_name == 'build.html':
+        _, t = src.split('<h1>', 1)
+        title, _ = t.split('</h1>', 1)
     else:
         raise Exception(f'Unknown src type "{src_name}". ')
     times = [x['time'] for x in prev_root if x['id'] == blog_id]
@@ -71,7 +80,7 @@ def extract(blog_id, src_name, prev_root):
 def handleFolder(src_name, src, meta, ignore_hash):
     src_hash = hashFile(src_name)
     try:
-        with open(HASH_FILENAME, 'r') as f:
+        with open(HASH_FILENAME, 'r', encoding='utf-8') as f:
             prev_hash = f.read().strip()
     except FileNotFoundError:
         prev_hash = ''
@@ -83,7 +92,7 @@ def handleFolder(src_name, src, meta, ignore_hash):
         else:
             p('Building...')
             buildBlog(src_name, src, p)
-            with open(HASH_FILENAME, 'w+') as f:
+            with open(HASH_FILENAME, 'w+', encoding='utf-8') as f:
                 print(src_hash, file=f)
             p('Built successfully. ')
             return True
@@ -98,7 +107,7 @@ def buildBlog(src_name, src, p):
             extensions=['codehilite'], 
         )
         p('Writing HTML...')
-        with open('build.html', 'w+') as f:
+        with open('build.html', 'w+', encoding='utf-8') as f:
             print('<html>', file=f)
             print('<head>', file=f)
             print('<link rel="stylesheet" href="/blog/style.css" />', file=f)
@@ -107,6 +116,8 @@ def buildBlog(src_name, src, p):
             print(body, file=f)
             print('</body>', file=f)
             print('</html>', file=f)
+    elif src_name == 'build.html':
+        p('build.html needs nothing to be done. ')
     else:
         raise Exception(f'Unknown src type "{src_name}". ')
 
