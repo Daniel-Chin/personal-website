@@ -1,266 +1,454 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd-->  
+<html xmlns="http://www.w3.org/1999/xhtml"  
+> 
+<head><title>Human-Instrument Co-adaptation</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<!-- xhtml,charset=utf-8,html --> 
+<meta name="src" content="main.tex" /> 
+<link rel="stylesheet" type="text/css" href="main.css" /> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                  
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
-<meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="biLearn_files/filelist.xml">
-<link rel=themeData href="biLearn_files/themedata.thmx">
-<link rel=colorSchemeMapping href="biLearn_files/colorschememapping.xml">
+                                                                  
+                                                                  
 
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:3 0 0 0 1 0;}
-@font-face
-	{font-family:等线;
-	panose-1:2 1 6 0 3 1 1 1 1 1;
-	mso-font-alt:DengXian;
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
-@font-face
-	{font-family:Verdana;
-	panose-1:2 11 6 4 3 5 4 4 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-1610610945 1073750107 16 0 415 0;}
-@font-face
-	{font-family:"\@等线";
-	panose-1:2 1 6 0 3 1 1 1 1 1;
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin-top:0in;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Verdana",sans-serif;
-	mso-fareast-font-family:等线;
-	mso-fareast-theme-font:minor-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-h2
-	{mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 2 Char";
-	mso-style-next:Normal;
-	margin-top:2.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:2;
-	font-size:13.0pt;
-	font-family:"Verdana",sans-serif;
-	mso-fareast-font-family:"等线 Light";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	font-weight:normal;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-link:"Balloon Text Char";
-	margin:0in;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	mso-pagination:widow-orphan;
-	font-size:9.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:等线;
-	mso-fareast-theme-font:minor-fareast;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 2";
-	mso-ansi-font-size:13.0pt;
-	mso-bidi-font-size:13.0pt;
-	font-family:"Verdana",sans-serif;
-	mso-ascii-font-family:Verdana;
-	mso-fareast-font-family:"等线 Light";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Verdana;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Balloon Text";
-	mso-ansi-font-size:9.0pt;
-	mso-bidi-font-size:9.0pt;
-	font-family:"Times New Roman",serif;
-	mso-ascii-font-family:"Times New Roman";
-	mso-hansi-font-family:"Times New Roman";
-	mso-bidi-font-family:"Times New Roman";}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:等线;
-	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-.MsoPapDefault
-	{mso-style-type:export-only;
-	margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:8.5in 11.0in;
-	margin:.5in 1.0in .5in 1.0in;
-	mso-header-margin:.5in;
-	mso-footer-margin:.5in;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-<!--[if gte mso 10]>
-<style>
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:"Table Normal";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-parent:"";
-	mso-padding-alt:0in 5.4pt 0in 5.4pt;
-	mso-para-margin-top:0in;
-	mso-para-margin-right:0in;
-	mso-para-margin-bottom:8.0pt;
-	mso-para-margin-left:0in;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <o:shapelayout v:ext="edit">
-  <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><![endif]-->
-</head>
+                                                                  
 
-<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
+<h2 class="titleHead">Human-Instrument Co-adaptation</h2>
+   </div>
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-10001"></a>The Main Idea</h3>
+<!--l. 24--><p class="noindent" >Let me describe to you a long-lasting frustration and a new hope.
+</p><!--l. 26--><p class="indent" >   The current channels of musical expression are like thin tubes that musical ideas
+have to squeeze through. A Digital Audio Workstation (DAW) is expressive but not
+real-time. A trumpet is real-time but not nearly as expressive. How can a
+machine extract humans’ internal music imagination, so that a genius like Bach
+could compose the four parts of a four-part fugue simultaneously; so that
+a non-expert could improvise music without mastering any instrument or
+DAW?
+</p><!--l. 28--><p class="indent" >   Allow me to show you my answer: a dynamically scaﬀolded multi-modal
+<span 
+class="cmti-10">co-adaptation </span>between a human and her bespoke instrument through interactive
+machine learning. Picture an instrument that translates the human’s hand gesture,
+body motions, breathing, micro facial expressions, tongue movement details, muscle
+activations, and EEG signal into the music she is imagining. The instrument uses an
+ensemble of variational neural networks supervised by parallel data generated when
+she listens to or improvises music. Two training techniques foster better
+generalization from limited training data: 1) KL divergence loss ensures
+<span 
+class="cmti-10">low-frequency continuity </span>of the mapping; 2) Cycle consistency makes the entire
+output space <span 
+class="cmti-10">reachable</span>. Additionally, the human plays the instrument, marks
+undesirable behaviors, and scores the various ensemble learners in oﬄine review
+sessions.
+</p><!--l. 30--><p class="indent" >   Furthermore, the human learns the instrument! Contrary to a static decoding task
+where the ground truth is passive, in co-adaptation the ground truth also moves
+towards the decoder. Concretely, when the human sees something the instrument
+does, she latches onto that and has some low-dimensional control over the
+instrument. She tries exposing diﬀerent features for the instrument to learn. The
+human-instrument bi-directional learning never ends and the dimensionality of
+control increases. Moreover, the instrument applies haptic guidance to train the
+human. Speciﬁcally, the human selects a piece she wants to play, and the
+haptic ground truth is computed by the opposite encoder in charge of the
+cycle consistency. Using haptic guidance, the human can also intuitively
+playback old training data and tell the instrument to “forget” outdated
+ones.
+</p><!--l. 32--><p class="indent" >   Here is the big picture in my eyes. Mind-reading the human would oﬀer perfect
+expressivity, but unintrusive readings like EEG are unassailably noisy – an unreliable
+                                                                  
 
-<div class=WordSection1>
+                                                                  
+mapping. A piano translates ﬁnger motions to music, but is not nearly as expressive –
+a collapsed mapping. Co-adaptation gradually ﬁnds a mapping where the human can
+interface with the instrument at maximal information throughput. With many users,
+we can summarize several “pruned / principal instruments” for beginners to fork and
+jump start the training.
+</p><!--l. 34--><p class="indent" >   We will ﬁnally be free! Non-experts will be able to jam together in symphony.
+Musicians will be able to improvise multi-part novel-timbre music while hearing it in
+real time!
+</p><!--l. 36--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-20002"></a>More Points (that I can think of so far)</h3>
+<!--l. 37--><p class="noindent" >
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-2002x1">The  initialization  of  the  mapping  can  be  copied  from  an  existing
+     instrument.
+     </li>
+     <li 
+  class="enumerate" id="x1-2004x2">We  can  go  from  a  <span 
+class="cmti-10">generator  </span>that  decodes  random  noise  to  music,  to
+     a <span 
+class="cmti-10">controlled generator </span>that decodes some noise in junction with human
+     input, and ﬁnally to an <span 
+class="cmti-10">instrument </span>that decodes the human.
+     </li>
+     <li 
+  class="enumerate" id="x1-2006x3">The  above-mentioned  techniques  that  ensure  mapping  continuity  and
+     output space reachability not only regularize the instrument via training,
+     but  also  expose  problems  with  the  human’s  envisioned  mapping  via
+     the  instrument’s  learning  behaviors,  resulting  in  a  human-machine
+     collaborated design process.
+     </li>
+     <li 
+  class="enumerate" id="x1-2008x4">Online learning enables the human to supply training data in response to
+     the instrument’s mistakes <span class="cite">[<a 
+href="#Xfiebrink_model_eval">1</a>]</span>.
+     </li>
+     <li 
+  class="enumerate" id="x1-2010x5">In turn, the machine actively asks for training data. “How would you
+     play this music?” “What would this sound like? [applies haptic guidance]”
+     Asking good questions requires good unsupervised learning.
+     </li>
+     <li 
+  class="enumerate" id="x1-2012x6">Another training method is to let the human sight-play a musical score on the
+     instrument. Here both the human and the instrument learn at the same time.
+     For the human, the (musical score, instrument) pair is the ground truth that
+     supervises her playing. For the instrument, the (musical score, human) pair is
+     the ground truth that supervises its parsing. It is analogous to cue-based
+     co-adaptation in <span class="cite">[<a 
+href="#Xcue_co_adaptive_BCI">2</a>]</span>.
+                                                                  
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Times New Roman",serif'>Let me describe to you a long-lasting frustration and
-a new hope. <o:p></o:p></span></p>
+                                                                  
+         <ul class="itemize1">
+         <li class="itemize">Also, a muted variation of sight-play training may better approximate
+         the  improvisation  environment,  ﬁghting  the  <a 
+href="#x1-202312">domain  danger</a>.  The
+         instrument uses eye tracking to align human input with the score.
+         Afterwards, the human marks her own mistakes so they don’t become
+         training data, which will be easy with haptic playback.</li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x1-2014x7">Automatically discover model redundancy and query the user to cut
+     complexity.
+         <ul class="itemize1">
+         <li class="itemize">Degree  of  redundancy  can  be  captured  by  either  (A)  how  well  a
+         smaller network can learn to replicate the current network, or (B)
+         the partial derivative of model accuracy in response to regularization
+         strength.</li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x1-2016x8">Automatic discovery of problematic / conﬂicting training data.
+         <ul class="itemize1">
+         <li class="itemize">For  example,  (A)  as  we  strengthen  regularization,  which  training
+         datapoints  incur  high  marginal  loss?  (B)  masking  which  training
+         datapoints minimizes the regularization loss of a model trained to
+         equilibrium?
+         </li>
+         <li class="itemize">Even  better,  we  want  to  show  the  user  a  pair  of  contradictory
+         datapoints.  Cluster  training  data  into  a  tree  where  each  node
+         has a contradiction index. Find the maximum contradiction node.
+         Represent its subnodes with generated summaries, if they are not
+         leave nodes yet.</li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x1-2018x9">Dampen the instrument’s learning, so that the human is not dealing with a
+     stranger every batch <span class="cite">[<a 
+href="#Xcomm_with_cartwright">3</a>]</span>.
+     </li>
+     <li 
+  class="enumerate" id="x1-2020x10">The machine learning (ML) model.
+         <ul class="itemize1">
+         <li class="itemize">It  is  <span 
+class="cmti-10">not  </span>human-in-the-loop  reinforcement  learning  (RL)  since
+         rewards are not sparse and feedback is directional.
+         </li>
+         <li class="itemize">It is more like a combination of VAE and CycleGAN.
+         </li>
+         <li class="itemize">Compared to the logic of the Wekinator <span class="cite">[<a 
+href="#Xfiebrink_phd_thesis">4</a>]</span>, it involves a two-way
+         mapping, allowing the machine to ﬁgure things out on its own, query
+         the human eﬃciently, and even guide the human with <span 
+class="cmti-10">its </span>inductive
+         biases.</li></ul>
+                                                                  
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Times New Roman",serif'>The current channels of musical expression are like
-thin tubes that musical ideas have to squeeze through. A Digital Audio
-Workstation (DAW) is expressive but not real-time. A trumpet is real-time but
-not expressive. How can a machine extract humans' internal music imagination,
-so that a genius like Bach could compose the four parts of a four-part fugue
-simultaneously; so that a non-expert could improvise music without mastering
-any instrument or DAW? <o:p></o:p></span></p>
+                                                                  
+     </li>
+     <li 
+  class="enumerate" id="x1-2022x11">Are humans capable of such rapid information output?
+         <ul class="itemize1">
+         <li class="itemize">See my blog <a 
+href="/#/blog/new_modalities" >Novel Human Modality Discovery</a>. Also,
+         </li>
+         <li class="itemize">I invite you to imagine a world where the piano did not exist. You
+         asked people in that world to imagine what it would be like to play
+         the piano. They would tell you it’s impossible! Such an unintuitive
+         and precise skill must be too diﬃcult for humans to acquire. From an
+         objective lens, playing the piano is a truly novel way for the human
+         to output information. Natural selection did not make this happen.
+         It is the plasticity of human capability that makes it possible. We
+         underestimate our potential to interact. Our output capabilities are
+         vastly unused.</li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x1-2024x12"><a 
+ id="x1-202312"></a> Domain danger.
+         <ul class="itemize1">
+         <li class="itemize">When the human trains the instrument with diﬀerent methods and in
+         diﬀerent environments, the data will be in diﬀerent domains, making
+         few-shot learning more diﬃcult.
+         </li>
+         <li class="itemize">EEG has non-stationarities <span class="cite">[<a 
+href="#XBCI_calibration_vs_feedback">5</a>]</span>.
+         </li>
+         <li class="itemize">Particularly,  “users  exhibit  a  diﬀerent  mental  state  during  oﬄine
+         calibration and online feedback” <span class="cite">[<a 
+href="#Xcue_co_adaptive_BCI">2</a>]</span>. In my case the online feedback
+         is, instead of a problem, the entire goal. Hence the question is how
+         we can make better use of the oﬄine calibration data to augment
+         online feedback. <span class="cite">[<a 
+href="#Xunsupervised_co_adap">6</a>]</span> applies online unsupervised learning to normalize
+         feedback-time input. In my case, since music control needs to be
+         precise, domain adaptation should happen fast.</li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x1-2026x13">Three levels of HCI + ML:
+         <ol  class="enumerate2" >
+         <li 
+  class="enumerate" id="x1-2028x1">Interactive machine learning (IML) originally proposed by <span class="cite">[<a 
+href="#Ximl_fails_olsen">7</a>]</span>: Online
+         learning allows the human to provide more eﬀective training data.
+         Note that the human’s goal does not change.
+         </li>
+         <li 
+  class="enumerate" id="x1-2030x2">Co-adaptation. The human changes her desired mapping during the
+         process <span class="cite">[<a 
+href="#Xfiebrink_model_eval">1</a>, <a 
+href="#Xfiebrink_phd_thesis">4</a>, <a 
+href="#Xfiebrink_wekinator">8</a>, <a 
+href="#Xco_adapt_and_feedback">9</a>, <a 
+href="#Xprogressive_co_adapt">10</a>]</span>. On the bright side, the human avoids what
+         the machine is bad at and focuses on what the machine is good at,
+         increasing model accuracy. More importantly, interesting responses
+                                                                  
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Times New Roman",serif'>Allow me to show you my answer: a dynamically
-scaffolded multi-modal <i>co-adaptation</i> between a human and her bespoke instrument
-through interactive machine learning. Picture an instrument that translates the
-human’s hand gesture, body motions, breathing, micro facial expressions, tongue
-movement details, muscle activations, and EEG signal into the music she is
-imagining. The instrument uses an ensemble of variational neural networks
-supervised by parallel data generated when she listens to or improvises music.
-Two training techniques foster better generalization from limited training
-data: 1) KL divergence loss ensures <i>low-frequency</i> <i>continuity</i> of
-the mapping; 2) Cycle consistency makes the entire output space <i>reachable</i>.
-Additionally, the human plays the instrument, marks undesirable behaviors, and
-scores the various ensemble learners in offline review sessions. <o:p></o:p></span></p>
+                                                                  
+         from the machine give the human new ideas, making the machine
+         no longer a passive tool but a partner in the creative duo. But of
+         course, the moving target poses new challenges to the training of the
+         machine <span class="cite">[<a 
+href="#Xmoving_target">11</a>]</span>.
+         </li>
+         <li 
+  class="enumerate" id="x1-2032x3">Bi-directional learning. While training, the machine teaches a skill
+         to the human. The bi-directional learning drastically redeﬁnes the
+         learning problem and further promotes the role of the machine in
+         the interaction. In the context of my proposal, recent advancement
+         in haptic guidance <span class="cite">[<a 
+href="#Xforce_mode">12</a>, <a 
+href="#Xzuhequan">13</a>]</span> is a core prerequisite.</li></ol>
+     </li>
+     <li 
+  class="enumerate" id="x1-2034x14">Correct the machine’s mistakes (provide ground truth) at a low cost with the
+     machine’s help.
+         <ul class="itemize1">
+         <li class="itemize">The main reason I want to use ensemble learning is to have alternative
+         parses of the human’s playing, so that the human can easily select a
+         nice ground truth among candidates.
+         </li>
+         <li class="itemize">In  CueTIP  <span class="cite">[<a 
+href="#XcueTip">14</a>]</span>,  when  the  machine  makes  a  mistake,  the  human
+         provides partial constraints and let the machine re-classify until the
+         machine gives the correct results. It will be nice if I can think of
+         some ways the human can communicate musical constraints with the
+         machine to implement a similar tool.</li></ul>
+     </li></ol>
+<!--l. 87--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-30003"></a>More Related Works</h3>
+<!--l. 88--><p class="noindent" >See <span class="cite">[<a 
+href="#Xbci_direction">15</a>, <a 
+href="#Xbci_ml">16</a>, <a 
+href="#Xecog_speech">17</a>, <a 
+href="#Xhigh_level_knob">18</a>, <a 
+href="#Xhand_pose">19</a>, <a 
+href="#Xglove_talk_ii">20</a>]</span>
+</p><!--l. 1--><p class="noindent" >
+</p>
+   <h3 class="likesectionHead"><a 
+ id="x1-40003"></a>References</h3>
+<!--l. 1--><p class="noindent" >
+    </p><div class="thebibliography">
+    <p class="bibitem" ><span class="biblabel">
+  [1]<span class="bibsp">   </span></span><a 
+ id="Xfiebrink_model_eval"></a>R. Fiebrink, P. R. Cook, and D. Trueman, “Human model evaluation
+    in   interactive   supervised   learning,”   in   <span 
+class="cmti-10">Proceedings  of  the  SIGCHI</span>
+    <span 
+class="cmti-10">Conference on Human Factors in Computing Systems</span>, pp. 147–156, 2011.
+                                                                  
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Times New Roman",serif'>Furthermore, the human learns the instrument! Contrary
-to a static decoding task where the ground truth is passive, in co-adaptation
-the ground truth also moves towards the decoder. Concretely, when the human
-sees something the instrument does, she latches onto that and has some
-low-dimensional control over the instrument. She tries exposing different
-features for the instrument to learn. The human-instrument bi-directional
-learning never ends and the dimensionality of control increases. Moreover, the
-instrument applies haptic guidance to train the human. Specifically, the human
-selects a piece she wants to play, and the haptic ground truth is computed by
-the opposite encoder in charge of the cycle consistency. Using haptic guidance,
-the human can also review old training data and tell the instrument to "forget"
-outdated ones. <o:p></o:p></span></p>
+                                                                  
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [2]<span class="bibsp">   </span></span><a 
+ id="Xcue_co_adaptive_BCI"></a>C. Vidaurre,          C. Sannelli,          K.-R.          Müller,          and
+    B. Blankertz, “Co-adaptive calibration to improve bci eﬃciency,” <span 
+class="cmti-10">Journal</span>
+    <span 
+class="cmti-10">of neural engineering</span>, vol. 8, no. 2, p. 025009, 2011.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [3]<span class="bibsp">   </span></span><a 
+ id="Xcomm_with_cartwright"></a>M. Cartwright. Email communication.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [4]<span class="bibsp">   </span></span><a 
+ id="Xfiebrink_phd_thesis"></a>R. A. Fiebrink, <span 
+class="cmti-10">Real-time human interaction with supervised learning</span>
+    <span 
+class="cmti-10">algorithms for music composition and performance</span>. Citeseer, 2011.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [5]<span class="bibsp">   </span></span><a 
+ id="XBCI_calibration_vs_feedback"></a>P. Shenoy, M. Krauledat, B. Blankertz, R. P. Rao, and K.-R. Müller,
+    “Towards adaptive classiﬁcation for bci,” <span 
+class="cmti-10">Journal of neural engineering</span>,
+    vol. 3, no. 1, p. R13, 2006.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [6]<span class="bibsp">   </span></span><a 
+ id="Xunsupervised_co_adap"></a>C. Vidaurre, M. Kawanabe, P. von Bünau, B. Blankertz, and K.-R.
+    Müller,  “Toward  unsupervised  adaptation  of  lda  for  brain–computer
+    interfaces,” <span 
+class="cmti-10">IEEE Transactions on Biomedical Engineering</span>, vol. 58, no. 3,
+    pp. 587–597, 2010.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [7]<span class="bibsp">   </span></span><a 
+ id="Ximl_fails_olsen"></a>J. A.  Fails  and  D. R.  Olsen Jr,  “Interactive  machine  learning,”
+    in  <span 
+class="cmti-10">Proceedings  of  the  8th  international  conference  on  Intelligent  user</span>
+    <span 
+class="cmti-10">interfaces</span>, pp. 39–45, 2003.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [8]<span class="bibsp">   </span></span><a 
+ id="Xfiebrink_wekinator"></a>R. Fiebrink, D. Trueman, and P. R. Cook, “A meta-instrument for
+    interactive, on-the-ﬂy machine learning.,” in <span 
+class="cmti-10">NIME</span>, pp. 280–285, 2009.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+  [9]<span class="bibsp">   </span></span><a 
+ id="Xco_adapt_and_feedback"></a>M. Zbyszynski,   B. Di Donato,   and   A. Tanaka,   “The   eﬀect   of
+    co-adaptive  learning  &#x0026;  feedback  in  interactive  machine  learning,”  in
+    <span 
+class="cmti-10">ACM CHI: Human-Centered Machine Learning Perspectives Workshop at</span>
+    <span 
+class="cmti-10">Glasgow 2019</span>, ACM, 2019.
+                                                                  
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Times New Roman",serif'>Here is the big picture in my eyes. Mind-reading the
-human would offer perfect expressivity, but unintrusive readings like EEG are
-unassailably noisy – an unreliable mapping. A piano translates finger motions
-to music, but is not nearly as expressive – a collapsed mapping. Co-adaptation
-gradually finds a mapping where the human can interface with the instrument at
-maximal information throughput. With many users, we can summarize several
-&quot;pruned / principal instruments&quot; for beginners to fork and jump start
-the training. <o:p></o:p></span></p>
+                                                                  
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [10]<span class="bibsp">   </span></span><a 
+ id="Xprogressive_co_adapt"></a>P. Gallina, N. Bellotto, and M. Di Luca, “Progressive co-adaptation
+    in  human-machine  interaction,”  in  <span 
+class="cmti-10">2015  12th  International  Conference</span>
+    <span 
+class="cmti-10">on Informatics in Control, Automation and Robotics (ICINCO)</span>, vol. 2,
+    pp. 362–368, IEEE, 2015.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [11]<span class="bibsp">   </span></span><a 
+ id="Xmoving_target"></a>M. Cartwright   and   B. Pardo,   “The   moving   target   in   creative
+    interactive machine learning,” in <span 
+class="cmti-10">Proceedings of the 2016 CHI Conference</span>
+    <span 
+class="cmti-10">Extended  Abstracts  on  Human  Factors  in  Computing  Systems  (CHI</span>
+    <span 
+class="cmti-10">EA’16). San Jose, California, USA</span>, 2016.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [12]<span class="bibsp">   </span></span><a 
+ id="Xforce_mode"></a>G. Xia,   C. Jacobsen,   Q. Chen,   X. Yang,   and   R. Dannenberg,
+    “Shift:   A   semi-haptic   interface   for   ﬂute   tutoring,”   <span 
+class="cmti-10">arXiv  preprint</span>
+    <span 
+class="cmti-10">arXiv:1803.06625</span>, 2018.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [13]<span class="bibsp">   </span></span><a 
+ id="Xzuhequan"></a>Y. Zhang,   Y. Li,   D. Chin,   and   G. Xia,   “Adaptive   multimodal
+    music   learning   via   interactive-haptic   instrument,”   <span 
+class="cmti-10">arXiv   preprint</span>
+    <span 
+class="cmti-10">arXiv:1906.01197</span>, 2019.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [14]<span class="bibsp">   </span></span><a 
+ id="XcueTip"></a>M. Shilman, D. S. Tan, and P. Simard, “Cuetip: a mixed-initiative
+    interface  for  correcting  handwriting  errors,”  in  <span 
+class="cmti-10">Proceedings  of  the  19th</span>
+    <span 
+class="cmti-10">annual  ACM  symposium  on  User  interface  software  and  technology</span>,
+    pp. 323–332, 2006.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [15]<span class="bibsp">   </span></span><a 
+ id="Xbci_direction"></a>C. Vidaurre  and  B. Blankertz,  “Towards  a  cure  for  bci  illiteracy,”
+    <span 
+class="cmti-10">Brain topography</span>, vol. 23, no. 2, pp. 194–198, 2010.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [16]<span class="bibsp">   </span></span><a 
+ id="Xbci_ml"></a>E. S. Nurse, P. J. Karoly, D. B. Grayden, and D. R. Freestone, “A
+    generalizable  brain-computer  interface  (bci)  using  machine  learning  for
+    feature discovery,” <span 
+class="cmti-10">PloS one</span>, vol. 10, no. 6, p. e0131328, 2015.
+    </p>
+                                                                  
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Times New Roman",serif'>We will finally be free! Non-experts will be able to jam
-together in symphony. Musicians will be able to improvise multi-part
-novel-timbre music while hearing it in real time! <o:p></o:p></span></p>
+                                                                  
+    <p class="bibitem" ><span class="biblabel">
+ [17]<span class="bibsp">   </span></span><a 
+ id="Xecog_speech"></a>M. Angrick,   C. Herﬀ,   E. Mugler,   M. C.   Tate,   M. W.   Slutzky,
+    D. J.  Krusienski,  and  T. Schultz,  “Speech  synthesis  from  ecog  using
+    densely connected 3d convolutional neural networks,” <span 
+class="cmti-10">Journal of neural</span>
+    <span 
+class="cmti-10">engineering</span>, vol. 16, no. 3, p. 036019, 2019.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [18]<span class="bibsp">   </span></span><a 
+ id="Xhigh_level_knob"></a>C.-Z. A.  Huang,  D. Duvenaud,  K. C.  Arnold,  B. Partridge,  J. W.
+    Oberholtzer, and K. Z. Gajos, “Active learning of intuitive control knobs
+    for  synthesizers  using  gaussian  processes,”  in  <span 
+class="cmti-10">Proceedings  of  the  19th</span>
+    <span 
+class="cmti-10">international conference on Intelligent User Interfaces</span>, pp. 115–124, 2014.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [19]<span class="bibsp">   </span></span><a 
+ id="Xhand_pose"></a>O. Glauser, S. Wu, D. Panozzo, O. Hilliges, and O. Sorkine-Hornung,
+    “Interactive hand pose estimation using a stretch-sensing soft glove,” <span 
+class="cmti-10">ACM</span>
+    <span 
+class="cmti-10">Transactions on Graphics (TOG)</span>, vol. 38, no. 4, pp. 1–15, 2019.
+    </p>
+    <p class="bibitem" ><span class="biblabel">
+ [20]<span class="bibsp">   </span></span><a 
+ id="Xglove_talk_ii"></a>S. Fels and G. Hinton, “Glove-talkii: an adaptive gesture-to-formant
+    interface,” in <span 
+class="cmti-10">Proceedings of the SIGCHI conference on Human factors in</span>
+    <span 
+class="cmti-10">computing systems</span>, pp. 456–463, 1995.
+</p>
+    </div>
+    
+</body></html> 
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Times New Roman",serif'>Viability-wise, I see various possible first steps.
-The initialization of the mapping can be copied from an existing instrument. I
-can go from a <i>generator</i> that decodes random noise to music, to a <i>controlled
-generator</i> that decodes some noise in junction with human input, and finally
-to an <i>instrument</i> that decodes the human. <o:p></o:p></span></p>
+                                                                  
 
-</div>
 
-</body>
-
-</html>
