@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import blogRoot from '../helpers/blogRoot';
-import SmartIframe from '../component/SmartIframe';
+import StupidIframe from '../component/StupidIframe';
 import PrevNextBlog from '../component/PrevNextBlog';
 
 const BlogPage = () => {
@@ -23,8 +23,8 @@ const BlogPage = () => {
   return (
     <div>
       <PrevNextBlog blog_index={blog_index} />
-      <SmartIframe 
-        target={`/blog/${blog_id}/build.html`} 
+      <StupidIframe 
+        src={`/blog/${blog_id}/build.html`} 
         title={blogMeta.title}
       />
       <PrevNextBlog blog_index={blog_index} />

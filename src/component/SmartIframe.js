@@ -3,6 +3,11 @@ import React, {
   useCallback, 
 } from 'react';
 
+/* 
+  Problem: if Chrome is in full screen, every alt+tab will 
+  trigger useLayoutEffect, bringing document scroll 
+  position to the top.  
+*/
 const SmartIframe = ({ target, title }) => {
   const iFrame = createRef();
   const [iframeHeight, setIframeHeight] = useState(100);
