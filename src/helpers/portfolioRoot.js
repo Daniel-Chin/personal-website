@@ -9,6 +9,7 @@ const hci = 'hci';
 const android = 'android';
 const mit_app_inventor = 'mit_app_inventor';
 const high_school = 'high_school';
+const python = 'python';
 
 const portfolio_root = [
   {
@@ -38,7 +39,7 @@ const portfolio_root = [
     title : 'Poster for dorm', 
     year : 2018, 
     pride : 6, 
-    tags : ['art', visualization, processing, 'math', 'python'], 
+    tags : ['art', visualization, processing, 'math', python], 
     description : 'Visualization of the Collatz conjecture. I hanged it in my NYU Shanghai dorm room. ', 
     img : 'PosterFor1608.png', 
     links: [
@@ -173,7 +174,7 @@ const portfolio_root = [
     title : 'Nozomi.la AI', 
     year : 2020, 
     pride : 6, 
-    tags : ['ai', 'html', 'js', 'python', 'html2api', 'backend', 'frontend', 'recommendation_algo', 'user_preferences', hci], 
+    tags : ['ai', 'html', 'js', python, 'html2api', 'backend', 'frontend', 'recommendation_algo', 'user_preferences', hci], 
     description : 'A recommendation algo learns your preferences of fan arts from your reactions. ', 
     img : 'nozomi_ai.png', 
     links: [
@@ -242,7 +243,7 @@ const portfolio_root = [
     title : '_December 2018', 
     year : 2018, 
     pride : 1, 
-    tags : ['game', 'python', 'under_construction', hci], 
+    tags : ['game', python, 'under_construction', hci], 
     description : '', 
     img : '', 
     links: [
@@ -301,7 +302,7 @@ const portfolio_root = [
     title : 'Do Details Make People Buy into Bullshit?', 
     year : 2018, 
     pride : 4, 
-    tags : ['psychology', 'python', 'cross_platform', 'tkinter', 'music'], 
+    tags : ['psychology', python, 'cross_platform', 'tkinter', 'music'], 
     description : '', 
     img : '', 
     links: [
@@ -335,7 +336,7 @@ const portfolio_root = [
     title : 'Spaghetti chat room', 
     year : 2018, 
     pride : 4, 
-    tags : ['python', 'js', 'html', 'backend', 'frontend'], 
+    tags : [python, 'js', 'html', 'backend', 'frontend'], 
     description : '', 
     img : '', 
     links: [
@@ -347,7 +348,7 @@ const portfolio_root = [
     title : 'Beat Swap Zane Fadul', 
     year : 2020, 
     pride : 5, 
-    tags : ['music', 'python', 'jupyter_notebook', 'computer_music'], 
+    tags : ['music', python, 'jupyter_notebook', 'computer_music'], 
     description : 'I swapped some beats of some game OST composed by my friend Zane Fadul. ', 
     img : 'beat_swap.png', 
     links: [
@@ -359,7 +360,7 @@ const portfolio_root = [
     title : 'Simplinstrument', 
     year : 2019, 
     pride : 6, 
-    tags : ['colab', 'music', 'arduino', 'computer_music', processing, 'python', 'distributed_app', 'gui_2_api', '3d_print', hci, 'real-time'], 
+    tags : ['colab', 'music', 'arduino', 'computer_music', processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, 'real-time'], 
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
@@ -451,7 +452,7 @@ const portfolio_root = [
     title : 'Digital Rapper', 
     year : 2018, 
     pride : 4, 
-    tags : ['python', 'music', 'computer_music', 'jupyter_notebook', 'colab', dsp], 
+    tags : [python, 'music', 'computer_music', 'jupyter_notebook', 'colab', dsp], 
     description : 'Colab with Matthew, supervised by Gus Xia', 
     img : '', 
     links: [
@@ -463,7 +464,7 @@ const portfolio_root = [
     title : "Pascal's Triangle Music", 
     year : 2018, 
     pride : 5, 
-    tags : ['python', 'music', 'sonification', 'computer_music', 'jupyter_notebook', 'math'], 
+    tags : [python, 'music', 'sonification', 'computer_music', 'jupyter_notebook', 'math'], 
     description : "Translating the Pascal's triangle to music using Diatonic scale. ", 
     img : 'pascal_music.png', 
     links: [
@@ -556,7 +557,7 @@ const portfolio_root = [
     title : '24 solver', 
     year : 2020, 
     pride : 2, 
-    tags : ['python', 'algo', 'math'], 
+    tags : [python, 'algo', 'math'], 
     description : '', 
     img : '', 
     links: [
@@ -567,7 +568,7 @@ const portfolio_root = [
     title : 'alarm', 
     year : 2020, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'A python alarm clock, written only because the Win10 Alarm App HCI is trash.', 
     img : '', 
     links: [
@@ -578,7 +579,7 @@ const portfolio_root = [
     title : '"Response Generator"', 
     year : 2017, 
     pride : 3, 
-    tags : ['python', 'p2p'], 
+    tags : [python, 'p2p'], 
     description : '', 
     img : '', 
     links: [
@@ -589,7 +590,7 @@ const portfolio_root = [
     title : 'RRRR Archiver', 
     year : 2019, 
     pride : 2, 
-    tags : ['python', 'data_scrape'], 
+    tags : [python, 'data_scrape'], 
     description : '', 
     img : '', 
     links: [
@@ -600,7 +601,7 @@ const portfolio_root = [
     title : 'LAN scan', 
     year : 2017, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Scans the NYUSH LAN', 
     img : '', 
     links: [
@@ -611,7 +612,7 @@ const portfolio_root = [
     title : 'Wechat MIM', 
     year : 2017, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'A man-in-middle to figure out how Wechat PC client works. It failed. ', 
     img : '', 
     links: [
@@ -622,7 +623,7 @@ const portfolio_root = [
     title : 'LENOVO shipping', 
     year : 2018, 
     pride : 1, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'An attempt to implement SSH when I was young.', 
     img : '', 
     links: [
@@ -633,7 +634,7 @@ const portfolio_root = [
     title : 'Robust storage', 
     year : 2019, 
     pride : 3, 
-    tags : ['python', 'lib', 'database'], 
+    tags : [python, 'lib', 'database'], 
     description : 'Atomic database access immune to power-outage. Inspired by Undertale', 
     img : '', 
     links: [
@@ -644,7 +645,7 @@ const portfolio_root = [
     title : 'Sleep prober', 
     year : 2019, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Keeps beeping, until the computer sleeps. Useful in rare occasions. ', 
     img : '', 
     links: [
@@ -655,7 +656,7 @@ const portfolio_root = [
     title : 'ascii table', 
     year : 2019, 
     pride : 2, 
-    tags : ['python', 'dev_tool'], 
+    tags : [python, 'dev_tool'], 
     description : 'A beautiful script. Next time you need to look at the ascii table, run this. ', 
     img : '', 
     links: [
@@ -666,7 +667,7 @@ const portfolio_root = [
     title : 'Beer on the wall', 
     year : 2017, 
     pride : 2, 
-    tags : ['python', 'joke'], 
+    tags : [python, 'joke'], 
     description : '', 
     img : '', 
     links: [
@@ -677,7 +678,7 @@ const portfolio_root = [
     title : 'Book', 
     year : 2018, 
     pride : 6, 
-    tags : ['python', 'encryption'], 
+    tags : [python, 'encryption'], 
     description : 'A file system. Encrypted system-wise with Fernet. ', 
     img : 'book.jpg', 
     links: [
@@ -688,7 +689,7 @@ const portfolio_root = [
     title : 'cache no hash', 
     year : 2018, 
     pride : 2, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'Cache function returns without hashing inputs. ', 
     img : '', 
     links: [
@@ -699,7 +700,7 @@ const portfolio_root = [
     title : 'chdir context', 
     year : 2020, 
     pride : 2, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'A python context to temporarily cd to another directory.', 
     img : '', 
     links: [
@@ -710,7 +711,7 @@ const portfolio_root = [
     title : 'Clicker', 
     year : 2018, 
     pride : 5, 
-    tags : ['python', 'p2p', hci, 'http'], 
+    tags : [python, 'p2p', hci, 'http'], 
     description : 'Use your phone to send UP and DOWN to your computer! You can finally read papers with arms relaxed. ', 
     img : 'clicker.jpg', 
     links: [
@@ -721,7 +722,7 @@ const portfolio_root = [
     title : 'Color Tiles', 
     year : 2018, 
     pride : 4, 
-    tags : ['python', 'game', 'cocos2d'], 
+    tags : [python, 'game', 'cocos2d'], 
     description : 'The minigame from Undertale, implemented in python. ', 
     img : 'color_tile.png', 
     links: [
@@ -732,7 +733,7 @@ const portfolio_root = [
     title : 'Readme compiler', 
     year : 2019, 
     pride : 4, 
-    tags : ['python', 'meta'], 
+    tags : [python, 'meta'], 
     description : 'Iterate through all  files in my python repo and build a readme.md for the repo', 
     img : '', 
     links: [
@@ -743,7 +744,7 @@ const portfolio_root = [
     title : 'Lightweight interactive Python shell', 
     year : 2018, 
     pride : 6, 
-    tags : ['python', 'lib', 'vm', 'dev_tool'], 
+    tags : [python, 'lib', 'vm', 'dev_tool'], 
     description : "Just like IPython - supports runtime embed. But: 1) It's way lighter; 2) Other threads can still print things when user is inputting commands; 3) Tab auto-completes your phrase, even under Windows! 4) secret ctrl+R feature. ", 
     img : '', 
     links: [
@@ -754,7 +755,7 @@ const portfolio_root = [
     title : 'Count votes', 
     year : 2019, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'For counting votes and ranking the counts.  ', 
     img : '', 
     links: [
@@ -765,7 +766,7 @@ const portfolio_root = [
     title : 'dict shape compare', 
     year : 2019, 
     pride : 2, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'Compare the shape of two dicts. ', 
     img : '', 
     links: [
@@ -776,7 +777,7 @@ const portfolio_root = [
     title : 'Find Vera', 
     year : 2017, 
     pride : 2, 
-    tags : ['python', 'game', 'ascii_game'], 
+    tags : [python, 'game', 'ascii_game'], 
     description : 'A simple ascii game. ', 
     img : 'find_vera.png', 
     links: [
@@ -787,7 +788,7 @@ const portfolio_root = [
     title : 'Python flash player', 
     year : 2019, 
     pride : 2, 
-    tags : ['python', 'html'], 
+    tags : [python, 'html'], 
     description : 'Play .swf files with a browser. ', 
     img : '', 
     links: [
@@ -798,7 +799,7 @@ const portfolio_root = [
     title : 'Folder Go', 
     year : 2020, 
     pride : 4, 
-    tags : ['python', 'p2p'], 
+    tags : [python, 'p2p'], 
     description : 'Transmit a folder over the internet.  ', 
     img : '', 
     links: [
@@ -809,7 +810,7 @@ const portfolio_root = [
     title : 'Force multithread map', 
     year : 2018, 
     pride : 2, 
-    tags : ['python', 'lib', 'multi_thread'], 
+    tags : [python, 'lib', 'multi_thread'], 
     description : 'Like dummy.Pool.map, but no limit on number of threads. Useful when IO-bound.', 
     img : '', 
     links: [
@@ -820,7 +821,7 @@ const portfolio_root = [
     title : 'non-ascii formula evaluation', 
     year : 2018, 
     pride : 4, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'I use this frequently for Finance problem sets. ', 
     img : 'formula.png', 
     links: [
@@ -831,7 +832,7 @@ const portfolio_root = [
     title : 'Time formattor', 
     year : 2018, 
     pride : 2, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'Obviously a wheel re-invted', 
     img : '', 
     links: [
@@ -842,7 +843,7 @@ const portfolio_root = [
     title : 'Terminal graphic utils', 
     year : 2018, 
     pride : 4, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'Tools to do graphics in the terminal.', 
     img : '', 
     links: [
@@ -853,7 +854,7 @@ const portfolio_root = [
     title : 'HTTP MIM', 
     year : 2019, 
     pride : 3, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'HTTP man in middle. Prints all traffic. Useful for investigating how http works. Although Chrome Dev Tools prolly have something like this already.', 
     img : '', 
     links: [
@@ -864,7 +865,7 @@ const portfolio_root = [
     title : 'Socket Hub', 
     year : 2018, 
     pride : 2, 
-    tags : ['python', 'p2p', 'multi_thread', 'lib'], 
+    tags : [python, 'p2p', 'multi_thread', 'lib'], 
     description : 'Broadcast messages from any client to all clients. ', 
     img : '', 
     links: [
@@ -875,7 +876,7 @@ const portfolio_root = [
     title : 'Indent printer', 
     year : 2019, 
     pride : 3, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'A python context to indent print outputs. ', 
     img : '', 
     links: [
@@ -886,7 +887,7 @@ const portfolio_root = [
     title : 'Android interactive file explorer', 
     year : 2018, 
     pride : 2, 
-    tags : ['python', 'lib', hci], 
+    tags : [python, 'lib', hci], 
     description : 'An android-friendly terminal file explorer. ', 
     img : '', 
     links: [
@@ -897,7 +898,7 @@ const portfolio_root = [
     title : 'Terminal interactivity utils', 
     year : 2019, 
     pride : 6, 
-    tags : ['python', 'lib', hci], 
+    tags : [python, 'lib', hci], 
     description : 'Thicc and powerful. See the source code for documentation. ', 
     img : '', 
     links: [
@@ -908,7 +909,7 @@ const portfolio_root = [
     title : 'ipynb to py', 
     year : 2019, 
     pride : 3, 
-    tags : ['python', 'jupyter_notebook'], 
+    tags : [python, 'jupyter_notebook'], 
     description : 'Converts jupyter notebook file to python script. Works even when Jupyter is not installed.', 
     img : '', 
     links: [
@@ -919,7 +920,7 @@ const portfolio_root = [
     title : 'python progress bar', 
     year : 2018, 
     pride : 3, 
-    tags : ['python', 'lib', hci], 
+    tags : [python, 'lib', hci], 
     description : 'Progress bar. Supports python context. Computes transmition speed too. ', 
     img : 'jdt.png', 
     links: [
@@ -930,7 +931,7 @@ const portfolio_root = [
     title : 'python linked file list', 
     year : 2019, 
     pride : 5, 
-    tags : ['python', 'lib', 'database'], 
+    tags : [python, 'lib', 'database'], 
     description : 'A simple database solution, but highly scalable.', 
     img : '', 
     links: [
@@ -941,7 +942,7 @@ const portfolio_root = [
     title : 'Display local IP', 
     year : 2019, 
     pride : 2, 
-    tags : ['python', 'dev_tool'], 
+    tags : [python, 'dev_tool'], 
     description : 'Find out local IP addr on Windows. ', 
     img : '', 
     links: [
@@ -952,7 +953,7 @@ const portfolio_root = [
     title : 'Macro', 
     year : 2018, 
     pride : 5, 
-    tags : ['python', 'gui_2_api', 'multi_thread'], 
+    tags : [python, 'gui_2_api', 'multi_thread'], 
     description : 'Record, play, save, and load macros. Think AFK bot. ', 
     img : '', 
     links: [
@@ -963,7 +964,7 @@ const portfolio_root = [
     title : 'md 2 html', 
     year : 2019, 
     pride : 4, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Translate markdown .md file to html file.', 
     img : '', 
     links: [
@@ -985,7 +986,7 @@ const portfolio_root = [
     title : 'Virtual Numpad', 
     year : 2020, 
     pride : 2, 
-    tags : ['python', 'p2p', 'html', 'js', 'frontend', hci, 'http'], 
+    tags : [python, 'p2p', 'html', 'js', 'frontend', hci, 'http'], 
     description : "Your laptop has no numpad? Can't play Cataclysm:DDA? No worries. Use your phone as a numpad!", 
     img : 'numpad.gif', 
     links: [
@@ -996,7 +997,7 @@ const portfolio_root = [
     title : 'more tkinter gadgets', 
     year : 2018, 
     pride : 3, 
-    tags : ['python', 'tkinter', 'lib', 'multi_thread'], 
+    tags : [python, 'tkinter', 'lib', 'multi_thread'], 
     description : 'MsgBox, InputBox, other util functions…', 
     img : '', 
     links: [
@@ -1007,7 +1008,7 @@ const portfolio_root = [
     title : 'Multi Terminal', 
     year : 2019, 
     pride : 5, 
-    tags : ['python', 'lib', 'multi_process', hci, 'multi_thread'], 
+    tags : [python, 'lib', 'multi_process', hci, 'multi_thread'], 
     description : 'Provides an interface to multiple terminal windows. E.g. for output of difference levels (debug, info, warning, error...)', 
     img : 'multi_term.png', 
     links: [
@@ -1018,7 +1019,7 @@ const portfolio_root = [
     title : 'My HTTP', 
     year : 2018, 
     pride : 5, 
-    tags : ['python', 'http', 'lib', 'multi_thread'], 
+    tags : [python, 'http', 'lib', 'multi_thread'], 
     description : 'HTTP server in python. Each request is handled by a thread. Global event loop and message queue. ', 
     img : '', 
     links: [
@@ -1029,7 +1030,7 @@ const portfolio_root = [
     title : 'Terminal ascii QR code', 
     year : 2019, 
     pride : 3, 
-    tags : ['python'], 
+    tags : [python], 
     description : "Prints QR code to terminal. How useful. I can't imagine why nobody built this", 
     img : 'qr.png', 
     links: [
@@ -1040,7 +1041,7 @@ const portfolio_root = [
     title : 'My socket', 
     year : 2018, 
     pride : 2, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'My socket utils', 
     img : '', 
     links: [
@@ -1051,7 +1052,7 @@ const portfolio_root = [
     title : 'netID 2 profile', 
     year : 2019, 
     pride : 3, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'For an NYU person, convert their netID to personal profile.', 
     img : '', 
     links: [
@@ -1062,7 +1063,7 @@ const portfolio_root = [
     title : 'One Ship', 
     year : 2018, 
     pride : 4, 
-    tags : ['python', 'p2p'], 
+    tags : [python, 'p2p'], 
     description : 'Transmit a file over the internet / LAN. I frequently use it with friends. ', 
     img : '', 
     links: [
@@ -1073,7 +1074,7 @@ const portfolio_root = [
     title : '力透纸背', 
     year : 2019, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : '', 
     img : '', 
     links: [
@@ -1084,7 +1085,7 @@ const portfolio_root = [
     title : 'Pickle Preview', 
     year : 2019, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Preview a pickle file. ', 
     img : '', 
     links: [
@@ -1095,7 +1096,7 @@ const portfolio_root = [
     title : 'Pickle socket', 
     year : 2018, 
     pride : 1, 
-    tags : ['python', 'lib'], 
+    tags : [python, 'lib'], 
     description : 'Send objects over sockets. ', 
     img : '', 
     links: [
@@ -1106,7 +1107,7 @@ const portfolio_root = [
     title : 'Play wav', 
     year : 2018, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Light-weight wav player. (Why does Windows Media Player take so long to launch?)', 
     img : '', 
     links: [
@@ -1117,7 +1118,7 @@ const portfolio_root = [
     title : 'Port forward', 
     year : 2018, 
     pride : 4, 
-    tags : ['python', 'multi_thread'], 
+    tags : [python, 'multi_thread'], 
     description : 'Forward socket traffic. Useful as a firewall. Is not thread safe - expect unexpected behaviors. ', 
     img : '', 
     links: [
@@ -1128,7 +1129,7 @@ const portfolio_root = [
     title : 'Push git', 
     year : 2017, 
     pride : 1, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Interactive git commit and push.  ', 
     img : '', 
     links: [
@@ -1139,7 +1140,7 @@ const portfolio_root = [
     title : 'QR chat', 
     year : 2019, 
     pride : 3, 
-    tags : ['python', 'p2p', 'multi_thread'], 
+    tags : [python, 'p2p', 'multi_thread'], 
     description : 'Sets up a server, displays a QR code. Scan it to go to a web page. Exchange raw texts!  ', 
     img : '', 
     links: [
@@ -1150,7 +1151,7 @@ const portfolio_root = [
     title : 'Create React component', 
     year : 2019, 
     pride : 3, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Creates a react component file containing boilerplate code. Prints code that imports this component. ', 
     img : '', 
     links: [
@@ -1161,7 +1162,7 @@ const portfolio_root = [
     title : 'Safe server', 
     year : 2019, 
     pride : 3, 
-    tags : ['python', 'http', 'html', 'security'], 
+    tags : [python, 'http', 'html', 'security'], 
     description : 'A simple file server. Serves files in a folder. Has a simple HTML page interface.', 
     img : '', 
     links: [
@@ -1172,7 +1173,7 @@ const portfolio_root = [
     title : 'Safe http', 
     year : 2019, 
     pride : 5, 
-    tags : ['python', 'http', 'security', 'lib'], 
+    tags : [python, 'http', 'security', 'lib'], 
     description : 'An HTTP backend server baseclass. Really tries to be safe against injection attacks. Intentionally uses single thread only.', 
     img : '', 
     links: [
@@ -1183,7 +1184,7 @@ const portfolio_root = [
     title : 'Serve now', 
     year : 2019, 
     pride : 1, 
-    tags : ['python', 'dev_tool'], 
+    tags : [python, 'dev_tool'], 
     description : 'Immediately opens a port, accepts a connection and does nothing. ', 
     img : '', 
     links: [
@@ -1194,7 +1195,7 @@ const portfolio_root = [
     title : 'Summarize dependencies', 
     year : 2019, 
     pride : 2, 
-    tags : ['python', 'dev_tool'], 
+    tags : [python, 'dev_tool'], 
     description : 'Examines a directory of .py files and find all imports. ', 
     img : '', 
     links: [
@@ -1205,7 +1206,7 @@ const portfolio_root = [
     title : 'To the Earth', 
     year : 2017, 
     pride : 6, 
-    tags : ['python', 'game', 'ascii_game'], 
+    tags : [python, 'game', 'ascii_game'], 
     description : 'A hard-core ascii-graphic adventure game in python. Tremendous eastereggs. ', 
     img : 'to_the_earth.png', 
     links: [
@@ -1216,7 +1217,7 @@ const portfolio_root = [
     title : 'Typo fix', 
     year : 2019, 
     pride : 6, 
-    tags : ['python', hci, 'algo'], 
+    tags : [python, hci, 'algo'], 
     description : 'I came up with an algorithm that fixes typos. ', 
     img : '', 
     links: [
@@ -1227,7 +1228,7 @@ const portfolio_root = [
     title : 'Voice scroll', 
     year : 2020, 
     pride : 6, 
-    tags : ['python', hci], 
+    tags : [python, hci], 
     description : 'Reading papers? Hands off. Scroll down with your voice. ', 
     img : 'voice_scroll.png', 
     links: [
@@ -1238,7 +1239,7 @@ const portfolio_root = [
     title : 'wget', 
     year : 2019, 
     pride : 2, 
-    tags : ['python'], 
+    tags : [python], 
     description : 'Downloads a web resource.', 
     img : '', 
     links: [
@@ -1908,7 +1909,7 @@ const portfolio_root = [
     title : 'Wechat moments (朋友圈) data scrape + client viewer', 
     year : 2018, 
     pride : 5, 
-    tags : ['python', 'data_scrape', 'tkinter'], 
+    tags : [python, 'data_scrape', 'tkinter'], 
     description : '', 
     img : 'moments_data.png', 
     links: [
@@ -2029,7 +2030,7 @@ const portfolio_root = [
     title : 'Real-time Benchmarking of Pitch Estimators', 
     year : 2020, 
     pride : 2, 
-    tags : ['music', 'python', 'jupyter_notebook', 'tensorflow', 'real-time'], 
+    tags : ['music', python, 'jupyter_notebook', 'tensorflow', 'real-time'], 
     description : 'Modified YIN and Crepe to real-time. Proposed SFT (Slow Fourier Transform)-based cepstrum peak interpolation. Benchmarked the three. ', 
     img : '', 
     links: [
@@ -2051,7 +2052,7 @@ const portfolio_root = [
     title : 'Blind Descend', 
     year : 2020, 
     pride : 4, 
-    tags : ['python', 'lib', 'algo'], 
+    tags : [python, 'lib', 'algo'], 
     description : 'Efficiently find local minima of 1D functions without gradient. ', 
     img : '', 
     links: [
@@ -2091,6 +2092,18 @@ const portfolio_root = [
     img : 'sleep_fire.png', 
     links: [
       [ "Source Code", INTERNAL, "sleep_fire.aia" ], 
+    ], 
+  }, 
+  {
+    title : 'MS Word-generated HTML cleaning', 
+    year : 2020, 
+    pride : 2, 
+    tags : [python], 
+    description : 'Re-encodes to utf-8 and removes MS Outlook-specific metadata. Shrinks file size by ~60%. I use it to publish blogs on my personal website. ', 
+    img : '', 
+    links: [
+      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#cleanwordhtmlpy" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/cleanWordHtml.py" ], 
     ], 
   }, 
 ];
