@@ -38,7 +38,7 @@ def main(ignore_hash = False):
                 if modified:
                     meta['time'] = time()
                 root.append(meta)
-        root.sort(key=lambda x:x['time'])
+        root.sort(key=lambda x:x['time'], reverse=True)
         with open(ROOT_FILENAME, 'w', encoding='utf-8') as f:
             json.dump(root, f, indent=2)
 
