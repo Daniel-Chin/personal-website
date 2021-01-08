@@ -24,7 +24,7 @@ const BlogPage = () => {
     <div>
       <PrevNextBlog blog_index={blog_index} />
       <StupidIframe 
-        src={`/blog/${blog_id}/build.html`} 
+        src={`/blog/${blog_id}/build.${blogMeta.build_type}`} 
         title={blogMeta.title}
       />
       <PrevNextBlog blog_index={blog_index} />
