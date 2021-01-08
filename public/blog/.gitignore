@@ -2,3 +2,4 @@ build.html
 *.mp3
 *.jpg
 *.pdf
+node_modules/
