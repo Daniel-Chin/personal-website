@@ -1,27 +1,38 @@
 [
   {
+    "id": "gpt_2_test",
+    "title": "Testing GPT 2",
+    "build_type": "pdf",
+    "time": 1610079055.938425
+  },
+  {
     "id": "cup_song_bbt",
     "title": "Mix: Cups + Big Bang Theory",
+    "build_type": "html",
     "time": 1610078057.1263354
   },
   {
     "id": "viscomm_sketch",
     "title": "Sketches from Intro to Visual Communication",
+    "build_type": "html",
     "time": 1610077292.7738338
   },
   {
     "id": "new_modalities",
     "title": "Novel Human Modality Discovery",
+    "build_type": "html",
     "time": 1609940182.7771497
   },
   {
     "id": "tor_hidden_service_democracy",
     "title": "A way to take down child porn Tor hidden services",
+    "build_type": "html",
     "time": 1609151390.697432
   },
   {
     "id": "carbon_accounting",
     "title": "Carbon emission accounting",
+    "build_type": "html",
     "time": 1609055955.2064264
   }
 ]
