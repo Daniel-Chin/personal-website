@@ -7,4 +7,4 @@ I looked at Yiyi's online class last week. They were teaching how to count boxes
 
 These are extreme examples, but even in *my* education, there are too many specific algos taught. 
 
-See [Come up with it](/blog/come_up_with_it).  
+See [Come up with it](/#/blog/come_up_with_it).  
