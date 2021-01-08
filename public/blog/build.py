@@ -10,7 +10,7 @@ from indentprinter import indentPrinter
 
 EXCLUDE_EXT = [
     'py', 'json', 'css', '__pycache__', 
-    'gitignore', 
+    'gitignore', 'lnk', 
 ]
 
 HASH_FILENAME = 'hash.txt'
@@ -28,12 +28,15 @@ def main(ignore_hash = False):
         root = []
         for blog_id in blog_ids:
             with ChdirContext(blog_id):
-                src_name = getSrcName()
+                src_name, build_type = getSrcName()
                 if src_name is None:
                     continue
-                src, meta = extract(blog_id, src_name, prev_root)
+                meta = extract(
+                    blog_id, src_name, prev_root, 
+                    build_type, 
+                )
                 modified = handleFolder(
-                    src_name, src, meta, ignore_hash
+                    src_name, meta, ignore_hash
                 )
                 if modified:
                     meta['time'] = time()
@@ -49,21 +52,29 @@ def getSrcName():
         if x.lower().startswith('src')
     ]
     if srcs:
-        return srcs[0]
+        return srcs[0], 'html'
     if 'build.html' in list_dir:
-        return 'build.html'
-    return None
+        return 'build.html', 'html'
+    if 'build.pdf' in list_dir:
+        return 'build.pdf', 'pdf'
+    return None, None
 
-def extract(blog_id, src_name, prev_root):
-    with open(src_name, 'r', encoding='utf-8') as f:
-        src = f.read()
+def extract(blog_id, src_name, prev_root, build_type):
+    def openSrc():
+        return open(src_name, 'r', encoding='utf-8')
     if src_name.endswith('.md'):
-        line_0 = src.split('\n', 1)[0].strip()
-        assert line_0.startswith('# ')
-        title = line_0.lstrip('# ')
+        with openSrc() as f:
+            line_0 = next(f).strip()
+            assert line_0.startswith('# ')
+            title = line_0.lstrip('# ')
     elif src_name == 'build.html':
+        with openSrc() as f:
+            src = f.read()
         _, t = src.split('<h1>', 1)
         title, _ = t.split('</h1>', 1)
+    elif src_name == 'build.pdf':
+        with open('title.txt', 'r', encoding='utf-8') as f:
+            title = f.read().strip()
     else:
         raise Exception(f'Unknown src type "{src_name}". ')
     times = [x['time'] for x in prev_root if x['id'] == blog_id]
@@ -71,13 +82,14 @@ def extract(blog_id, src_name, prev_root):
         _time = times[0]
     else:
         _time = time()
-    return src, {
+    return {
         'id': blog_id, 
         'title': title, 
+        'build_type': build_type, 
         'time': _time, 
     }
 
-def handleFolder(src_name, src, meta, ignore_hash):
+def handleFolder(src_name, meta, ignore_hash):
     src_hash = hashFile(src_name)
     try:
         with open(HASH_FILENAME, 'r', encoding='utf-8') as f:
@@ -91,14 +103,18 @@ def handleFolder(src_name, src, meta, ignore_hash):
             return False
         else:
             p('Building...')
-            buildBlog(src_name, src, p)
+            buildBlog(src_name, p)
             with open(HASH_FILENAME, 'w+', encoding='utf-8') as f:
                 print(src_hash, file=f)
             p('Built successfully. ')
             return True
 
-def buildBlog(src_name, src, p):
+def buildBlog(src_name, p):
+    def openSrc():
+        return open(src_name, 'r', encoding='utf-8')
     if src_name.endswith('.md'):
+        with openSrc() as f:
+            src = f.read()
         p('Translating code blocks...')
         translated = translateCodeBlock(src)
         p('Translating md to HTML...')
@@ -118,6 +134,8 @@ def buildBlog(src_name, src, p):
             print('</html>', file=f)
     elif src_name == 'build.html':
         p('build.html needs nothing to be done. ')
+    elif src_name == 'build.pdf':
+        p('build.pdf needs nothing to be done. ')
     else:
         raise Exception(f'Unknown src type "{src_name}". ')
 
