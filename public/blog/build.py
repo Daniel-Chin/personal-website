@@ -44,7 +44,7 @@ def main(ignore_hash = False):
                 modified = handleFolder(
                     src_name, meta, ignore_hash
                 )
-                if modified:
+                if modified and not ignore_hash:
                     meta['time'] = time()
                 root.append(meta)
         root.sort(key=lambda x:x['time'], reverse=True)
