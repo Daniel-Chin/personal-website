@@ -1,23 +1,29 @@
 # Builds blogs source into html
 
 import os
+from os import path
+from shutil import copyfile
 from myfile import hashFile
 from chdir_context import ChdirContext, ChdirAlongside
-from markdown import markdown
 import json
 from time import time
 from indentprinter import indentPrinter
 
 EXCLUDE_EXT = [
     'py', 'json', 'css', '__pycache__', 
-    'gitignore', 'lnk', 
+    'gitignore', 'lnk', 'js', 'json', 'node_modules', 
 ]
 
 HASH_FILENAME = 'hash.txt'
 ROOT_FILENAME = '../../src/helpers/blogRoot.json'
 
+js = {}
+
 def main(ignore_hash = False):
     with ChdirAlongside(__file__):
+        js["script_fn"] = path.abspath("md.js")
+        js["in_fn"]   = path.abspath("md_js_in.md")
+        js["out_fn"]  = path.abspath("md_js_out.body")
         with open(ROOT_FILENAME, 'r', encoding='utf-8') as f:
             prev_root = json.load(f)
         blog_ids = [
@@ -104,26 +110,22 @@ def handleFolder(src_name, meta, ignore_hash):
         else:
             p('Building...')
             buildBlog(src_name, p)
-            with open(HASH_FILENAME, 'w+', encoding='utf-8') as f:
+            with open(HASH_FILENAME, 'w', encoding='utf-8') as f:
                 print(src_hash, file=f)
             p('Built successfully. ')
             return True
 
 def buildBlog(src_name, p):
-    def openSrc():
-        return open(src_name, 'r', encoding='utf-8')
     if src_name.endswith('.md'):
-        with openSrc() as f:
-            src = f.read()
-        p('Translating code blocks...')
-        translated = translateCodeBlock(src)
         p('Translating md to HTML...')
-        body = markdown(
-            translated, 
-            extensions=['codehilite'], 
-        )
+        copyfile(src_name, js['in_fn'])
+        os.system('node ' + js['script_fn'])
+        with open(js['out_fn'], 'r', encoding='utf-8') as f:
+            body = f.read()
+        os.remove(js['in_fn'])
+        os.remove(js['out_fn'])
         p('Writing HTML...')
-        with open('build.html', 'w+', encoding='utf-8') as f:
+        with open('build.html', 'w', encoding='utf-8') as f:
             print('<html>', file=f)
             print('<head>', file=f)
             print('<link rel="stylesheet" href="/blog/style.css" />', file=f)
