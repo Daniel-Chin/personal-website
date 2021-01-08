@@ -1,5 +1,11 @@
 [
   {
+    "id": "hearthstone_coders",
+    "title": "Some Hearthstone Cards",
+    "build_type": "html",
+    "time": 1610081864.347837
+  },
+  {
     "id": "csv_perpetuity",
     "title": "CSV",
     "build_type": "html",
