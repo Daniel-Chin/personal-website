@@ -22,8 +22,8 @@ js = {}
 def main(ignore_hash = False):
     with ChdirAlongside(__file__):
         js["script_fn"] = path.abspath("md.js")
-        js["in_fn"]   = path.abspath("md_js_in.md")
-        js["out_fn"]  = path.abspath("md_js_out.body")
+        js["in_fn"]   = "md_js_in.md"
+        js["out_fn"]  = "md_js_out.body"
         with open(ROOT_FILENAME, 'r', encoding='utf-8') as f:
             prev_root = json.load(f)
         blog_ids = [
@@ -138,6 +138,8 @@ def buildBlog(src_name, p):
         p('build.html needs nothing to be done. ')
     elif src_name == 'build.pdf':
         p('build.pdf needs nothing to be done. ')
+    # elif src_name.endswith('.docx'):
+    #     p('.docx should be compiled with MS Word. ')
     else:
         raise Exception(f'Unknown src type "{src_name}". ')
 
