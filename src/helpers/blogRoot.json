@@ -1,5 +1,17 @@
 [
   {
+    "id": "red_panda",
+    "title": "Red Panda",
+    "build_type": "html",
+    "time": 1610080676.5194085
+  },
+  {
+    "id": "bad_songs",
+    "title": "Random music I made goes here",
+    "build_type": "html",
+    "time": 1610080256.6010423
+  },
+  {
     "id": "gpt_2_test",
     "title": "Testing GPT 2",
     "build_type": "pdf",
