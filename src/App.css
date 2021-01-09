@@ -22,8 +22,10 @@ p {
   width: calc(min(100% - 30px, 800px));
   background-color: #f2f2f2;
   padding: 15px 1em;
-  transition: .2s;
   position: relative;
+  /* transition: 1s;
+} .portfolio-card:hover {
+  transform: scale(1.02); */
 }
 
 .card-left {
