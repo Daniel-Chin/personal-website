@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import InkLeak from '../component/InkLeak';
 import { blogId2Url } from '../helpers/misc'
 import blogRoot from '../helpers/blogRoot';
 
@@ -13,8 +14,10 @@ const LandingPage = () => {
   ));
   return (
     <div className='margin-1em'>
-      <h1 className='center-text'>Daniel Chin</h1>
-      <p className='center-text'>Legally known as NanFeng Qin</p>
+      <h1 className='center-text daniel-chin'>
+        <InkLeak text='Daniel Chin' height={100} />
+      </h1>
+      <p className='center-text daniel-chin'>Legally known as NanFeng Qin</p>
       <p>This is my personal website.</p>
       <p>It is <b>under construction</b>.</p>
       <p>

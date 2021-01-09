@@ -4,6 +4,7 @@ import { SORT, sortProjects, summarizeTags } from '../helpers/misc';
 import PortfolioCard from '../component/PortfolioCard';
 import ProjectTag from '../component/ProjectTag';
 import RadioButton from '../component/RadioButton';
+import InkLeak from '../component/InkLeak';
 
 const PortfolioPage = () => {
   const [sort_method, set_sort_method] = useState(SORT.PRIDE);
@@ -14,7 +15,7 @@ const PortfolioPage = () => {
   return (
     <>
       <h1 className='center-text'>
-        Project Portfolio
+        <InkLeak text='Project Portfolio' height={80} />
       </h1>
       <div className='portfolio-control-panel'>
         <div className='portfolio-control-panel-row'>

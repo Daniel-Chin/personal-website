@@ -3,11 +3,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import blogRoot from '../helpers/blogRoot';
 import { blogId2Url, formatTime } from '../helpers/misc'
+import InkLeak from '../component/InkLeak';
 
 const BlogListPage = () => {
   return (
     <div className='margin-1em'>
-      <h1 className='center-text'>Blogs</h1>
+      <h1 className='center-text'>
+      <InkLeak text='Blogs' height={150} />
+      </h1>
       <table className='margin-hori-auto'>
         {/* <thead>
           <tr>
