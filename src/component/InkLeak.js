@@ -11,7 +11,7 @@ const MIN_BRUSH_DENSITY = 2;
 
 const InkLeak = ({
   text, height, period, do_border, max_brush_density, 
-  clear_density, fore_color, back_color, 
+  clear_density, fore_color, back_color, className, 
 }) => {
   const canvas = useRef();
   noise.seed(Math.random());
@@ -62,6 +62,7 @@ const InkLeak = ({
     <canvas 
       alt={text} ref={canvas} 
       width={width} height={height} 
+      className={className}
     />
   );
 };
@@ -198,7 +199,7 @@ const drawRoot = (root, ctx, phase, max_brush_density) => {
 
 const echoClear = (ctx, width, height, density) => {
   ctx.beginPath();
-  ctx.moveTo(0, 0);
+  ctx.moveTo(0, Math.random() * height);
   const times = Math.floor(density * height);
   let _width = 0;
   for (let _ = 0; _ < times; _ ++) {

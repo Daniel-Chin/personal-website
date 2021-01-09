@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectTag from '../component/ProjectTag';
 import ProjectLink from '../component/ProjectLink';
 import { resolveInternalUri } from '../helpers/misc';
+import InkLeak from './InkLeak';
 
 const PortfolioCard = ({
   project, positive_tags, negative_tags, 
@@ -17,11 +18,17 @@ const PortfolioCard = ({
       <div className='portfolio-card'>
         <div className='card-left'>
           <span className='middle-helper'></span>
-          <img 
-            src={resolveInternalUri(project.img, 'portfolio')} 
-            alt={project.img ? `A preview of ${project.img}` : ''}
-            className='thumb-image'
-          />
+          {
+            project.img === '__ink_leak__' 
+            ? 
+            <InkLeak text='Demo' height={100} className='thumb-image' />
+            :
+            <img 
+              src={resolveInternalUri(project.img, 'portfolio')} 
+              alt={project.img ? `A preview of ${project.img}` : ''}
+              className='thumb-image'
+            />
+          }
         </div>
         <div className='card-right'>
           <h3 className='project-heading'>{project.title}</h3>
