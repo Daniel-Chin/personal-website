@@ -10,13 +10,18 @@ const android = 'android';
 const mit_app_inventor = 'mit_app_inventor';
 const high_school = 'high_school';
 const python = 'python';
+const js = 'js';
+const animation = 'animation';
+const art = 'art';
+const lib = 'lib';
+const react = 'react';
 
 const portfolio_root = [
   {
     title : 'Personal Website', 
     year : 2020, 
     pride : 4, 
-    tags : ['html', 'js', 'frontend', 'react'], 
+    tags : ['html', js, 'frontend', react], 
     description : 'I have a project portfolio on there, did you know? ', 
     img : 'portfolio.png', 
     links: [
@@ -39,7 +44,7 @@ const portfolio_root = [
     title : 'Poster for dorm', 
     year : 2018, 
     pride : 6, 
-    tags : ['art', visualization, processing, 'math', python], 
+    tags : [art, visualization, processing, 'math', python], 
     description : 'Visualization of the Collatz conjecture. I hanged it in my NYU Shanghai dorm room. ', 
     img : 'PosterFor1608.png', 
     links: [
@@ -50,7 +55,7 @@ const portfolio_root = [
     title : 'WhereDitGo', 
     year : 2019, 
     pride : 5, 
-    tags : ['html', 'js', 'forsaken', 'frontend', 'backend'], 
+    tags : ['html', js, 'forsaken', 'frontend', 'backend'], 
     description : "Expense accounting app. The design doc is very detailed, but I decided it's not worth my time to implement it. ", 
     img : '', 
     links: [
@@ -62,7 +67,7 @@ const portfolio_root = [
     title : 'coffeetawk', 
     year : 2018, 
     pride : 1, 
-    tags : ['html', 'js', 'frontend', 'app_lab'], 
+    tags : ['html', js, 'frontend', 'app_lab'], 
     description : '', 
     img : '', 
     links: [
@@ -75,7 +80,7 @@ const portfolio_root = [
     title : 'Socrates', 
     year : 2018, 
     pride : 1, 
-    tags : ['html', 'js', 'frontend', 'app_lab', 'firebase', 'colab', 'react'], 
+    tags : ['html', js, 'frontend', 'app_lab', 'firebase', 'colab', react], 
     description : 'Colab with Vincent Wu', 
     img : '', 
     links: [
@@ -87,7 +92,7 @@ const portfolio_root = [
     title : 'js withDir', 
     year : 2019, 
     pride : 2, 
-    tags : ['js', 'lib'], 
+    tags : [js, lib], 
     description : '', 
     img : '', 
     links: [
@@ -98,7 +103,7 @@ const portfolio_root = [
     title : 'js Interactive Tester', 
     year : 2019, 
     pride : 5, 
-    tags : ['js', 'lib', 'vm', 'npm', 'dev_tool'], 
+    tags : [js, lib, 'vm', 'npm', 'dev_tool'], 
     description : 'Test the functions and objects you wrote in a real-time terminal shell, analogous to `IPython.embed()`.', 
     img : '', 
     links: [
@@ -110,7 +115,7 @@ const portfolio_root = [
     title : 'js Linked File List', 
     year : 2019, 
     pride : 6, 
-    tags : ['js', 'lib', 'npm', 'database'], 
+    tags : [js, lib, 'npm', 'database'], 
     description : 'Each entry is a file, with id as its filename. A simple database solution, but highly scalable. Integrates version tracking with Git. ', 
     img : 'js_linked_files.png', 
     links: [
@@ -135,7 +140,7 @@ const portfolio_root = [
     title : 'NYU login page verify', 
     year : 2019, 
     pride : 5, 
-    tags : ['js', 'chrome_extension'], 
+    tags : [js, 'chrome_extension'], 
     description : 'Let this Chrome extension check whether the URL is "https://shibboleth.nyu.edu/"', 
     img : 'nyu_login_verify.png', 
     links: [
@@ -161,7 +166,7 @@ const portfolio_root = [
     title : 'World of Blogs', 
     year : 2019, 
     pride : 6, 
-    tags : ['html', 'js', 'frontend', 'backend', 'firebase', 'user_auth', 'security', 'express', 'react'], 
+    tags : ['html', js, 'frontend', 'backend', 'firebase', 'user_auth', 'security', 'express', react], 
     description : 'A blog platform that fights the info cacoon effect. Novel database structure that optimizes random sampling. Robust user auth that withstands even timing attacks. Supervised by James Ayres. ', 
     img : 'worldOfBlog_singout.png', 
     links: [
@@ -174,7 +179,7 @@ const portfolio_root = [
     title : 'Nozomi.la AI', 
     year : 2020, 
     pride : 6, 
-    tags : ['ai', 'html', 'js', python, 'html2api', 'backend', 'frontend', 'recommendation_algo', 'user_preferences', hci], 
+    tags : ['ai', 'html', js, python, 'html2api', 'backend', 'frontend', 'recommendation_algo', 'user_preferences', hci], 
     description : 'A recommendation algo learns your preferences of fan arts from your reactions. ', 
     img : 'nozomi_ai.png', 
     links: [
@@ -221,7 +226,7 @@ const portfolio_root = [
     title : 'OPEC Auction Assistant', 
     year : 2020, 
     pride : 2, 
-    tags : ['html', hci, 'js'], 
+    tags : ['html', hci, js], 
     description : '', 
     img : 'auction_assist.png', 
     links: [
@@ -336,7 +341,7 @@ const portfolio_root = [
     title : 'Spaghetti chat room', 
     year : 2018, 
     pride : 4, 
-    tags : [python, 'js', 'html', 'backend', 'frontend'], 
+    tags : [python, js, 'html', 'backend', 'frontend'], 
     description : '', 
     img : '', 
     links: [
@@ -403,10 +408,10 @@ const portfolio_root = [
     ], 
   }, 
   {
-    title : 'Ink leak', 
+    title : 'Ink Leak Classic', 
     year : 2019, 
-    pride : 5, 
-    tags : [processing, 'animation', 'art', 'lib'], 
+    pride : 2, 
+    tags : [processing, animation, art, lib], 
     description : 'The GIF does not do justice. Run it yourself for HD 60 FPS. ', 
     img : 'ink_leak.gif', 
     links: [
@@ -429,7 +434,7 @@ const portfolio_root = [
     title : 'Playing card design', 
     year : 2019, 
     pride : 3, 
-    tags : ['art', 'adobe_illustrator'], 
+    tags : [art, 'adobe_illustrator'], 
     description : 'Supervised by Will Varner', 
     img : 'playing_card.png', 
     links: [
@@ -476,7 +481,7 @@ const portfolio_root = [
     title : 'Bamboozle', 
     year : 2018, 
     pride : 5, 
-    tags : ['joke', 'art'], 
+    tags : ['joke', art], 
     description : '', 
     img : '', 
     links: [
@@ -522,7 +527,7 @@ const portfolio_root = [
     title : 'Urban Voicinary', 
     year : 2019, 
     pride : 4, 
-    tags : ['js', 'react', 'frontend', hci], 
+    tags : [js, react, 'frontend', hci], 
     description : 'Supervised by James Ayres', 
     img : 'urban_voice.png', 
     links: [
@@ -535,7 +540,7 @@ const portfolio_root = [
     title : 'Processing GUI Tree', 
     year : 2018, 
     pride : 6, 
-    tags : [processing, 'gui', 'frontend', 'lib'], 
+    tags : [processing, 'gui', 'frontend', lib], 
     description : 'A GUI framework. A tree of GUI elements that renders recursively. Comes with 3 gadgets for free, too. ', 
     img : 'proc_gui_tree.png', 
     links: [
@@ -546,7 +551,7 @@ const portfolio_root = [
     title : 'Processing Routine Throttle', 
     year : 2019, 
     pride : 2, 
-    tags : [processing, 'lib'], 
+    tags : [processing, lib], 
     description : '', 
     img : '', 
     links: [
@@ -634,7 +639,7 @@ const portfolio_root = [
     title : 'Robust storage', 
     year : 2019, 
     pride : 3, 
-    tags : [python, 'lib', 'database'], 
+    tags : [python, lib, 'database'], 
     description : 'Atomic database access immune to power-outage. Inspired by Undertale', 
     img : '', 
     links: [
@@ -689,7 +694,7 @@ const portfolio_root = [
     title : 'cache no hash', 
     year : 2018, 
     pride : 2, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'Cache function returns without hashing inputs. ', 
     img : '', 
     links: [
@@ -700,7 +705,7 @@ const portfolio_root = [
     title : 'chdir context', 
     year : 2020, 
     pride : 2, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'A python context to temporarily cd to another directory.', 
     img : '', 
     links: [
@@ -744,7 +749,7 @@ const portfolio_root = [
     title : 'Lightweight interactive Python shell', 
     year : 2018, 
     pride : 6, 
-    tags : [python, 'lib', 'vm', 'dev_tool'], 
+    tags : [python, lib, 'vm', 'dev_tool'], 
     description : "Just like IPython - supports runtime embed. But: 1) It's way lighter; 2) Other threads can still print things when user is inputting commands; 3) Tab auto-completes your phrase, even under Windows! 4) secret ctrl+R feature. ", 
     img : '', 
     links: [
@@ -766,7 +771,7 @@ const portfolio_root = [
     title : 'dict shape compare', 
     year : 2019, 
     pride : 2, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'Compare the shape of two dicts. ', 
     img : '', 
     links: [
@@ -810,7 +815,7 @@ const portfolio_root = [
     title : 'Force multithread map', 
     year : 2018, 
     pride : 2, 
-    tags : [python, 'lib', 'multi_thread'], 
+    tags : [python, lib, 'multi_thread'], 
     description : 'Like dummy.Pool.map, but no limit on number of threads. Useful when IO-bound.', 
     img : '', 
     links: [
@@ -832,7 +837,7 @@ const portfolio_root = [
     title : 'Time formattor', 
     year : 2018, 
     pride : 2, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'Obviously a wheel re-invted', 
     img : '', 
     links: [
@@ -843,7 +848,7 @@ const portfolio_root = [
     title : 'Terminal graphic utils', 
     year : 2018, 
     pride : 4, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'Tools to do graphics in the terminal.', 
     img : '', 
     links: [
@@ -865,7 +870,7 @@ const portfolio_root = [
     title : 'Socket Hub', 
     year : 2018, 
     pride : 2, 
-    tags : [python, 'p2p', 'multi_thread', 'lib'], 
+    tags : [python, 'p2p', 'multi_thread', lib], 
     description : 'Broadcast messages from any client to all clients. ', 
     img : '', 
     links: [
@@ -876,7 +881,7 @@ const portfolio_root = [
     title : 'Indent printer', 
     year : 2019, 
     pride : 3, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'A python context to indent print outputs. ', 
     img : '', 
     links: [
@@ -887,7 +892,7 @@ const portfolio_root = [
     title : 'Android interactive file explorer', 
     year : 2018, 
     pride : 2, 
-    tags : [python, 'lib', hci], 
+    tags : [python, lib, hci], 
     description : 'An android-friendly terminal file explorer. ', 
     img : '', 
     links: [
@@ -898,7 +903,7 @@ const portfolio_root = [
     title : 'Terminal interactivity utils', 
     year : 2019, 
     pride : 6, 
-    tags : [python, 'lib', hci], 
+    tags : [python, lib, hci], 
     description : 'Thicc and powerful. See the source code for documentation. ', 
     img : '', 
     links: [
@@ -920,7 +925,7 @@ const portfolio_root = [
     title : 'python progress bar', 
     year : 2018, 
     pride : 3, 
-    tags : [python, 'lib', hci], 
+    tags : [python, lib, hci], 
     description : 'Progress bar. Supports python context. Computes transmition speed too. ', 
     img : 'jdt.png', 
     links: [
@@ -931,7 +936,7 @@ const portfolio_root = [
     title : 'python linked file list', 
     year : 2019, 
     pride : 5, 
-    tags : [python, 'lib', 'database'], 
+    tags : [python, lib, 'database'], 
     description : 'A simple database solution, but highly scalable.', 
     img : '', 
     links: [
@@ -986,7 +991,7 @@ const portfolio_root = [
     title : 'Virtual Numpad', 
     year : 2020, 
     pride : 2, 
-    tags : [python, 'p2p', 'html', 'js', 'frontend', hci, 'http'], 
+    tags : [python, 'p2p', 'html', js, 'frontend', hci, 'http'], 
     description : "Your laptop has no numpad? Can't play Cataclysm:DDA? No worries. Use your phone as a numpad!", 
     img : 'numpad.gif', 
     links: [
@@ -997,7 +1002,7 @@ const portfolio_root = [
     title : 'more tkinter gadgets', 
     year : 2018, 
     pride : 3, 
-    tags : [python, 'tkinter', 'lib', 'multi_thread'], 
+    tags : [python, 'tkinter', lib, 'multi_thread'], 
     description : 'MsgBox, InputBox, other util functions…', 
     img : '', 
     links: [
@@ -1008,7 +1013,7 @@ const portfolio_root = [
     title : 'Multi Terminal', 
     year : 2019, 
     pride : 5, 
-    tags : [python, 'lib', 'multi_process', hci, 'multi_thread'], 
+    tags : [python, lib, 'multi_process', hci, 'multi_thread'], 
     description : 'Provides an interface to multiple terminal windows. E.g. for output of difference levels (debug, info, warning, error...)', 
     img : 'multi_term.png', 
     links: [
@@ -1019,7 +1024,7 @@ const portfolio_root = [
     title : 'My HTTP', 
     year : 2018, 
     pride : 5, 
-    tags : [python, 'http', 'lib', 'multi_thread'], 
+    tags : [python, 'http', lib, 'multi_thread'], 
     description : 'HTTP server in python. Each request is handled by a thread. Global event loop and message queue. ', 
     img : '', 
     links: [
@@ -1041,7 +1046,7 @@ const portfolio_root = [
     title : 'My socket', 
     year : 2018, 
     pride : 2, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'My socket utils', 
     img : '', 
     links: [
@@ -1096,7 +1101,7 @@ const portfolio_root = [
     title : 'Pickle socket', 
     year : 2018, 
     pride : 1, 
-    tags : [python, 'lib'], 
+    tags : [python, lib], 
     description : 'Send objects over sockets. ', 
     img : '', 
     links: [
@@ -1173,7 +1178,7 @@ const portfolio_root = [
     title : 'Safe http', 
     year : 2019, 
     pride : 5, 
-    tags : [python, 'http', 'security', 'lib'], 
+    tags : [python, 'http', 'security', lib], 
     description : 'An HTTP backend server baseclass. Really tries to be safe against injection attacks. Intentionally uses single thread only.', 
     img : '', 
     links: [
@@ -1509,7 +1514,7 @@ const portfolio_root = [
     title : 'VB progress bar', 
     year : 2014, 
     pride : 2, 
-    tags : ['vb', 'middle_school', 'lib'], 
+    tags : ['vb', 'middle_school', lib], 
     description : '', 
     img : '', 
     links: [
@@ -1841,7 +1846,7 @@ const portfolio_root = [
     title : 'Vine growth', 
     year : 2015, 
     pride : 4, 
-    tags : ['vb', high_school, 'art'], 
+    tags : ['vb', high_school, art], 
     description : '', 
     img : 'vine.gif', 
     links: [
@@ -2052,7 +2057,7 @@ const portfolio_root = [
     title : 'Blind Descend', 
     year : 2020, 
     pride : 4, 
-    tags : [python, 'lib', 'algo'], 
+    tags : [python, lib, 'algo'], 
     description : 'Efficiently find local minima of 1D functions without gradient. ', 
     img : '', 
     links: [
@@ -2104,6 +2109,17 @@ const portfolio_root = [
     links: [
       [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#cleanwordhtmlpy" ], 
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/cleanWordHtml.py" ], 
+    ], 
+  }, 
+  {
+    title : 'Ink Leak', 
+    year : 2021, 
+    pride : 5, 
+    tags : [js, animation, art, lib, react], 
+    description : 'A React component that animate texts as a canvas. ', 
+    img : '__ink_leak__', 
+    links: [
+      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/InkLeak#ink-leak" ], 
     ], 
   }, 
 ];
