@@ -7,7 +7,7 @@ const StupidIframe = ({ src, title }) => {
   useEffect(() => {
     if (scrolled === 1) {
       setTimeout(() => {  // Why do we need 100ms? 
-        iFrame.current.scrollIntoView(true, { behavior: 'smooth' });
+        iFrame.current.scrollIntoView({ behavior: 'smooth' });
       }, 100);  // Why does "smooth" not work in Chrome 87? 
       set_scrolled(2);
     }
