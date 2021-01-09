@@ -9,6 +9,7 @@ span {
   --light-gray: #e8e8e8;
   --hat-hori-mar: .7em;
   --page-margin: 1em;
+  /* change together 2p4983rtw43t4 */
   --dark-green: #003333;
 }
 
@@ -205,7 +206,8 @@ p {
 
 .page-with-margin {
   margin: var(--page-margin) auto;
-  width: calc(min(700px, 100% - var(--page-margin)*2));
+  width: calc(min(700px, 100% - 2em));
+  /* change together 2p4983rtw43t4 */
 }
 
 .hat {
