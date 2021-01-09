@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhoamiPage = () => {
   return (
-    <div className='margin-1em'>
+    <div className='page-with-margin'>
       <h1 className='center-text'>whoami</h1>
       <p>
         For those nerds among you: The URL of my website 

@@ -15,7 +15,10 @@ const PortfolioPage = () => {
   return (
     <>
       <h1 className='center-text'>
-        <InkLeak text='Project Portfolio' height={80} />
+        <InkLeak 
+          text='Project Portfolio' height={80} 
+          className='no-fat'
+        />
       </h1>
       <div className='portfolio-control-panel'>
         <div className='portfolio-control-panel-row'>

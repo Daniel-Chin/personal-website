@@ -7,9 +7,9 @@ import InkLeak from '../component/InkLeak';
 
 const BlogListPage = () => {
   return (
-    <div className='margin-1em'>
+    <div className='page-with-margin'>
       <h1 className='center-text'>
-      <InkLeak text='Blogs' height={150} />
+      <InkLeak text='Blogs' height={150} className='no-fat' />
       </h1>
       <table className='margin-hori-auto'>
         {/* <thead>

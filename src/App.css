@@ -8,6 +8,8 @@ span {
 :root {
   --light-gray: #e8e8e8;
   --hat-hori-mar: .7em;
+  --page-margin: 1em;
+  --dark-green: #003333;
 }
 
 .portfolio-card {
@@ -196,12 +198,12 @@ span {
   text-decoration: underline;
 }
 
-.margin-1em {
-  margin: 1em;
+.page-with-margin {
+  margin: var(--page-margin);
 }
 
 .hat {
-  box-shadow: #bbb 0 0px 5px 5px;
+  box-shadow: #bbb 0 2.5px 5px 2.5px;
 }
 .hat ul {
   list-style-type: none;
@@ -257,7 +259,46 @@ td {
   padding: .5em;
 }
 
-.daniel-chin {
+.no-vertical-margin {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.no-fat {
+  max-width: calc(100vw - var(--page-margin) * 2);
+}
+
+.landing-sticky {
+  background-color: var(--dark-green);
+  color: white;
+  padding: 1px var(--page-margin);
+  border-bottom: 1px solid black;
+}
+
+.dark-context a {
+  color: cyan;
+  transition: .1s;
+} .dark-context a:visited {
+  color: #ccaaff;
+} .dark-context a:hover {
+  color: white;
+}
+
+.my-face {
+  margin: 0 auto;
+  display: block;
+  max-height: 80vh;
+  height: 200px;
+}
+
+.legal-name {
+  position: relative;
+  top: -1em;
+}
+
+.landing-bottom {
+  background-color: var(--dark-green);
+  color: white;
+  padding: 1px var(--page-margin);
+  border-top: 1px solid black;
 }
