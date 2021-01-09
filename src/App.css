@@ -12,6 +12,10 @@ span {
   --dark-green: #003333;
 }
 
+p {
+  text-align: justify;
+}
+
 .portfolio-card {
   margin: 20px auto 20px;
   width: calc(min(100% - 30px, 800px));
@@ -200,7 +204,8 @@ span {
 }
 
 .page-with-margin {
-  margin: var(--page-margin);
+  margin: var(--page-margin) auto;
+  width: calc(min(700px, 100% - var(--page-margin)*2));
 }
 
 .hat {
@@ -289,12 +294,15 @@ td {
   margin: 0 auto;
   display: block;
   max-height: 80vh;
-  height: 200px;
+  height: 150px;
+  transition: .3s;
+} .my-face:hover {
+  transform: scale(2);
 }
 
 .legal-name {
   position: relative;
-  top: -1em;
+  top: -.8em;
 }
 
 .landing-bottom {
@@ -302,4 +310,18 @@ td {
   color: white;
   padding: 1px var(--page-margin);
   border-top: 1px solid black;
+}
+
+.zhiying {
+  transition: .3s;
+} .zhiying:hover {
+  color: #ff7777;
+}
+
+.publications li {
+  margin-bottom: 1em;
+}
+
+.cursor-help {
+  cursor: help;
 }

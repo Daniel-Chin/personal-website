@@ -13,9 +13,14 @@ import AboutMePage      from './page/AboutMePage';
 import WhoamiPage       from './page/WhoamiPage';
 import IndieIframePage  from './page/IndieIframePage';
 import Hat              from './component/Hat';
+import TopOfEverything  from './page/TopOfEverything';
+
 const App = () => {
   return (
     <>
+      <Route exact path='/'>
+        <TopOfEverything />
+      </Route>
       <Hat />
       <Switch>
         <Route exact path='/'>
