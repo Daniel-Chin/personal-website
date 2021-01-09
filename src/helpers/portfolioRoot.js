@@ -520,7 +520,7 @@ const portfolio_root = [
     description : '', 
     img : 'mouse_shell.jpg', 
     links: [
-      [ "Read More", INTERNAL, "TODO" ], 
+      [ "Read More", EXTERNAL, "/documentation/mouse_shell/build.html" ], 
     ], 
   }, 
   {
