@@ -24,8 +24,6 @@ p {
   padding: 15px 1em;
   transition: .2s;
   position: relative;
-} .portfolio-card:hover {
-  transform: scale(1.03);
 }
 
 .card-left {
