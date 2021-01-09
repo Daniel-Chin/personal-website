@@ -1,43 +1,40 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import { noise } from '../helpers/perlin';
 
-const WIGGLE_NOISE_UNCORRELATE = .5;
-const WIGGLE_ROOM = .3;
+const WIGGLE_NOISE_UNCORRELATE = .3;
+const WIGGLE_ROOM = .4;
 const PADDING = 40;
 const TOP_PAD = 15;
+const BLINK_PHASE_DELTA = .02;
+const MIN_BRUSH_DENSITY = 2;
 
 const InkLeak = ({
   text, height, period, do_border, max_brush_density, 
-  max_clear_density, fore_color, back_color, 
+  clear_density, fore_color, back_color, 
 }) => {
   const canvas = useRef();
   noise.seed(Math.random());
 
-  period = period || 1000;
+  period = period || 2000;
   do_border = do_border || true;
-  max_brush_density = max_brush_density || 5;
-  max_clear_density = max_clear_density || .05;
+  max_brush_density = max_brush_density || 3;
+  clear_density = clear_density || .0018;
   fore_color = fore_color || '#000000';
   back_color = back_color || '#FFFFFF';
 
   const root = Root({ do_border });
   const width = vectorizeText(text, root, height / (100 + TOP_PAD));
 
-  const draw = useCallback((ctx, t) => {
-    const phase = t % period;
-    const progress = Math.max(1, phase / period * 2);
-    root.edge_times = 1 + Math.floor(
-      (1 - progress) * max_brush_density
-    );
-    const clear_density = progress * max_clear_density;
+  const draw = useCallback((ctx, t, dt) => {
+    const phase = (t / period) % 1;
 
     ctx.strokeStyle = back_color;
-    echoClear(ctx, width, height, clear_density);
+    echoClear(ctx, width, height, clear_density * dt);
     ctx.strokeStyle = fore_color;
-    drawRoot(root, ctx);
+    drawRoot(root, ctx, phase, max_brush_density);
   }, [
     root, height, period, max_brush_density, 
-    max_clear_density, back_color, fore_color, width, 
+    clear_density, back_color, fore_color, width, 
   ]);
 
   useEffect(() => {
@@ -48,8 +45,9 @@ const InkLeak = ({
     let _t = 0;
 
     const loop = (t) => {
+      const dt = Math.min(100, t - _t);
       _t = t;
-      draw(context, t);
+      draw(context, t, dt);
       animation_frame_id = window.requestAnimationFrame(loop);
     };
     loop(_t);
@@ -88,7 +86,7 @@ const Node = (x_offset, scale, i, ax, ay, bx, by) => {
 const wiggle = (node) => {
   if (node.wiggle_speed && (node.wiggle_speed !== 0)) {
     node.noise_phase += node.wiggle_speed * 0.01;
-    const offset = (noise.perlin2(node.noise_phase, 0) - .5) * node.wiggle_size;
+    const offset = noise.perlin2(node.noise_phase, 0) * node.wiggle_size;
     node.effective_x = node.x + offset * Math.cos(node.angle);
     node.effective_y = node.y + offset * Math.sin(node.angle);
   }
@@ -119,15 +117,22 @@ const orientWith = (nodeA, nodeB) => {
   }
 };
 
-const Edge = (nodeA, nodeB) => ({
-  nodeA, nodeB, 
-});
+const Edge = (root, nodeA, nodeB) => {
+  root.edge_phase += BLINK_PHASE_DELTA;
+  return {
+    nodeA, nodeB, 
+    phase: root.edge_phase, 
+  };
+};
 
-const drawEdge = (root, ctx, edge) => {
+const drawEdge = (root, ctx, phase, max_brush_density, edge) => {
   let [node_0, node_1] = [edge.nodeA, edge.nodeB];
   let point = sample(node_0);
   ctx.moveTo(point.x, point.y);
-  for (let _ = root.edge_times; _ > 0; _ --) {
+  const edge_times = MIN_BRUSH_DENSITY + Math.floor((1 - Math.max(
+    1, ((1 + edge.phase - phase) % 1) * 2
+  )) * max_brush_density);
+  for (let _ = edge_times; _ > 0; _ --) {
     [node_0, node_1] = [node_1, node_0];
     point = sample(node_0);
     ctx.lineTo(point.x, point.y);
@@ -157,12 +162,12 @@ const Root = (options) => ({
   nodes: [], 
   edges: [],
   lastNode: null, 
-  edge_times: 1,
+  edge_phase: 0, 
   ...options, 
 });
 
 const link = (root, a, b) => {
-  const edge = Edge(a, b);
+  const edge = Edge(root, a, b);
   root.edges.push(edge);
   return edge;
 };
@@ -183,10 +188,10 @@ const moveTo = (root, node) => {
   return node;
 };
 
-const drawRoot = (root, ctx) => {
+const drawRoot = (root, ctx, phase, max_brush_density) => {
   ctx.beginPath();
   root.nodes.forEach(wiggle);
-  root.edges.forEach(drawEdge.bind(null, root, ctx));
+  root.edges.forEach(drawEdge.bind(null, root, ctx, phase, max_brush_density));
   ctx.stroke();
 };
 
@@ -194,8 +199,10 @@ const echoClear = (ctx, width, height, density) => {
   ctx.beginPath();
   ctx.moveTo(0, 0);
   const times = Math.floor(density * height);
+  let _width = 0;
   for (let _ = 0; _ < times; _ ++) {
-    ctx.lineTo(Math.random() * width, Math.random() * height);
+    _width = width - _width;
+    ctx.lineTo(_width, Math.random() * height);
   }
   ctx.stroke();
 };
@@ -767,29 +774,31 @@ const VERDANA = {
     ],
   ],
   m: [
-    103.253006,
+    103.084335,
     [
       OPEN,
-      [7.3, 21.9, 25.1, 21.9],
-      [7.5, 74.8, 25.4, 74.8],
+      [7.1, 22.0, 25.1, 22.0],
+      [7.1, 74.5, 24.5, 74.7],
     ],
     [
       OPEN,
-      [23.6, 28.9, 23.6, 38.2],
-      [32.2, 23.1, 31.3, 34.6],
-      [42.4, 20.8, 39.0, 34.8],
-      [48.2, 21.8, 40.8, 37.5],
-      [51.4, 23.0, 42.3, 41.0],
-      [54.3, 25.7, 42.5, 74.8],
-      [57.5, 29.5, 59.2, 74.6],
-      [58.6, 29.0, 59.6, 37.7],
-      [63.4, 25.8, 65.7, 34.7],
-      [70.5, 21.7, 70.5, 34.3],
-      [79.0, 20.7, 74.6, 36.0],
-      [87.0, 23.1, 76.3, 38.3],
-      [91.7, 29.2, 76.4, 40.2],
-      [94.1, 37.1, 76.5, 41.3],
-      [94.1, 74.7, 76.9, 74.7],
+      [20.8, 29.3, 21.1, 39.8],
+      [31.9, 23.5, 32.9, 34.2],
+      [39.9, 21.0, 37.3, 34.8],
+      [51.0, 23.1, 40.1, 36.5],
+      [57.6, 30.1, 41.2, 39.0],
+      [59.0, 38.4, 41.9, 40.8],
+      [59.2, 75.1, 42.4, 74.7],
+    ],
+    [
+      OPEN,
+      [55.8, 30.7, 57.3, 38.9],
+      [65.7, 24.1, 65.8, 34.7],
+      [74.8, 20.6, 71.7, 34.8],
+      [84.0, 21.9, 75.3, 36.6],
+      [90.7, 28.2, 75.9, 38.0],
+      [93.3, 36.0, 76.3, 40.6],
+      [93.9, 75.1, 76.7, 75.1],
     ],
   ],
 };
