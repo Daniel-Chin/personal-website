@@ -53,6 +53,9 @@ def handleFolder(novel_id, src_name, meta, ignore_hash):
         if src_name == 'build.pdf':
             build_name = 'build.pdf'
             need_build = False
+        elif src_name == 'build.html':
+            build_name = 'build.html'
+            need_build = False
         else:
             raise Exception(f'File "{src_name}" is of unknown src type')
         meta[BUILD_NAME] = build_name
