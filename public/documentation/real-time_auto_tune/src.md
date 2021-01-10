@@ -3,7 +3,7 @@ Sing into the computer. The computer rounds your pitch to the nearest 12-tone-va
 
 This was the final project for Intro to Computer Music @ NYU Shanghai, supervised by Gus Xia. Collaborators: Evan Ma, Saili Yao.  
 
-During that semester, however, we could not assail the real-time pitch detection part. I picked this project back up after doing the real-time pitch detection project (https://github.com/Daniel-Chin/Real-time-Benchmarking-of-Pitch-Estimators).  
+During that semester, however, we could not assail the real-time pitch detection part. I picked this project back up after doing the [real-time pitch detection project](https://github.com/Daniel-Chin/Real-time-Benchmarking-of-Pitch-Estimators).  
 
 I modified the YIN code in Librosa to make it frame-based and real-time.  
 
