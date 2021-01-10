@@ -12,6 +12,7 @@ import QuestionListPage from './page/QuestionListPage';
 import AboutMePage      from './page/AboutMePage';
 import WhoamiPage       from './page/WhoamiPage';
 import IndieIframePage  from './page/IndieIframePage';
+import DocumentationPage    from './page/DocumentationPage';
 import Hat              from './component/Hat';
 import TopOfEverything  from './page/TopOfEverything';
 
@@ -49,6 +50,9 @@ const App = () => {
         </Route>
         <Route exact path='/indie/:uri'>
           <IndieIframePage />
+        </Route>
+        <Route exact path='/documentation/:id'>
+          <DocumentationPage />
         </Route>
         <Route exact path='/temp'>
           <TempPage />

@@ -15,6 +15,9 @@ const animation = 'animation';
 const art = 'art';
 const lib = 'lib';
 const react = 'react';
+const real_time = 'real-time';
+const music = 'music';
+const colab = 'colab';
 
 const portfolio_root = [
   {
@@ -33,7 +36,7 @@ const portfolio_root = [
     title : 'Small Strange AdvenTure (SSAT)', 
     year : 2015, 
     pride : 6, 
-    tags : ['vb', 'game', high_school, 'real-time'], 
+    tags : ['vb', 'game', high_school, real_time], 
     description : 'Adventure game in VB. I implemented the 2D physics engine. My first OOP project (because there were an variable number of walls in a level). Many eastereggs... ', 
     img : 'ssat.png', 
     links: [
@@ -80,7 +83,7 @@ const portfolio_root = [
     title : 'Socrates', 
     year : 2018, 
     pride : 1, 
-    tags : ['html', js, 'frontend', 'app_lab', 'firebase', 'colab', react], 
+    tags : ['html', js, 'frontend', 'app_lab', 'firebase', colab, react], 
     description : 'Colab with Vincent Wu', 
     img : '', 
     links: [
@@ -127,7 +130,7 @@ const portfolio_root = [
     title : 'Dice Simulation', 
     year : 2019, 
     pride : 6, 
-    tags : ['matlab', 'physics', processing, visualization, 'simulation', 'colab', 'peskin', inquiry], 
+    tags : ['matlab', 'physics', processing, visualization, 'simulation', colab, 'peskin', inquiry], 
     description : 'Can human cheat with perfect dice? I simulated dice rolls in Matlab and colored the initial condition space according to roll outcome. Colab with Michael Li. Supervise by Charles Peskin. ', 
     img : 'dice_sim.png', 
     links: [
@@ -191,7 +194,7 @@ const portfolio_root = [
     title : 'Shape of Chords', 
     year : 2020, 
     pride : 6, 
-    tags : ['p5.js', 'music', visualization, 'frontend', hci, 'math'], 
+    tags : ['p5.js', music, visualization, 'frontend', hci, 'math'], 
     description : 'Visualize chords on the complex plane using Fourier transform at root frequency.', 
     img : 'shape_of_chord.png', 
     links: [
@@ -215,7 +218,7 @@ const portfolio_root = [
     title : 'What Features Drive Demand High? Airbnb in New York, Fitting a Demand Surface', 
     year : 2020, 
     pride : 5, 
-    tags : ['ai', 'machine_learning', 'colab', 'data_sci', 'colab', 'paper'], 
+    tags : ['ai', 'machine_learning', colab, 'data_sci', colab, 'paper'], 
     description : 'Colab with Andrew Liu, Wendi Tang. Supervised by Xiao Liu. ', 
     img : 'airbnb.png', 
     links: [
@@ -272,7 +275,7 @@ const portfolio_root = [
     title : 'Incubus M.D.', 
     year : 2019, 
     pride : 4, 
-    tags : ['game', 'game_maker_lang', 'colab', 'game_jam'], 
+    tags : ['game', 'game_maker_lang', colab, 'game_jam'], 
     description : 'Colab with Zane Fadul, Andrew Liu, Vera Zhong, Thomas Tai', 
     img : 'incubus.gif', 
     links: [
@@ -296,7 +299,7 @@ const portfolio_root = [
     title : 'Tinder vs Bumble', 
     year : 2020, 
     pride : 4, 
-    tags : ['not_coding', 'video', 'colab'], 
+    tags : ['not_coding', 'video', colab], 
     description : 'Colab with Alex Zhao, Brielle Albert, Doraian, Rosalane Chow, Yolanda Liu', 
     img : 'tinder_bumble.png', 
     links: [
@@ -307,7 +310,7 @@ const portfolio_root = [
     title : 'Do Details Make People Buy into Bullshit?', 
     year : 2018, 
     pride : 4, 
-    tags : ['psychology', python, 'cross_platform', 'tkinter', 'music'], 
+    tags : ['psychology', python, 'cross_platform', 'tkinter', music], 
     description : '', 
     img : '', 
     links: [
@@ -330,7 +333,7 @@ const portfolio_root = [
     title : 'Mario XP', 
     year : 2018, 
     pride : 3, 
-    tags : ['music', 'audacity', 'game', 'joke'], 
+    tags : [music, 'audacity', 'game', 'joke'], 
     description : '', 
     img : '', 
     links: [
@@ -353,7 +356,7 @@ const portfolio_root = [
     title : 'Beat Swap Zane Fadul', 
     year : 2020, 
     pride : 5, 
-    tags : ['music', python, 'jupyter_notebook', 'computer_music'], 
+    tags : [music, python, 'jupyter_notebook', 'computer_music'], 
     description : 'I swapped some beats of some game OST composed by my friend Zane Fadul. ', 
     img : 'beat_swap.png', 
     links: [
@@ -365,7 +368,7 @@ const portfolio_root = [
     title : 'Simplinstrument', 
     year : 2019, 
     pride : 6, 
-    tags : ['colab', 'music', 'arduino', 'computer_music', processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, 'real-time'], 
+    tags : [colab, music, 'arduino', 'computer_music', processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time], 
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
@@ -399,7 +402,7 @@ const portfolio_root = [
     title : 'laser arcade', 
     year : 2019, 
     pride : 6, 
-    tags : ['colab', 'arduino', processing, 'distributed_app', '3d_print', 'fusion_360', 'audacity', 'game', hci], 
+    tags : [colab, 'arduino', processing, 'distributed_app', '3d_print', 'fusion_360', 'audacity', 'game', hci], 
     description : 'An arcade machine. Do watch all videos in the demo. Colab with Tristan Murdoch. ', 
     img : 'laser_arcade.jpg', 
     links: [
@@ -442,22 +445,22 @@ const portfolio_root = [
     ], 
   }, 
   {
-    title : 'Real-time Auto-tuner', 
+    title : 'Real-time auto tuner', 
     year : 2018, 
-    pride : 1, 
-    tags : ['suspended'], 
-    description : '', 
-    img : '', 
+    pride : 6, 
+    tags : [python, hci, dsp, real_time, music, colab], 
+    description : 'Sing into the computer. The computer rounds your pitch to the nearest 12-tone-valid pitch, and plays it out with the speakers. Colab with Evan Ma, Saili Yao. Supervised by Gus Xia. ', 
+    img : 'autotuner.png', 
     links: [
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Real-time-Auto-tuner" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Real-time-Auto-tuner#real-time-auto-tuner" ], 
+      [ "Read More", EXTERNAL, "/#/documentation/real-time_auto_tune" ], 
     ], 
   }, 
   {
     title : 'Digital Rapper', 
     year : 2018, 
     pride : 4, 
-    tags : [python, 'music', 'computer_music', 'jupyter_notebook', 'colab', dsp], 
+    tags : [python, music, 'computer_music', 'jupyter_notebook', colab, dsp], 
     description : 'Colab with Matthew, supervised by Gus Xia', 
     img : '', 
     links: [
@@ -469,7 +472,7 @@ const portfolio_root = [
     title : "Pascal's Triangle Music", 
     year : 2018, 
     pride : 5, 
-    tags : [python, 'music', 'sonification', 'computer_music', 'jupyter_notebook', 'math'], 
+    tags : [python, music, 'sonification', 'computer_music', 'jupyter_notebook', 'math'], 
     description : "Translating the Pascal's triangle to music using Diatonic scale. ", 
     img : 'pascal_music.png', 
     links: [
@@ -520,7 +523,7 @@ const portfolio_root = [
     description : '', 
     img : 'mouse_shell.jpg', 
     links: [
-      [ "Read More", EXTERNAL, "/documentation/mouse_shell/build.html" ], 
+      [ "Read More", EXTERNAL, "/#/documentation/mouse_shell" ], 
     ], 
   }, 
   {
@@ -1266,7 +1269,7 @@ const portfolio_root = [
     title : 'Gloper', 
     year : 2014, 
     pride : 4, 
-    tags : ['vb', 'game', 'middle_school', 'music'], 
+    tags : ['vb', 'game', 'middle_school', music], 
     description : 'Dodge game. I made the OST. ', 
     img : 'gloper.png', 
     links: [
@@ -1288,7 +1291,7 @@ const portfolio_root = [
     title : '西江湾路模拟器', 
     year : 2015, 
     pride : 3, 
-    tags : ['vb', 'simulation', 'colab'], 
+    tags : ['vb', 'simulation', colab], 
     description : 'MCM project. Simulate traffic in front of my school. Colab with Erwin Yonghao Xu, Andy Zhiyuan Le, and Yi Zhu. ', 
     img : '', 
     links: [
@@ -1300,7 +1303,7 @@ const portfolio_root = [
     title : 'Aca pella machine', 
     year : 2015, 
     pride : 3, 
-    tags : ['vb', 'matlab', high_school, 'music'], 
+    tags : ['vb', 'matlab', high_school, music], 
     description : '', 
     img : '', 
     links: [
@@ -1312,7 +1315,7 @@ const portfolio_root = [
     title : 'How 2 Become A Calculater', 
     year : 2015, 
     pride : 5, 
-    tags : ['vb', 'game', high_school, '3d_render_engine', 'real-time'], 
+    tags : ['vb', 'game', high_school, '3d_render_engine', real_time], 
     description : 'I had to write an algorithm to render 3D wireframe in VB using `line()` only. ', 
     img : 'calc.gif', 
     links: [
@@ -1359,7 +1362,7 @@ const portfolio_root = [
     title : 'Javis', 
     year : 2013, 
     pride : 6, 
-    tags : ['vb', 't2s', 'matlab', high_school, hci, 'real-time'], 
+    tags : ['vb', 't2s', 'matlab', high_school, hci, real_time], 
     description : 'A Chinese text-to-speech bot that has my voice. I recorded myself speaking Chinese. Wrote a Matlab script to auto-annotate the audio and normalized it. VB had really bad audio control latency, so I had to have two audio players running simultaneously to pronounce characters in an alternating fashion. ', 
     img : '', 
     links: [
@@ -1746,7 +1749,7 @@ const portfolio_root = [
     title : 'Stocket', 
     year : 2016, 
     pride : 6, 
-    tags : ['vb', 'finance', 'game', 'multi_player', high_school, 'real-time'], 
+    tags : ['vb', 'finance', 'game', 'multi_player', high_school, real_time], 
     description : 'Stock + Market = Stocket… It also resembles "socket"… ', 
     img : '', 
     links: [
@@ -1925,7 +1928,7 @@ const portfolio_root = [
     title : 'Undertale 南山南 remix', 
     year : 2017, 
     pride : 3, 
-    tags : ['music', 'remix', 'undertale', 'not_coding'], 
+    tags : [music, 'remix', 'undertale', 'not_coding'], 
     description : '', 
     img : '', 
     links: [
@@ -1936,7 +1939,7 @@ const portfolio_root = [
     title : 'Air bridge', 
     year : 2017, 
     pride : 2, 
-    tags : ['music', 'not_coding'], 
+    tags : [music, 'not_coding'], 
     description : '', 
     img : '', 
     links: [
@@ -1969,7 +1972,7 @@ const portfolio_root = [
     title : 'Metro station modeling', 
     year : 2014, 
     pride : 1, 
-    tags : ['colab', 'paper'], 
+    tags : [colab, 'paper'], 
     description : 'MCM project. Models people flow in a metro station. Colab with Erwin Yonghao Xu, Andy Zhiyuan Le, and Yi Zhu. I contributed relatively little work. ', 
     img : '', 
     links: [
@@ -1980,7 +1983,7 @@ const portfolio_root = [
     title : 'Summer bug', 
     year : 2015, 
     pride : 2, 
-    tags : ['not_coding', 'music'], 
+    tags : ['not_coding', music], 
     description : '', 
     img : '', 
     links: [
@@ -1991,7 +1994,7 @@ const portfolio_root = [
     title : 'Song for WCJ', 
     year : 2014, 
     pride : 3, 
-    tags : ['not_coding', 'music'], 
+    tags : ['not_coding', music], 
     description : '', 
     img : '', 
     links: [
@@ -2002,7 +2005,7 @@ const portfolio_root = [
     title : 'His theme + the World Revolving', 
     year : 2018, 
     pride : 2, 
-    tags : ['not_coding', 'music', 'remix', 'undertale'], 
+    tags : ['not_coding', music, 'remix', 'undertale'], 
     description : '', 
     img : '', 
     links: [
@@ -2013,7 +2016,7 @@ const portfolio_root = [
     title : 'Black Bamboo', 
     year : 2017, 
     pride : 3, 
-    tags : ['not_coding', 'music'], 
+    tags : ['not_coding', music], 
     description : '', 
     img : '', 
     links: [
@@ -2035,7 +2038,7 @@ const portfolio_root = [
     title : 'Real-time Benchmarking of Pitch Estimators', 
     year : 2020, 
     pride : 2, 
-    tags : ['music', python, 'jupyter_notebook', 'tensorflow', 'real-time'], 
+    tags : [music, python, 'jupyter_notebook', 'tensorflow', real_time], 
     description : 'Modified YIN and Crepe to real-time. Proposed SFT (Slow Fourier Transform)-based cepstrum peak interpolation. Benchmarked the three. ', 
     img : '', 
     links: [
