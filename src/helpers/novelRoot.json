@@ -3,16 +3,16 @@
     "title": "\u6b7b\u661f\u53db\u5f92",
     "year": 2020,
     "language": "Chinese",
-    "prerequisites": "none",
-    "src": "build.pdf",
+    "prerequisites": [],
+    "src": "build.html",
     "id": "DeathStarTraitor_2020",
-    "build_name": "build.pdf"
+    "build_name": "build.html"
   },
   {
     "title": "Snapchat Assassin",
     "year": 2017,
     "language": "English",
-    "prerequisites": "none",
+    "prerequisites": [],
     "src": "build.pdf",
     "id": "SnapchatAssassin_2017",
     "build_name": "build.pdf"
