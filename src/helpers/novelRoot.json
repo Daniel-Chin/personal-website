@@ -5,6 +5,7 @@
     "language": "Chinese",
     "prerequisites": "none",
     "src": "build.pdf",
+    "id": "DeathStarTraitor_2020",
     "build_name": "build.pdf"
   },
   {
@@ -13,6 +14,7 @@
     "language": "English",
     "prerequisites": "none",
     "src": "build.pdf",
+    "id": "SnapchatAssassin_2017",
     "build_name": "build.pdf"
   }
 ]

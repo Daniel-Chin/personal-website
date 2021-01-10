@@ -8,7 +8,7 @@ from chdir_context import ChdirContext, ChdirAlongside
 import json
 from time import time
 from indentprinter import indentPrinter
-from meta_keywords import SRC, YEAR, TITLE, BUILD_NAME
+from meta_keywords import SRC, YEAR, TITLE, BUILD_NAME, ID
 
 EXCLUDE_EXT = [
     '.py', 'css', '__pycache__', 
@@ -39,15 +39,16 @@ def main(ignore_hash = False):
                 ).meta.meta
                 src_name = meta[SRC]
                 handleFolder(
-                    src_name, meta, ignore_hash
+                    novel_id, src_name, meta, ignore_hash
                 )
                 root.append(meta)
         root.sort(key=lambda x:x[YEAR], reverse=True)
         with open(ROOT_FILENAME, 'w', encoding='utf-8') as f:
             json.dump(root, f, indent=2)
 
-def handleFolder(src_name, meta, ignore_hash):
+def handleFolder(novel_id, src_name, meta, ignore_hash):
     print(meta[TITLE])
+    meta[ID] = novel_id
     with indentPrinter as p:
         if src_name == 'build.pdf':
             build_name = 'build.pdf'
