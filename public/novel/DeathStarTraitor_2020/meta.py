@@ -5,5 +5,5 @@ meta = {
     YEAR: 2020, 
     LANGUAGE: CHINESE, 
     PREREQUISITES: [], 
-    SRC: 'build.pdf', 
+    SRC: 'build.html', 
 }
