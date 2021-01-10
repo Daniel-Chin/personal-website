@@ -9,5 +9,3 @@ ID = 'id'
 CHINESE = 'Chinese'
 ENLGISH = 'English'
 CHINGLISH = 'Chinglish'
-
-NONE = 'none'
