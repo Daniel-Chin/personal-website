@@ -13,6 +13,7 @@ import AboutMePage      from './page/AboutMePage';
 import WhoamiPage       from './page/WhoamiPage';
 import IndieIframePage  from './page/IndieIframePage';
 import DocumentationPage    from './page/DocumentationPage';
+import NovelPage        from './page/NovelPage';
 import Hat              from './component/Hat';
 import TopOfEverything  from './page/TopOfEverything';
 
@@ -38,6 +39,9 @@ const App = () => {
         </Route>
         <Route exact path='/novels'>
           <NovelListPage />
+        </Route>
+        <Route exact path='/novel/:id'>
+          <NovelPage />
         </Route>
         <Route exact path='/questions'>
           <QuestionListPage />
