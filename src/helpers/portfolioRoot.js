@@ -2125,6 +2125,17 @@ const portfolio_root = [
       [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/InkLeak#ink-leak" ], 
     ], 
   }, 
+  {
+    title : 'Stream Profiler', 
+    year : 2021, 
+    pride : 3, 
+    tags : [python, lib, real_time], 
+    description : 'Profiles the computation time of a series of actions in a real-time stream-base application. ', 
+    img : '', 
+    links: [
+      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#streamprofilerpy" ], 
+    ], 
+  }, 
 ];
 
 export default portfolio_root;
