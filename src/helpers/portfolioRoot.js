@@ -2136,6 +2136,20 @@ const portfolio_root = [
       [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#streamprofilerpy" ], 
     ], 
   }, 
+  {
+    title : 'Sustain Pedal for Voice', 
+    year : 2021, 
+    pride : 6, 
+    tags : [python, music, dsp, real_time, hci], 
+    description : 'Wanna sing chords but only have one mouth? ', 
+    img : '', 
+    links: [
+      [ "YouTube 1", EXTERNAL, "https://youtu.be/PxjjnCc7VJw" ], 
+      [ "YouTube 2", EXTERNAL, "https://youtu.be/9ino2go_F9k" ], 
+      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice#sustain-pedal-for-voice" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice" ], 
+    ], 
+  }, 
 ];
 
 export default portfolio_root;
