@@ -18,13 +18,15 @@ const react = 'react';
 const real_time = 'real-time';
 const music = 'music';
 const colab = 'colab';
+const frontend = 'frontend';
+const html = 'html';
 
 const portfolio_root = [
   {
     title : 'Personal Website', 
     year : 2020, 
     pride : 4, 
-    tags : ['html', js, 'frontend', react], 
+    tags : [html, js, frontend, react], 
     description : 'I have a project portfolio on there, did you know? ', 
     img : 'portfolio.png', 
     links: [
@@ -58,7 +60,7 @@ const portfolio_root = [
     title : 'WhereDitGo', 
     year : 2019, 
     pride : 5, 
-    tags : ['html', js, 'forsaken', 'frontend', 'backend'], 
+    tags : [html, js, 'forsaken', frontend, 'backend'], 
     description : "Expense accounting app. The design doc is very detailed, but I decided it's not worth my time to implement it. ", 
     img : '', 
     links: [
@@ -70,7 +72,7 @@ const portfolio_root = [
     title : 'coffeetawk', 
     year : 2018, 
     pride : 1, 
-    tags : ['html', js, 'frontend', 'app_lab'], 
+    tags : [html, js, frontend, 'app_lab'], 
     description : '', 
     img : '', 
     links: [
@@ -83,7 +85,7 @@ const portfolio_root = [
     title : 'Socrates', 
     year : 2018, 
     pride : 1, 
-    tags : ['html', js, 'frontend', 'app_lab', 'firebase', colab, react], 
+    tags : [html, js, frontend, 'app_lab', 'firebase', colab, react], 
     description : 'Colab with Vincent Wu', 
     img : '', 
     links: [
@@ -169,7 +171,7 @@ const portfolio_root = [
     title : 'World of Blogs', 
     year : 2019, 
     pride : 6, 
-    tags : ['html', js, 'frontend', 'backend', 'firebase', 'user_auth', 'security', 'express', react], 
+    tags : [html, js, frontend, 'backend', 'firebase', 'user_auth', 'security', 'express', react], 
     description : 'A blog platform that fights the info cacoon effect. Novel database structure that optimizes random sampling. Robust user auth that withstands even timing attacks. Supervised by James Ayres. ', 
     img : 'worldOfBlog_singout.png', 
     links: [
@@ -182,7 +184,7 @@ const portfolio_root = [
     title : 'Nozomi.la AI', 
     year : 2020, 
     pride : 6, 
-    tags : ['ai', 'html', js, python, 'html2api', 'backend', 'frontend', 'recommendation_algo', 'user_preferences', hci], 
+    tags : ['ai', html, js, python, 'html2api', 'backend', frontend, 'recommendation_algo', 'user_preferences', hci], 
     description : 'A recommendation algo learns your preferences of fan arts from your reactions. ', 
     img : 'nozomi_ai.png', 
     links: [
@@ -194,7 +196,7 @@ const portfolio_root = [
     title : 'Shape of Chords', 
     year : 2020, 
     pride : 6, 
-    tags : ['p5.js', music, visualization, 'frontend', hci, 'math'], 
+    tags : ['p5.js', music, visualization, frontend, hci, 'math'], 
     description : 'Visualize chords on the complex plane using Fourier transform at root frequency.', 
     img : 'shape_of_chord.png', 
     links: [
@@ -229,7 +231,7 @@ const portfolio_root = [
     title : 'OPEC Auction Assistant', 
     year : 2020, 
     pride : 2, 
-    tags : ['html', hci, js], 
+    tags : [html, hci, js], 
     description : '', 
     img : 'auction_assist.png', 
     links: [
@@ -344,7 +346,7 @@ const portfolio_root = [
     title : 'Spaghetti chat room', 
     year : 2018, 
     pride : 4, 
-    tags : [python, js, 'html', 'backend', 'frontend'], 
+    tags : [python, js, html, 'backend', frontend], 
     description : '', 
     img : '', 
     links: [
@@ -530,7 +532,7 @@ const portfolio_root = [
     title : 'Urban Voicinary', 
     year : 2019, 
     pride : 4, 
-    tags : [js, react, 'frontend', hci], 
+    tags : [js, react, frontend, hci], 
     description : 'Supervised by James Ayres', 
     img : 'urban_voice.png', 
     links: [
@@ -543,7 +545,7 @@ const portfolio_root = [
     title : 'Processing GUI Tree', 
     year : 2018, 
     pride : 6, 
-    tags : [processing, 'gui', 'frontend', lib], 
+    tags : [processing, 'gui', frontend, lib], 
     description : 'A GUI framework. A tree of GUI elements that renders recursively. Comes with 3 gadgets for free, too. ', 
     img : 'proc_gui_tree.png', 
     links: [
@@ -796,7 +798,7 @@ const portfolio_root = [
     title : 'Python flash player', 
     year : 2019, 
     pride : 2, 
-    tags : [python, 'html'], 
+    tags : [python, html], 
     description : 'Play .swf files with a browser. ', 
     img : '', 
     links: [
@@ -994,7 +996,7 @@ const portfolio_root = [
     title : 'Virtual Numpad', 
     year : 2020, 
     pride : 2, 
-    tags : [python, 'p2p', 'html', js, 'frontend', hci, 'http'], 
+    tags : [python, 'p2p', html, js, frontend, hci, 'http'], 
     description : "Your laptop has no numpad? Can't play Cataclysm:DDA? No worries. Use your phone as a numpad!", 
     img : 'numpad.gif', 
     links: [
@@ -1170,7 +1172,7 @@ const portfolio_root = [
     title : 'Safe server', 
     year : 2019, 
     pride : 3, 
-    tags : [python, 'http', 'html', 'security'], 
+    tags : [python, 'http', html, 'security'], 
     description : 'A simple file server. Serves files in a folder. Has a simple HTML page interface.', 
     img : '', 
     links: [
@@ -2148,6 +2150,19 @@ const portfolio_root = [
       [ "YouTube 2", EXTERNAL, "https://youtu.be/9ino2go_F9k" ], 
       [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice#sustain-pedal-for-voice" ], 
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice" ], 
+    ], 
+  }, 
+  {
+    title : 'imalading', 
+    year : 2021, 
+    pride : 3, 
+    tags : [html, js, frontend], 
+    description : 'Tool for my LA job. ', 
+    img : 'imalading.png', 
+    links: [
+      [ "Go", EXTERNAL, "https://wonderful-meninsky-5e3135.netlify.app/" ], 
+      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/imalading#imalading" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/imalading" ], 
     ], 
   }, 
 ];
