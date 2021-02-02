@@ -70,7 +70,7 @@ const LandingPage = () => {
         CS/game/jazz videos made by youtubers, writing 
         science 
         fictions and finance fictions, and Math. I am
-        deeply in love with my partner,{' '} 
+        deeply into my partner,{' '} 
         <span className='zhiying'>Zhiying Yan</span>. 
       </p>
       <p>
