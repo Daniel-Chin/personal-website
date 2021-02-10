@@ -88,7 +88,7 @@ const ProjectTag = ({
           }}
         > 
           {caption}
-          {occurance && occurance > 1 ? ` (${occurance})` : null}
+          {occurance && occurance > 1 ? `\u00a0(${occurance})` : null}
         </span>
         {is_negative ? null :
           <span className='tag-positive smol-pad' 
