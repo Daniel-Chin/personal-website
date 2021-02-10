@@ -119,6 +119,7 @@ p {
   color: white;
   position: relative;
   line-height: 1.6;
+  white-space: nowrap;
 }
 .tag-middle {
   transition: .2s;
