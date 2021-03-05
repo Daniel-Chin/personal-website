@@ -20,6 +20,8 @@ const music = 'music';
 const colab = 'colab';
 const frontend = 'frontend';
 const html = 'html';
+const not_coding = 'not_coding';
+
 
 const portfolio_root = [
   {
@@ -209,7 +211,7 @@ const portfolio_root = [
     title : "Daniel's Funplex on Ice", 
     year : 2020, 
     pride : 3, 
-    tags : ['minecraft', 'not_coding', 'game'], 
+    tags : ['minecraft', not_coding, 'game'], 
     description : 'A funplex in Minecraft', 
     img : '', 
     links: [
@@ -242,7 +244,7 @@ const portfolio_root = [
     title : 'Grandfather Paradox Solved with Mixed Strategy Equilibrium', 
     year : 2020, 
     pride : 6, 
-    tags : ['not_coding', 'game_theory', 'time_travel', 'paper'], 
+    tags : [not_coding, 'game_theory', 'time_travel', 'paper'], 
     description : '', 
     img : '', 
     links: [
@@ -301,7 +303,7 @@ const portfolio_root = [
     title : 'Tinder vs Bumble', 
     year : 2020, 
     pride : 4, 
-    tags : ['not_coding', 'video', colab], 
+    tags : [not_coding, 'video', colab], 
     description : 'Colab with Alex Zhao, Brielle Albert, Doraian, Rosalane Chow, Yolanda Liu', 
     img : 'tinder_bumble.png', 
     links: [
@@ -324,7 +326,7 @@ const portfolio_root = [
     title : 'Redstone: 5-bit password', 
     year : 2020, 
     pride : 3, 
-    tags : ['minecraft', 'not_coding', 'game', 'redstone'], 
+    tags : ['minecraft', not_coding, 'game', 'redstone'], 
     description : '', 
     img : 'minecraft_5_bit.jpg', 
     links: [
@@ -428,7 +430,7 @@ const portfolio_root = [
     title : 'Mixed Strategies in Werewolf: Guardian vs Werewolves', 
     year : 2020, 
     pride : 3, 
-    tags : ['not_coding', 'game_theory', 'game', 'paper'], 
+    tags : [not_coding, 'game_theory', 'game', 'paper'], 
     description : 'Colab with Harry Huang, Vincent Wu, Aurora Yao', 
     img : '', 
     links: [
@@ -1930,7 +1932,7 @@ const portfolio_root = [
     title : 'Undertale 南山南 remix', 
     year : 2017, 
     pride : 3, 
-    tags : [music, 'remix', 'undertale', 'not_coding'], 
+    tags : [music, 'remix', 'undertale', not_coding], 
     description : '', 
     img : '', 
     links: [
@@ -1941,7 +1943,7 @@ const portfolio_root = [
     title : 'Air bridge', 
     year : 2017, 
     pride : 2, 
-    tags : [music, 'not_coding'], 
+    tags : [music, not_coding], 
     description : '', 
     img : '', 
     links: [
@@ -1963,7 +1965,7 @@ const portfolio_root = [
     title : 'Math thoughts 2012', 
     year : 2012, 
     pride : 2, 
-    tags : ['not_coding', 'math'], 
+    tags : [not_coding, 'math'], 
     description : 'I had a notebook where I put math/sci thoughts in', 
     img : '', 
     links: [
@@ -1985,7 +1987,7 @@ const portfolio_root = [
     title : 'Summer bug', 
     year : 2015, 
     pride : 2, 
-    tags : ['not_coding', music], 
+    tags : [not_coding, music], 
     description : '', 
     img : '', 
     links: [
@@ -1996,7 +1998,7 @@ const portfolio_root = [
     title : 'Song for WCJ', 
     year : 2014, 
     pride : 3, 
-    tags : ['not_coding', music], 
+    tags : [not_coding, music], 
     description : '', 
     img : '', 
     links: [
@@ -2007,7 +2009,7 @@ const portfolio_root = [
     title : 'His theme + the World Revolving', 
     year : 2018, 
     pride : 2, 
-    tags : ['not_coding', music, 'remix', 'undertale'], 
+    tags : [not_coding, music, 'remix', 'undertale'], 
     description : '', 
     img : '', 
     links: [
@@ -2018,7 +2020,7 @@ const portfolio_root = [
     title : 'Black Bamboo', 
     year : 2017, 
     pride : 3, 
-    tags : ['not_coding', music], 
+    tags : [not_coding, music], 
     description : '', 
     img : '', 
     links: [
@@ -2163,6 +2165,17 @@ const portfolio_root = [
       [ "Go", EXTERNAL, "https://wonderful-meninsky-5e3135.netlify.app/" ], 
       [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/imalading#imalading" ], 
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/imalading" ], 
+    ], 
+  }, 
+  {
+    title : 'Sound of calligraphy', 
+    year : 2021, 
+    pride : 2, 
+    tags : [not_coding], 
+    description : '', 
+    img : '', 
+    links: [
+      [ "Read More", EXTERNAL, "/#/documentation/sound_of_calligraphy" ], 
     ], 
   }, 
 ];
