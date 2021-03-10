@@ -21,7 +21,8 @@ const colab = 'colab';
 const frontend = 'frontend';
 const html = 'html';
 const not_coding = 'not_coding';
-
+const matlab = 'matlab';
+const simulation = 'simulation';
 
 const portfolio_root = [
   {
@@ -134,7 +135,7 @@ const portfolio_root = [
     title : 'Dice Simulation', 
     year : 2019, 
     pride : 6, 
-    tags : ['matlab', 'physics', processing, visualization, 'simulation', colab, 'peskin', inquiry], 
+    tags : [matlab, 'physics', processing, visualization, simulation, colab, 'peskin', inquiry], 
     description : 'Can human cheat with perfect dice? I simulated dice rolls in Matlab and colored the initial condition space according to roll outcome. Colab with Michael Li. Supervise by Charles Peskin. ', 
     img : 'dice_sim.png', 
     links: [
@@ -291,7 +292,7 @@ const portfolio_root = [
     title : 'Wage Simulation', 
     year : 2019, 
     pride : 6, 
-    tags : ['matlab', 'econ', 'peskin', 'simulation', 'paper'], 
+    tags : [matlab, 'econ', 'peskin', simulation, 'paper'], 
     description : 'Simulate an economy. Wages go up when Thanos snaps his fingers. Supervised by Charles Peskin. ', 
     img : 'econ_thanos.png', 
     links: [
@@ -1295,7 +1296,7 @@ const portfolio_root = [
     title : '西江湾路模拟器', 
     year : 2015, 
     pride : 3, 
-    tags : ['vb', 'simulation', colab], 
+    tags : ['vb', simulation, colab], 
     description : 'MCM project. Simulate traffic in front of my school. Colab with Erwin Yonghao Xu, Andy Zhiyuan Le, and Yi Zhu. ', 
     img : '', 
     links: [
@@ -1307,7 +1308,7 @@ const portfolio_root = [
     title : 'Aca pella machine', 
     year : 2015, 
     pride : 3, 
-    tags : ['vb', 'matlab', high_school, music], 
+    tags : ['vb', matlab, high_school, music], 
     description : '', 
     img : '', 
     links: [
@@ -1366,7 +1367,7 @@ const portfolio_root = [
     title : 'Javis', 
     year : 2013, 
     pride : 6, 
-    tags : ['vb', 't2s', 'matlab', high_school, hci, real_time], 
+    tags : ['vb', 't2s', matlab, high_school, hci, real_time], 
     description : 'A Chinese text-to-speech bot that has my voice. I recorded myself speaking Chinese. Wrote a Matlab script to auto-annotate the audio and normalized it. VB had really bad audio control latency, so I had to have two audio players running simultaneously to pronounce characters in an alternating fashion. ', 
     img : '', 
     links: [
@@ -1388,7 +1389,7 @@ const portfolio_root = [
     title : 'VB Game of Life', 
     year : 2015, 
     pride : 5, 
-    tags : ['vb', high_school, 'simulation'], 
+    tags : ['vb', high_school, simulation], 
     description : '', 
     img : '', 
     links: [
@@ -1499,7 +1500,7 @@ const portfolio_root = [
     title : 'Threebody simulation', 
     year : 2013, 
     pride : 3, 
-    tags : ['vb', 'physics', 'middle_school', 'simulation'], 
+    tags : ['vb', 'physics', 'middle_school', simulation], 
     description : '', 
     img : '', 
     links: [
@@ -1886,7 +1887,7 @@ const portfolio_root = [
     title : 'Mate selection simulation', 
     year : 2016, 
     pride : 5, 
-    tags : ['vb', high_school, 'simulation', 'evolution', inquiry], 
+    tags : ['vb', high_school, simulation, 'evolution', inquiry], 
     description : 'Simulate a bi-sexual world evolution with sexual traits and sexual orientation traits inheritable. ', 
     img : 'bi_sex_evo.png', 
     links: [
@@ -1954,7 +1955,7 @@ const portfolio_root = [
     title : 'Audio puzzles', 
     year : 2017, 
     pride : 3, 
-    tags : [dsp, 'matlab', 'puzzle'], 
+    tags : [dsp, matlab, 'puzzle'], 
     description : 'Can you find the secret message? ', 
     img : '', 
     links: [
@@ -2176,6 +2177,18 @@ const portfolio_root = [
     img : '', 
     links: [
       [ "Read More", EXTERNAL, "/#/documentation/sound_of_calligraphy" ], 
+    ], 
+  }, 
+  {
+    title : 'Soup', 
+    year : 2021, 
+    pride : 5, 
+    tags : [matlab, simulation, inquiry], 
+    description : 'Simulate a soup of positive and negative masses. ', 
+    img : 'soup.gif', 
+    links: [
+      [ "YouTube", EXTERNAL, "https://youtu.be/BERUmHHRzA0" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/daniel-chin/soup" ], 
     ], 
   }, 
 ];
