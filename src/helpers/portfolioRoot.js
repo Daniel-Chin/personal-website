@@ -23,6 +23,7 @@ const html = 'html';
 const not_coding = 'not_coding';
 const matlab = 'matlab';
 const simulation = 'simulation';
+const fabrication = 'fabrication';
 
 const portfolio_root = [
   {
@@ -373,7 +374,7 @@ const portfolio_root = [
     title : 'Simplinstrument', 
     year : 2019, 
     pride : 6, 
-    tags : [colab, music, 'arduino', 'computer_music', processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time], 
+    tags : [colab, music, 'arduino', 'computer_music', processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time, fabrication], 
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
@@ -407,7 +408,7 @@ const portfolio_root = [
     title : 'laser arcade', 
     year : 2019, 
     pride : 6, 
-    tags : [colab, 'arduino', processing, 'distributed_app', '3d_print', 'fusion_360', 'audacity', 'game', hci], 
+    tags : [colab, 'arduino', processing, 'distributed_app', '3d_print', 'fusion_360', 'audacity', 'game', hci, fabrication], 
     description : 'An arcade machine. Do watch all videos in the demo. Colab with Tristan Murdoch. ', 
     img : 'laser_arcade.jpg', 
     links: [
@@ -2189,6 +2190,17 @@ const portfolio_root = [
     links: [
       [ "YouTube", EXTERNAL, "https://youtu.be/BERUmHHRzA0" ], 
       [ "Source Code", EXTERNAL, "https://github.com/daniel-chin/soup" ], 
+    ], 
+  }, 
+  {
+    title : '鞋音', 
+    year : 2021, 
+    pride : 5, 
+    tags : [fabrication, music], 
+    description : 'Speaker in a shoe. Supervised by Eric Parren. ', 
+    img : 'xie_yin.jpg', 
+    links: [
+      [ "Read More", EXTERNAL, "/#/documentation/xie_yin" ], 
     ], 
   }, 
 ];
