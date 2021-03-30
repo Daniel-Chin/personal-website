@@ -21,6 +21,18 @@ Many spy movies mention 鞋子电话， shoe phone. I don't know which original 
 
 <img src='phone.jpg' />
 
+## But why???
+First of all, the concept is just relentlessly funny.  
+
+How did I think of using a shoe? Initially, I specified the following design goals:  
+- Should sit stably on a flat surface. (no-round-bottom)  
+- Professor Parren said something like "because [I made a cube](https://wp.nyu.edu/shanghai-ima-nime/build-a-speaker-cabinet/), none of you should make a cube." So no cubes.  
+- Enclosed + rigid body to prevent stress on soldering connections.  
+- I should be able to push a male 1/4-inch jack in without holding the female port. i.e. Rigid support underneath the female port.  
+
+A shoe is a perfect solution!  
+
+## Misc
 Dave Santiano made a suggestion to make it stereo.  
 
 Slap "like" if you want me to make it stereo.  
