@@ -1,5 +1,11 @@
 [
   {
+    "id": "resistor_scales",
+    "title": "Tiers of scales",
+    "build_type": "html",
+    "time": 1617084014.1433477
+  },
+  {
     "id": "double_line_number",
     "title": "Can you spot why VSCode underlined this?",
     "build_type": "html",
