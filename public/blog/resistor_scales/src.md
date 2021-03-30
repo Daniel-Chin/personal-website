@@ -7,7 +7,7 @@ Why did that happen? To make C4, I used (4 + 1 = 5) resistors, and to make D4, I
 Is this a coincidence? Or is the Blues scale very special? 
 
 ## Building scales from resistors
-I wrote a [python script](./1.py) to compute: what notes are possible to produce with a limited number (`N`) of resistors? As I increase `N`, more notes become available. Thus, we can formulate *multiple tiers of scales*. 
+I wrote a [python script](https://github.com/Daniel-Chin/personal-website/blob/main/public/blog/resistor_scales/1.py) to compute: what notes are possible to produce with a limited number (`N`) of resistors? As I increase `N`, more notes become available. Thus, we can formulate *multiple tiers of scales*. 
 
 Note: Notes more than 10 cents off from the equal temperament are filtered away.  
 
