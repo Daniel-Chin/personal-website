@@ -124,6 +124,7 @@ def buildBlog(src_name, p):
             body = f.read()
         os.remove(js['in_fn'])
         os.remove(js['out_fn'])
+        body = body.replace('<a ', '<a target="_blank" ')
         p('Writing HTML...')
         with open('build.html', 'w', encoding='utf-8') as f:
             print('<html>', file=f)
