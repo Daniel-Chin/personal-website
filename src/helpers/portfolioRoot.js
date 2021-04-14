@@ -24,6 +24,7 @@ const not_coding = 'not_coding';
 const matlab = 'matlab';
 const simulation = 'simulation';
 const fabrication = 'fabrication';
+const self_ref = 'self_ref';
 
 const portfolio_root = [
   {
@@ -2201,6 +2202,18 @@ const portfolio_root = [
     img : 'xie_yin.jpg', 
     links: [
       [ "Read More", EXTERNAL, "/#/documentation/xie_yin" ], 
+    ], 
+  }, 
+  {
+    title : 'Processing 3 Quine', 
+    year : 2021, 
+    pride : 5, 
+    tags : [processing, self_ref], 
+    description : 'This sketch produces a sketch editor containing its own source code. ', 
+    img : '', 
+    links: [
+      [ "Demo", INTERNAL, "processing_quine.zip" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Processing/tree/master/quine" ], 
     ], 
   }, 
 ];
