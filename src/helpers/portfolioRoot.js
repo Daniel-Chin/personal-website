@@ -25,6 +25,10 @@ const matlab = 'matlab';
 const simulation = 'simulation';
 const fabrication = 'fabrication';
 const self_ref = 'self_ref';
+const jupyter_notebook = 'jupyter_notebook';
+const sonification = 'sonification';
+const computer_music = 'computer_music';
+const math = 'math';
 
 const portfolio_root = [
   {
@@ -363,7 +367,7 @@ const portfolio_root = [
     title : 'Beat Swap Zane Fadul', 
     year : 2020, 
     pride : 5, 
-    tags : [music, python, 'jupyter_notebook', 'computer_music'], 
+    tags : [music, python, jupyter_notebook, computer_music], 
     description : 'I swapped some beats of some game OST composed by my friend Zane Fadul. ', 
     img : 'beat_swap.png', 
     links: [
@@ -375,7 +379,7 @@ const portfolio_root = [
     title : 'Simplinstrument', 
     year : 2019, 
     pride : 6, 
-    tags : [colab, music, 'arduino', 'computer_music', processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time, fabrication], 
+    tags : [colab, music, 'arduino', computer_music, processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time, fabrication], 
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
@@ -467,7 +471,7 @@ const portfolio_root = [
     title : 'Digital Rapper', 
     year : 2018, 
     pride : 4, 
-    tags : [python, music, 'computer_music', 'jupyter_notebook', colab, dsp], 
+    tags : [python, music, computer_music, jupyter_notebook, colab, dsp], 
     description : 'Colab with Matthew, supervised by Gus Xia', 
     img : '', 
     links: [
@@ -479,7 +483,7 @@ const portfolio_root = [
     title : "Pascal's Triangle Music", 
     year : 2018, 
     pride : 5, 
-    tags : [python, music, 'sonification', 'computer_music', 'jupyter_notebook', 'math'], 
+    tags : [python, music, sonification, computer_music, jupyter_notebook, math], 
     description : "Translating the Pascal's triangle to music using Diatonic scale. ", 
     img : 'pascal_music.png', 
     links: [
@@ -924,7 +928,7 @@ const portfolio_root = [
     title : 'ipynb to py', 
     year : 2019, 
     pride : 3, 
-    tags : [python, 'jupyter_notebook'], 
+    tags : [python, jupyter_notebook], 
     description : 'Converts jupyter notebook file to python script. Works even when Jupyter is not installed.', 
     img : '', 
     links: [
@@ -1347,7 +1351,7 @@ const portfolio_root = [
     title : 'Phonebook', 
     year : 2015, 
     pride : 6, 
-    tags : ['vb', high_school, 'sonification', hci], 
+    tags : ['vb', high_school, sonification, hci], 
     description : "Lookup my friends' phone number by typing into a rolling buffer. Phone number is read out loud using Javis, so I can dial while listening. ", 
     img : '', 
     links: [
@@ -2045,7 +2049,7 @@ const portfolio_root = [
     title : 'Real-time Benchmarking of Pitch Estimators', 
     year : 2020, 
     pride : 2, 
-    tags : [music, python, 'jupyter_notebook', 'tensorflow', real_time], 
+    tags : [music, python, jupyter_notebook, 'tensorflow', real_time], 
     description : 'Modified YIN and Crepe to real-time. Proposed SFT (Slow Fourier Transform)-based cepstrum peak interpolation. Benchmarked the three. ', 
     img : '', 
     links: [
@@ -2214,6 +2218,19 @@ const portfolio_root = [
     links: [
       [ "Demo", INTERNAL, "processing_quine.zip" ], 
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Processing/tree/master/quine" ], 
+    ], 
+  }, 
+  {
+    title : 'Sonification of Sierpinski triangle', 
+    year : 2021, 
+    pride : 3, 
+    tags : [python, jupyter_notebook, dsp, math, sonification, computer_music, music], 
+    description : 'Directly translate the Sierpinski triangle to sound. This is probably a subset of bitwise operation generated music. ', 
+    img : '', 
+    links: [
+      [ "Sample 0", INTERNAL, "sierpinski_sonification_demo_0.mp3" ], 
+      [ "Sample 1", INTERNAL, "sierpinski_sonification_demo_1.mp3" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Sonification-of-Sierpinski-triangle/blob/main/sierpinski.ipynb" ], 
     ], 
   }, 
 ];
