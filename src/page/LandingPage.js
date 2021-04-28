@@ -69,9 +69,7 @@ const LandingPage = () => {
         I'm into programming, game design, jazz, watching
         CS/game/jazz videos made by youtubers, writing 
         science 
-        fictions and finance fictions, and Math. I am
-        deeply into my partner,{' '} 
-        <span className='zhiying'>Zhiying Yan</span>. 
+        fictions and finance fictions, and Math. 
       </p>
       <p>
         Majoring in 

@@ -315,12 +315,6 @@ td {
   border-top: 1px solid black;
 }
 
-.zhiying {
-  transition: .3s;
-} .zhiying:hover {
-  color: #ff7777;
-}
-
 .publications li {
   margin-bottom: 1em;
 }
