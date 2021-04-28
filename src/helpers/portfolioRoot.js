@@ -2233,6 +2233,19 @@ const portfolio_root = [
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Sonification-of-Sierpinski-triangle/blob/main/sierpinski.ipynb" ], 
     ], 
   }, 
+  {
+    title : 'Better Ins', 
+    year : 2021, 
+    pride : 3, 
+    tags : [music, computer_music, hci], 
+    description : 'Map gesture to sound. Primitive prototype. Supervised by Eric Parren. ', 
+    img : '', 
+    links: [
+      [ "YouTube", EXTERNAL, "https://youtu.be/uBThrG-zqPM?list=PLNb0mNThMXblG0dK-Nn2zbvm8S2aK1iqc" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/NIME-with-Parren/tree/main/better_ins" ], 
+      [ "WP.NYU", EXTERNAL, "https://wp.nyu.edu/nyushanghai-dcdt/category/nime-w-parren/" ], 
+    ], 
+  }, 
 ];
 
 export default portfolio_root;
