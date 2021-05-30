@@ -43,11 +43,11 @@ const LandingPage = () => {
         className='my-face no-fat'
       />
       <p>
-        Undergraduate at New York University Shanghai, <br />
-        UROP at{' '} 
+        PhD student at{' '} 
         <a href='http://musicxlab.com/'>
           Music X Lab
-        </a>. 
+        </a>,{' '} 
+        New York University Shanghai. <br />
       </p>
       <p>
         Email:{' '}
@@ -58,6 +58,7 @@ const LandingPage = () => {
         <a href='https://github.com/daniel-chin'>
           github.com/daniel-chin
         </a> <br />
+        Pronouns: he / they / 他
       </p>
       <h2>Greetings, visitor.</h2>
       <p>
