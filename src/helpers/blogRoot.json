@@ -1,5 +1,11 @@
 [
   {
+    "id": "intuition_and_reasoning",
+    "title": "Intuition and Reasoning",
+    "build_type": "html",
+    "time": 1624410343.5978162
+  },
+  {
     "id": "bill_wurtz_and_douglas_hofstadter",
     "title": "Bill Wurtz and Douglas Hofstadter",
     "build_type": "html",
@@ -10,12 +16,6 @@
     "title": "Finance is the acceleration of structural change",
     "build_type": "html",
     "time": 1624155741.9946847
-  },
-  {
-    "id": "intuition_and reasoning",
-    "title": "Intuition and Reasoning",
-    "build_type": "html",
-    "time": 1619759324.8890793
   },
   {
     "id": "real_life_as_proxy_for_game_model",
