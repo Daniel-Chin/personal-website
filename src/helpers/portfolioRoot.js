@@ -29,6 +29,9 @@ const jupyter_notebook = 'jupyter_notebook';
 const sonification = 'sonification';
 const computer_music = 'computer_music';
 const math = 'math';
+const nime = 'nime';
+const circuit = 'circuit';
+const game_tool = 'game_tool';
 
 const portfolio_root = [
   {
@@ -379,7 +382,7 @@ const portfolio_root = [
     title : 'Simplinstrument', 
     year : 2019, 
     pride : 6, 
-    tags : [colab, music, 'arduino', computer_music, processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time, fabrication], 
+    tags : [colab, music, 'arduino', computer_music, processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time, fabrication, nime], 
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
@@ -471,7 +474,7 @@ const portfolio_root = [
     title : 'Digital Rapper', 
     year : 2018, 
     pride : 4, 
-    tags : [python, music, computer_music, jupyter_notebook, colab, dsp], 
+    tags : [python, music, computer_music, jupyter_notebook, colab, dsp, nime], 
     description : 'Colab with Matthew, supervised by Gus Xia', 
     img : '', 
     links: [
@@ -483,7 +486,7 @@ const portfolio_root = [
     title : "Pascal's Triangle Music", 
     year : 2018, 
     pride : 5, 
-    tags : [python, music, sonification, computer_music, jupyter_notebook, math], 
+    tags : [python, music, sonification, computer_music, jupyter_notebook, math, nime], 
     description : "Translating the Pascal's triangle to music using Diatonic scale. ", 
     img : 'pascal_music.png', 
     links: [
@@ -994,7 +997,7 @@ const portfolio_root = [
     title : 'Minecraft AFK', 
     year : 2020, 
     pride : 2, 
-    tags : ['minecraft'], 
+    tags : ['minecraft', game_tool], 
     description : '', 
     img : '', 
     links: [
@@ -1005,7 +1008,7 @@ const portfolio_root = [
     title : 'Virtual Numpad', 
     year : 2020, 
     pride : 2, 
-    tags : [python, 'p2p', html, js, frontend, hci, 'http'], 
+    tags : [python, 'p2p', html, js, frontend, hci, 'http', game_tool], 
     description : "Your laptop has no numpad? Can't play Cataclysm:DDA? No worries. Use your phone as a numpad!", 
     img : 'numpad.gif', 
     links: [
@@ -2224,7 +2227,7 @@ const portfolio_root = [
     title : 'Sonification of Sierpinski triangle', 
     year : 2021, 
     pride : 3, 
-    tags : [python, jupyter_notebook, dsp, math, sonification, computer_music, music], 
+    tags : [python, jupyter_notebook, dsp, math, sonification, computer_music, music, nime], 
     description : 'Directly translate the Sierpinski triangle to sound. This is probably a subset of bitwise operation generated music. ', 
     img : '', 
     links: [
@@ -2237,13 +2240,78 @@ const portfolio_root = [
     title : 'Better Ins', 
     year : 2021, 
     pride : 3, 
-    tags : [music, computer_music, hci], 
+    tags : [music, computer_music, hci, nime], 
     description : 'Map gesture to sound. Primitive prototype. Supervised by Eric Parren. ', 
     img : '', 
     links: [
       [ "YouTube", EXTERNAL, "https://youtu.be/uBThrG-zqPM?list=PLNb0mNThMXblG0dK-Nn2zbvm8S2aK1iqc" ], 
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/NIME-with-Parren/tree/main/better_ins" ], 
-      [ "WP.NYU", EXTERNAL, "https://wp.nyu.edu/nyushanghai-dcdt/category/nime-w-parren/" ], 
+      [ "WP.NYU", EXTERNAL, "https://wp.nyu.edu/nyushanghai-dcdt/2021/04/28/weekly-performance-better-instruments/" ], 
+    ], 
+  }, 
+  {
+    title : 'Signal is Noise + Chord Swiper with LEDs', 
+    year : 2021, 
+    pride : 5, 
+    tags : [computer_music, nime, python, circuit], 
+    description : 'Generate angry signals with analog circuits. Supervised by Eric Parren. ', 
+    img : 'chord_swiper.jpg', 
+    links: [
+      [ "YouTube", EXTERNAL, "https://youtu.be/lYIWHZsMQYQ" ], 
+      [ "WP.NYU", EXTERNAL, "https://wp.nyu.edu/nyushanghai-dcdt/2021/05/14/signal-is-noise-chord-swiper-with-leds/" ], 
+    ], 
+  }, 
+  {
+    title : 'Hyper-hybrid Flute', 
+    year : 2021, 
+    pride : 4, 
+    tags : [computer_music, nime, fabrication, hci, '3d_print', colab], 
+    description : "Published in NIME 2021. A new interface which can be toggled between its electronic mode and its acoustic mode. In its acoustic mode, the interface is identical to the regular six-hole recorder. In its electronic mode, the interface detects the player's fingering and breath velocity and translates them to MIDI messages. Specifically, it maps higher breath velocity to higher octaves, with the modulo remainder controlling the microtonal pitch bend. This novel mapping reproduces a highly realistic flute-playing experience. Furthermore, changing the parameters easily augments the interface into a hyperinstrument that allows the player to control microtones more expressively via breathing techniques. Colab with Ian Zhang. Supervised by Gus Xia. ", 
+    img : 'hhf.jpg', 
+    links: [
+      [ "YouTube", EXTERNAL, "https://youtu.be/UIqsYK9F4xo" ], 
+      [ "Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV19U4y1V74e" ], 
+      [ "Poster", INTERNAL, "hhf.pdf" ], 
+      [ "Keyboard-and-Mouse Demo", EXTERNAL, "https://github.com/Daniel-Chin/HHF_NIME2021" ], 
+      [ "Paper", EXTERNAL, "https://nime.pubpub.org/pub/eshr" ], 
+      [ "More YouTube", EXTERNAL, "https://youtu.be/Qd3r8vkchTA?list=PLNb0mNThMXbmgJnrexhxPXHmCnZRUUFPY" ], 
+      [ "More Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1Ay4y1n7LP" ], 
+    ], 
+  }, 
+  {
+    title : 'Screen cable', 
+    year : 2021, 
+    pride : 3, 
+    tags : [python], 
+    description : "Playback a section of your screen. Useful for sharing PPT (with speaker notes on) over Tencent (VooV) Meeting. ", 
+    img : '', 
+    links: [
+      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#screencablemainpy" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/screenCable/__main__.py" ], 
+    ], 
+  }, 
+  {
+    title : 'Hybrid synth', 
+    year : 2021, 
+    pride : 5, 
+    tags : [python, dsp, computer_music, real_time], 
+    description : "Uses HarmonicSynth (precise) for the lower pitches; and IfftSynth (fast) for the higher pitches. ", 
+    img : '', 
+    links: [
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/hybridSynth.py" ], 
+      [ "HarmonicSynth", EXTERNAL, "https://github.com/daniel-chin/python_lib#harmonicsynthpy" ], 
+      [ "ifftSynth", EXTERNAL, "https://github.com/daniel-chin/python_lib#ifftsynthpy" ], 
+    ], 
+  }, 
+  {
+    title : 'Stellaris game assistant', 
+    year : 2021, 
+    pride : 2, 
+    tags : [python, game_tool], 
+    description : "Assignes hotkey to planet prev/next buttons and pop growth specification buttons. ", 
+    img : '', 
+    links: [
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/stellaris/__main__.py" ], 
     ], 
   }, 
 ];
