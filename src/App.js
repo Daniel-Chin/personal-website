@@ -16,6 +16,7 @@ import DocumentationPage    from './page/DocumentationPage';
 import NovelPage        from './page/NovelPage';
 import Hat              from './component/Hat';
 import TopOfEverything  from './page/TopOfEverything';
+import QuestionPage from './page/QuestionPage';
 
 const App = () => {
   return (
@@ -45,6 +46,9 @@ const App = () => {
         </Route>
         <Route exact path='/questions'>
           <QuestionListPage />
+        </Route>
+        <Route exact path='/question/:id'>
+          <QuestionPage />
         </Route>
         <Route exact path='/about'>
           <AboutMePage />

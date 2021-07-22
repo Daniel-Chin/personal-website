@@ -22,9 +22,6 @@ const TopOfEverything = () => {
             <Link to={blogId2Url(id)}>{title}</Link>
           </li>
         ))}
-        <li>
-          <Link to='/questions'>Piccard's Theorem</Link>
-        </li>
       </ul>
     </div>
   );
