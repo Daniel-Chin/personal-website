@@ -32,6 +32,7 @@ const math = 'math';
 const nime = 'nime';
 const circuit = 'circuit';
 const game_tool = 'game_tool';
+const voice = 'voice';
 
 const portfolio_root = [
   {
@@ -544,7 +545,7 @@ const portfolio_root = [
     title : 'Urban Voicinary', 
     year : 2019, 
     pride : 4, 
-    tags : [js, react, frontend, hci], 
+    tags : [js, react, frontend, hci, voice], 
     description : 'Supervised by James Ayres', 
     img : 'urban_voice.png', 
     links: [
@@ -1250,7 +1251,7 @@ const portfolio_root = [
     title : 'Voice scroll', 
     year : 2020, 
     pride : 6, 
-    tags : [python, hci], 
+    tags : [python, hci, voice], 
     description : 'Reading papers? Hands off. Scroll down with your voice. ', 
     img : 'voice_scroll.png', 
     links: [
@@ -1376,7 +1377,7 @@ const portfolio_root = [
     title : 'Javis', 
     year : 2013, 
     pride : 6, 
-    tags : ['vb', 't2s', matlab, high_school, hci, real_time], 
+    tags : ['vb', 't2s', matlab, high_school, hci, real_time, voice], 
     description : 'A Chinese text-to-speech bot that has my voice. I recorded myself speaking Chinese. Wrote a Matlab script to auto-annotate the audio and normalized it. VB had really bad audio control latency, so I had to have two audio players running simultaneously to pronounce characters in an alternating fashion. ', 
     img : '', 
     links: [
@@ -2154,7 +2155,7 @@ const portfolio_root = [
     title : 'Sustain Pedal for Voice', 
     year : 2021, 
     pride : 6, 
-    tags : [python, music, dsp, real_time, hci], 
+    tags : [python, music, dsp, real_time, hci, voice], 
     description : 'Wanna sing chords but only have one mouth? ', 
     img : '', 
     links: [
@@ -2312,6 +2313,22 @@ const portfolio_root = [
     img : '', 
     links: [
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/stellaris/__main__.py" ], 
+    ], 
+  }, 
+  {
+    title : 'One-person a cappella live', 
+    year : 2021, 
+    pride : 6, 
+    tags : [python, dsp, computer_music, real_time, nime, voice, hci], 
+    description : "Play chords on a MIDI keyboard and use your voice to... voice it. ", 
+    img : 'opal.png', 
+    links: [
+      [ "Bohemian Rhapsody YouTube", EXTERNAL, "https://youtu.be/dygKL4RDmvU" ], 
+      [ "Bohemian Rhapsody Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1Xq4y1W7aL/" ], 
+      [ "Video Explanation YouTube", EXTERNAL, "https://youtu.be/uKA5eqZypM0" ], 
+      [ "Video Explanation Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1cf4y157ux/" ], 
+      [ "How it Works", EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live/blob/main/demos/technicalDetails.pptx?raw=true" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live" ], 
     ], 
   }, 
 ];
