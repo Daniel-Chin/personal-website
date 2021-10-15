@@ -1,5 +1,11 @@
 [
   {
+    "id": "novel_ideas",
+    "title": "Novel ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1634303041.5037124
+  },
+  {
     "id": "intuition_and_reasoning",
     "title": "Intuition and Reasoning",
     "build_type": "html",
