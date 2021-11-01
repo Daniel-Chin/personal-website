@@ -33,6 +33,7 @@ const nime = 'nime';
 const circuit = 'circuit';
 const game_tool = 'game_tool';
 const voice = 'voice';
+const vm = 'vm';
 
 const portfolio_root = [
   {
@@ -767,7 +768,7 @@ const portfolio_root = [
     title : 'Lightweight interactive Python shell', 
     year : 2018, 
     pride : 6, 
-    tags : [python, lib, 'vm', 'dev_tool'], 
+    tags : [python, lib, vm, 'dev_tool'], 
     description : "Just like IPython - supports runtime embed. But: 1) It's way lighter; 2) Other threads can still print things when user is inputting commands; 3) Tab auto-completes your phrase, even under Windows! 4) secret ctrl+R feature. ", 
     img : '', 
     links: [
@@ -2329,6 +2330,18 @@ const portfolio_root = [
       [ "Video Explanation Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1cf4y157ux/" ], 
       [ "How it Works", EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live/blob/main/demos/technicalDetails.pptx?raw=true" ], 
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live" ], 
+    ], 
+  }, 
+  {
+    title : 'Mini Python', 
+    year : 2021, 
+    pride : 4, 
+    tags : [python, vm], 
+    description : "A mini Python interpreter, written in Python 3. ", 
+    img : '', 
+    links: [
+      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/mini-Python#mini-python" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/mini-Python" ], 
     ], 
   }, 
 ];
