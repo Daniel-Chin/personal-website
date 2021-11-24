@@ -2344,6 +2344,18 @@ const portfolio_root = [
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/mini-Python" ], 
     ], 
   }, 
+  {
+    title : 'American-British English translator', 
+    year : 2021, 
+    pride : 2, 
+    tags : [python], 
+    description : "Forked from Kyle Willett, added user interactivity.", 
+    img : '', 
+    links: [
+      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/common_language#common_language" ], 
+      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/common_language" ], 
+    ], 
+  }, 
 ];
 
 export default portfolio_root;
