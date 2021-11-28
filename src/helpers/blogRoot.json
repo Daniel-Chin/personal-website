@@ -1,5 +1,17 @@
 [
   {
+    "id": "notes_novel_ideas",
+    "title": "Notes: Novel ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1638137573.3627489
+  },
+  {
+    "id": "notes_game_ideas",
+    "title": "Notes: game ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1638137573.1335251
+  },
+  {
     "id": "a_poem",
     "title": "A poem",
     "build_type": "html",
@@ -16,12 +28,6 @@
     "title": "Baba is you \u5373 \u7f18\u8d77\u6027\u7a7a",
     "build_type": "html",
     "time": 1635182310.0244215
-  },
-  {
-    "id": "novel_ideas",
-    "title": "Novel ideas (continuously updated)",
-    "build_type": "html",
-    "time": 1634303041.5037124
   },
   {
     "id": "intuition_and_reasoning",
