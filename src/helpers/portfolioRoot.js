@@ -2356,6 +2356,17 @@ const portfolio_root = [
       [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/common_language" ], 
     ], 
   }, 
+  {
+    title : 'Field of Hopes and Dreams + Ragtime Osohe', 
+    year : 2021, 
+    pride : 2, 
+    tags : [not_coding, music, 'remix', 'undertale', 'mother3'], 
+    description : '', 
+    img : '', 
+    links: [
+      [ "YouTube", EXTERNAL, "https://youtu.be/sGtptSO12UU" ], 
+    ], 
+  }, 
 ];
 
 export default portfolio_root;
