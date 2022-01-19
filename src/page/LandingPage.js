@@ -73,15 +73,13 @@ const LandingPage = () => {
         fictions and finance fictions, and Math. 
       </p>
       <p>
-        Majoring in 
+        During undergrad, I majored in 
         Business and Finance and minoring in Interactive 
-        Media Arts (IMA), I'm half way through my senior 
-        year at NYU 
-        Shanghai. Believe it or not, Finance is
+        Media Arts (IMA). Believe it or not, Finance is
         a lot of fun! (almost as fun as IMA.) 
       </p>
       <p>
-        I expect to graduate in May. 
+        I'm starting my research in Computer Music. 
       </p>
       <h2>Publications</h2>
       <ol className='publications'>
