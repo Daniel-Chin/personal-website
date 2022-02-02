@@ -263,6 +263,10 @@ Meta game where character disguises as the game
         accompaniment + melody  
       when merging, drop the accompaniment:   
         melody + melody  
+  E.G.
+      A5    G5|F5    E5|...
+    +   D6C6  |  B5A5  |...
+    = A5D6C6G5|F5B5A5E5|...
   non-music:  
     could be visual.   
     char 1 has property A.   
@@ -272,3 +276,8 @@ Meta game where character disguises as the game
     the joint prob, P(A, C) and P(A, B) are high.   
     However, the player shouldn't be able to infer C from either A or B.   
     意料之外，情理之中。  
+
+## Cartographer
+    主观唯心地图。
+    player basically supply constraints. 
+    world topologies. 
