@@ -1,6 +1,13 @@
 const INTERNAL = 'internal';
 const EXTERNAL = 'external';
 
+const SOURCE_CODE = 'Source Code';
+const READ_MORE = 'Read More';
+const YOUTUBE = 'YouTube';
+const GO = 'Go!';
+const PAPER = "Paper";
+const DEMO = "Demo";
+
 const visualization = 'visualization';
 const processing = 'processing';
 const dsp = 'dsp';
@@ -34,6 +41,7 @@ const circuit = 'circuit';
 const game_tool = 'game_tool';
 const voice = 'voice';
 const vm = 'vm';
+const ui = 'ui';
 
 const portfolio_root = [
   {
@@ -44,8 +52,8 @@ const portfolio_root = [
     description : 'I have a project portfolio on there, did you know? ', 
     img : 'portfolio.png', 
     links: [
-      [ "Demo", EXTERNAL, "__egg__" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/personal-website" ], 
+      [ DEMO, EXTERNAL, "__egg__" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/personal-website" ], 
     ], 
   }, 
   {
@@ -56,7 +64,7 @@ const portfolio_root = [
     description : 'Adventure game in VB. I implemented the 2D physics engine. My first OOP project (because there were an variable number of walls in a level). Many eastereggs... ', 
     img : 'ssat.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/SSAT" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/SSAT" ], 
     ], 
   }, 
   {
@@ -67,7 +75,7 @@ const portfolio_root = [
     description : 'Visualization of the Collatz conjecture. I hanged it in my NYU Shanghai dorm room. ', 
     img : 'PosterFor1608.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Processing/blob/master/PosterForDorm/PosterForDorm_pde/PosterForDorm_pde.pyde" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Processing/blob/master/PosterForDorm/PosterForDorm_pde/PosterForDorm_pde.pyde" ], 
     ], 
   }, 
   {
@@ -78,8 +86,8 @@ const portfolio_root = [
     description : "Expense accounting app. The design doc is very detailed, but I decided it's not worth my time to implement it. ", 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/WhereDitGo" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/WhereDitGo#where-ditgo" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/WhereDitGo" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/WhereDitGo#where-ditgo" ], 
     ], 
   }, 
   {
@@ -91,8 +99,8 @@ const portfolio_root = [
     img : '', 
     links: [
       [ "GIF", EXTERNAL, "https://giphy.com/gifs/oymRyMemkmjrKxcVHk" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/coffeetawk" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/coffeetawk#coffeetawk" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/coffeetawk" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/coffeetawk#coffeetawk" ], 
     ], 
   }, 
   {
@@ -103,8 +111,8 @@ const portfolio_root = [
     description : 'Colab with Vincent Wu', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Socrates" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Socrates#socrates" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Socrates" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/Socrates#socrates" ], 
     ], 
   }, 
   {
@@ -115,7 +123,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/garbage_js_code_base/blob/master/withDir.js" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/garbage_js_code_base/blob/master/withDir.js" ], 
     ], 
   }, 
   {
@@ -126,8 +134,8 @@ const portfolio_root = [
     description : 'Test the functions and objects you wrote in a real-time terminal shell, analogous to `IPython.embed()`.', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Interactive-JS-Tester" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Interactive-JS-Tester#interactive-js-tester" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Interactive-JS-Tester" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/Interactive-JS-Tester#interactive-js-tester" ], 
     ], 
   }, 
   {
@@ -138,8 +146,8 @@ const portfolio_root = [
     description : 'Each entry is a file, with id as its filename. A simple database solution, but highly scalable. Integrates version tracking with Git. ', 
     img : 'js_linked_files.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/LinkedFileList" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/LinkedFileList#double-linked-file-list" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/LinkedFileList" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/LinkedFileList#double-linked-file-list" ], 
     ], 
   }, 
   {
@@ -150,9 +158,9 @@ const portfolio_root = [
     description : 'Can human cheat with perfect dice? I simulated dice rolls in Matlab and colored the initial condition space according to roll outcome. Colab with Michael Li. Supervise by Charles Peskin. ', 
     img : 'dice_sim.png', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/lm123dN5NC0" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/DiceSim" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/DiceSim#dice-simulation" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/lm123dN5NC0" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/DiceSim" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/DiceSim#dice-simulation" ], 
     ], 
   }, 
   {
@@ -164,8 +172,8 @@ const portfolio_root = [
     img : 'nyu_login_verify.png', 
     links: [
       [ "Store Page", EXTERNAL, "https://chrome.google.com/webstore/detail/nyu-login-page-verify/iocemmjdkjlfpnjdhofljbolljfeifdj" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/NYULoginPageVerify" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/NYULoginPageVerify#nyu-login-page-verify" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/NYULoginPageVerify" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/NYULoginPageVerify#nyu-login-page-verify" ], 
     ], 
   }, 
   {
@@ -178,7 +186,7 @@ const portfolio_root = [
     links: [
       [ "Short Video Demo", EXTERNAL, "https://youtu.be/lbv9AeI2el4" ], 
       [ "Presentation", EXTERNAL, "https://youtu.be/-dizYKs2uFI?t=5" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/droplet" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/droplet" ], 
     ], 
   }, 
   {
@@ -189,9 +197,9 @@ const portfolio_root = [
     description : 'A blog platform that fights the info cacoon effect. Novel database structure that optimizes random sampling. Robust user auth that withstands even timing attacks. Supervised by James Ayres. ', 
     img : 'worldOfBlog_singout.png', 
     links: [
-      [ "Go!", EXTERNAL, "https://world-of-blogs.herokuapp.com/" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/WorldOfBlogs" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/WorldOfBlogs#world-of-blogs" ], 
+      [ GO, EXTERNAL, "https://world-of-blogs.herokuapp.com/" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/WorldOfBlogs" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/WorldOfBlogs#world-of-blogs" ], 
     ], 
   }, 
   {
@@ -202,8 +210,8 @@ const portfolio_root = [
     description : 'A recommendation algo learns your preferences of fan arts from your reactions. ', 
     img : 'nozomi_ai.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/nozomi.la-AI" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/nozomi.la-AI#nozomila-ai" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/nozomi.la-AI" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/nozomi.la-AI#nozomila-ai" ], 
     ], 
   }, 
   {
@@ -214,9 +222,9 @@ const portfolio_root = [
     description : 'Visualize chords on the complex plane using Fourier transform at root frequency.', 
     img : 'shape_of_chord.png', 
     links: [
-      [ "Go!", EXTERNAL, "https://upbeat-volhard-31fdb8.netlify.app/" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/daniel-chin/shape-of-chords" ], 
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/shape-of-chords#shape-of-chords" ], 
+      [ GO, EXTERNAL, "https://upbeat-volhard-31fdb8.netlify.app/" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/shape-of-chords" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/shape-of-chords#shape-of-chords" ], 
     ], 
   }, 
   {
@@ -227,7 +235,7 @@ const portfolio_root = [
     description : 'A funplex in Minecraft', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/myMinecraftWorlds/blob/master/Daniel's%20Funplex%20on%20Ice.mcworld" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/myMinecraftWorlds/blob/master/Daniel's%20Funplex%20on%20Ice.mcworld" ], 
     ], 
   }, 
   {
@@ -238,18 +246,18 @@ const portfolio_root = [
     description : 'Colab with Andrew Liu, Wendi Tang. Supervised by Xiao Liu. ', 
     img : 'airbnb.png', 
     links: [
-      [ "Paper", INTERNAL, "airbnb.pdf" ], 
+      [ PAPER, INTERNAL, "airbnb.pdf" ], 
     ], 
   }, 
   {
     title : 'OPEC Auction Assistant', 
     year : 2020, 
     pride : 2, 
-    tags : [html, hci, js], 
+    tags : [html, ui, js], 
     description : '', 
     img : 'auction_assist.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/opec/tree/master/auction_assistant" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/opec/tree/master/auction_assistant" ], 
     ], 
   }, 
   {
@@ -260,7 +268,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Paper", INTERNAL, "grandpa.pdf" ], 
+      [ PAPER, INTERNAL, "grandpa.pdf" ], 
     ], 
   }, 
   {
@@ -271,7 +279,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/december2018" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/december2018" ], 
     ], 
   }, 
   {
@@ -283,8 +291,8 @@ const portfolio_root = [
     img : 'drink_lava.png', 
     links: [
       [ "Colab Notebook", EXTERNAL, "https://colab.research.google.com/drive/10DLgYVQYDVrTBjkcXWDrCAYmd3izelNJ?usp=sharing" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/SCP-294-NLP-AI" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/SCP-294-NLP-AI#predicting-the-result-of-consuming-liquid-from-scp-294-using-gpt-2" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/SCP-294-NLP-AI" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/SCP-294-NLP-AI#predicting-the-result-of-consuming-liquid-from-scp-294-using-gpt-2" ], 
     ], 
   }, 
   {
@@ -295,8 +303,8 @@ const portfolio_root = [
     description : 'Colab with Zane Fadul, Andrew Liu, Vera Zhong, Thomas Tai', 
     img : 'incubus.gif', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/ok" ], 
-      [ "Read More", EXTERNAL, "https://globalgamejam.org/2020/games/incubus-md-6" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/ok" ], 
+      [ READ_MORE, EXTERNAL, "https://globalgamejam.org/2020/games/incubus-md-6" ], 
     ], 
   }, 
   {
@@ -307,8 +315,8 @@ const portfolio_root = [
     description : 'Simulate an economy. Wages go up when Thanos snaps his fingers. Supervised by Charles Peskin. ', 
     img : 'econ_thanos.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/WageSim" ], 
-      [ "Paper", INTERNAL, "wage_sim.pdf" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/WageSim" ], 
+      [ PAPER, INTERNAL, "wage_sim.pdf" ], 
     ], 
   }, 
   {
@@ -319,7 +327,7 @@ const portfolio_root = [
     description : 'Colab with Alex Zhao, Brielle Albert, Doraian, Rosalane Chow, Yolanda Liu', 
     img : 'tinder_bumble.png', 
     links: [
-      [ "YouTube", EXTERNAL, "https://www.youtube.com/watch?v=AgMrl5ueot0" ], 
+      [ YOUTUBE, EXTERNAL, "https://www.youtube.com/watch?v=AgMrl5ueot0" ], 
     ], 
   }, 
   {
@@ -330,8 +338,8 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Sound-Perception-Experiment" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Sound-Perception-Experiment#do-details-make-people-buy-into-bullshit" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Sound-Perception-Experiment" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/Sound-Perception-Experiment#do-details-make-people-buy-into-bullshit" ], 
     ], 
   }, 
   {
@@ -342,7 +350,7 @@ const portfolio_root = [
     description : '', 
     img : 'minecraft_5_bit.jpg', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/TAs_eDUG32Y" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/TAs_eDUG32Y" ], 
     ], 
   }, 
   {
@@ -353,7 +361,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/VYBsNTBjYeM" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/VYBsNTBjYeM" ], 
     ], 
   }, 
   {
@@ -364,8 +372,8 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/spaghetti-chat-room" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/spaghetti-chat-room#spaghetti-chat-room" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/spaghetti-chat-room" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/spaghetti-chat-room#spaghetti-chat-room" ], 
     ], 
   }, 
   {
@@ -376,8 +384,8 @@ const portfolio_root = [
     description : 'I swapped some beats of some game OST composed by my friend Zane Fadul. ', 
     img : 'beat_swap.png', 
     links: [
-      [ "YouTube", EXTERNAL, "https://www.youtube.com/playlist?list=PLNb0mNThMXbn8XxE6-FwoaHdPxsVBg858" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/beat-swap/blob/main/main.ipynb" ], 
+      [ YOUTUBE, EXTERNAL, "https://www.youtube.com/playlist?list=PLNb0mNThMXbn8XxE6-FwoaHdPxsVBg858" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/beat-swap/blob/main/main.ipynb" ], 
     ], 
   }, 
   {
@@ -388,8 +396,8 @@ const portfolio_root = [
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
-      [ "Read More", EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/final-project-simplinstrument-by-daniel-chin/" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Interaction_Lab-NYU_Shanghai/tree/master/Final_project" ], 
+      [ READ_MORE, EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/final-project-simplinstrument-by-daniel-chin/" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Interaction_Lab-NYU_Shanghai/tree/master/Final_project" ], 
     ], 
   }, 
   {
@@ -400,7 +408,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/recitation-11-midea-manipulation-workshop-by-daniel-chin/" ], 
+      [ READ_MORE, EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/recitation-11-midea-manipulation-workshop-by-daniel-chin/" ], 
     ], 
   }, 
   {
@@ -411,7 +419,7 @@ const portfolio_root = [
     description : '', 
     img : 'heat_cam.jpg', 
     links: [
-      [ "Read More", EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/recitation-10-media-controller-by-daniel-chin/" ], 
+      [ READ_MORE, EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/recitation-10-media-controller-by-daniel-chin/" ], 
     ], 
   }, 
   {
@@ -422,8 +430,8 @@ const portfolio_root = [
     description : 'An arcade machine. Do watch all videos in the demo. Colab with Tristan Murdoch. ', 
     img : 'laser_arcade.jpg', 
     links: [
-      [ "Read More", EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/laser-arcade-daniel-chin-marcela/" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Interaction_Lab-NYU_Shanghai/tree/master/midterm" ], 
+      [ READ_MORE, EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/laser-arcade-daniel-chin-marcela/" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Interaction_Lab-NYU_Shanghai/tree/master/midterm" ], 
     ], 
   }, 
   {
@@ -434,8 +442,8 @@ const portfolio_root = [
     description : 'The GIF does not do justice. Run it yourself for HD 60 FPS. ', 
     img : 'ink_leak.gif', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Processing/tree/master/InkLeakLib" ], 
-      [ "Read More", EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/recitation-5-processing-basics-by-daniel-chin/" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Processing/tree/master/InkLeakLib" ], 
+      [ READ_MORE, EXTERNAL, "https://wp.nyu.edu/shanghai-ima-documentation/foundations/interaction-lab/nq285/recitation-5-processing-basics-by-daniel-chin/" ], 
     ], 
   }, 
   {
@@ -446,7 +454,7 @@ const portfolio_root = [
     description : 'Colab with Harry Huang, Vincent Wu, Aurora Yao', 
     img : '', 
     links: [
-      [ "Paper", INTERNAL, "werewolf.pdf" ], 
+      [ PAPER, INTERNAL, "werewolf.pdf" ], 
     ], 
   }, 
   {
@@ -457,7 +465,7 @@ const portfolio_root = [
     description : 'Supervised by Will Varner', 
     img : 'playing_card.png', 
     links: [
-      [ "Paper", INTERNAL, "playing_cards.pdf" ], 
+      [ PAPER, INTERNAL, "playing_cards.pdf" ], 
     ], 
   }, 
   {
@@ -468,8 +476,8 @@ const portfolio_root = [
     description : 'Sing into the computer. The computer rounds your pitch to the nearest 12-tone-valid pitch, and plays it out with the speakers. Colab with Evan Ma, Saili Yao. Supervised by Gus Xia. ', 
     img : 'autotuner.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Real-time-Auto-tuner" ], 
-      [ "Read More", EXTERNAL, "/#/documentation/real-time_auto_tune" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Real-time-Auto-tuner" ], 
+      [ READ_MORE, EXTERNAL, "/#/documentation/real-time_auto_tune" ], 
     ], 
   }, 
   {
@@ -480,8 +488,8 @@ const portfolio_root = [
     description : 'Colab with Matthew, supervised by Gus Xia', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/qVQ67LeLSwU" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Digital-Rapper/blob/main/Rap_no_output.ipynb" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/qVQ67LeLSwU" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Digital-Rapper/blob/main/Rap_no_output.ipynb" ], 
     ], 
   }, 
   {
@@ -492,8 +500,8 @@ const portfolio_root = [
     description : "Translating the Pascal's triangle to music using Diatonic scale. ", 
     img : 'pascal_music.png', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/Ty0LiKrBLgs" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Pascal-s-Triangle-Music/blob/main/generate.ipynb" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/Ty0LiKrBLgs" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Pascal-s-Triangle-Music/blob/main/generate.ipynb" ], 
     ], 
   }, 
   {
@@ -504,7 +512,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Paper", INTERNAL, "bamboozle.html" ], 
+      [ PAPER, INTERNAL, "bamboozle.html" ], 
     ], 
   }, 
   {
@@ -515,7 +523,7 @@ const portfolio_root = [
     description : 'Supervised by Cesar Guevara', 
     img : 'broom.jpg', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/gJItc8QrU6I" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/gJItc8QrU6I" ], 
       [ "Maya File", INTERNAL, "broom_closet.mb" ], 
     ], 
   }, 
@@ -527,7 +535,7 @@ const portfolio_root = [
     description : 'Supervised by Cesar Guevara', 
     img : 'canon.png', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/hg6fpN6gqaA" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/hg6fpN6gqaA" ], 
       [ "Maya File", INTERNAL, "revolver.mb" ], 
     ], 
   }, 
@@ -539,7 +547,7 @@ const portfolio_root = [
     description : '', 
     img : 'mouse_shell.jpg', 
     links: [
-      [ "Read More", EXTERNAL, "/#/documentation/mouse_shell" ], 
+      [ READ_MORE, EXTERNAL, "/#/documentation/mouse_shell" ], 
     ], 
   }, 
   {
@@ -550,9 +558,9 @@ const portfolio_root = [
     description : 'Supervised by James Ayres', 
     img : 'urban_voice.png', 
     links: [
-      [ "Go!", EXTERNAL, "https://naughty-lalande-3e9746.netlify.app/" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Dynamic_Web/tree/master/midterm" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Dynamic_Web/tree/master/midterm#urban-voicinary" ], 
+      [ GO, EXTERNAL, "https://naughty-lalande-3e9746.netlify.app/" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Dynamic_Web/tree/master/midterm" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/Dynamic_Web/tree/master/midterm#urban-voicinary" ], 
     ], 
   }, 
   {
@@ -563,7 +571,7 @@ const portfolio_root = [
     description : 'A GUI framework. A tree of GUI elements that renders recursively. Comes with 3 gadgets for free, too. ', 
     img : 'proc_gui_tree.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Processing/blob/master/GUILib/GUI.pde" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Processing/blob/master/GUILib/GUI.pde" ], 
     ], 
   }, 
   {
@@ -574,7 +582,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Processing/blob/master/TimerLib/TImer.pde" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Processing/blob/master/TimerLib/TImer.pde" ], 
     ], 
   }, 
   {
@@ -585,7 +593,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#24solverpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#24solverpy" ], 
     ], 
   }, 
   {
@@ -593,10 +601,10 @@ const portfolio_root = [
     year : 2020, 
     pride : 2, 
     tags : [python], 
-    description : 'A python alarm clock, written only because the Win10 Alarm App HCI is trash.', 
+    description : 'A python alarm clock, written only because the Win10 Alarm App UI is trash.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#alarmpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#alarmpy" ], 
     ], 
   }, 
   {
@@ -607,7 +615,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#archiveresponse-generator" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archiveresponse-generator" ], 
     ], 
   }, 
   {
@@ -618,7 +626,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#archivearchive_rrrrpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivearchive_rrrrpy" ], 
     ], 
   }, 
   {
@@ -629,7 +637,7 @@ const portfolio_root = [
     description : 'Scans the NYUSH LAN', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#archivelan_scan" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivelan_scan" ], 
     ], 
   }, 
   {
@@ -640,7 +648,7 @@ const portfolio_root = [
     description : 'A man-in-middle to figure out how Wechat PC client works. It failed. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/Archive/legacy_archive/WechatMirror.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/Archive/legacy_archive/WechatMirror.py" ], 
     ], 
   }, 
   {
@@ -651,7 +659,7 @@ const portfolio_root = [
     description : 'An attempt to implement SSH when I was young.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#archivelenovoshipping" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivelenovoshipping" ], 
     ], 
   }, 
   {
@@ -662,7 +670,7 @@ const portfolio_root = [
     description : 'Atomic database access immune to power-outage. Inspired by Undertale', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#archiverobust_persistent_data_solutionpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archiverobust_persistent_data_solutionpy" ], 
     ], 
   }, 
   {
@@ -673,7 +681,7 @@ const portfolio_root = [
     description : 'Keeps beeping, until the computer sleeps. Useful in rare occasions. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#archivesleepprober" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivesleepprober" ], 
     ], 
   }, 
   {
@@ -684,7 +692,7 @@ const portfolio_root = [
     description : 'A beautiful script. Next time you need to look at the ascii table, run this. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#ascii_tablepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#ascii_tablepy" ], 
     ], 
   }, 
   {
@@ -695,7 +703,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#beer-on-the-wall" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#beer-on-the-wall" ], 
     ], 
   }, 
   {
@@ -706,7 +714,7 @@ const portfolio_root = [
     description : 'A file system. Encrypted system-wise with Fernet. ', 
     img : 'book.jpg', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#bookpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#bookpy" ], 
     ], 
   }, 
   {
@@ -717,7 +725,7 @@ const portfolio_root = [
     description : 'Cache function returns without hashing inputs. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#cache_no_hashpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#cache_no_hashpy" ], 
     ], 
   }, 
   {
@@ -728,7 +736,7 @@ const portfolio_root = [
     description : 'A python context to temporarily cd to another directory.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#chdir_contextpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#chdir_contextpy" ], 
     ], 
   }, 
   {
@@ -739,7 +747,7 @@ const portfolio_root = [
     description : 'Use your phone to send UP and DOWN to your computer! You can finally read papers with arms relaxed. ', 
     img : 'clicker.jpg', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#clickermainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#clickermainpy" ], 
     ], 
   }, 
   {
@@ -750,7 +758,7 @@ const portfolio_root = [
     description : 'The minigame from Undertale, implemented in python. ', 
     img : 'color_tile.png', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#color_tiles" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#color_tiles" ], 
     ], 
   }, 
   {
@@ -761,7 +769,7 @@ const portfolio_root = [
     description : 'Iterate through all  files in my python repo and build a readme.md for the repo', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#compile_readmepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#compile_readmepy" ], 
     ], 
   }, 
   {
@@ -772,7 +780,7 @@ const portfolio_root = [
     description : "Just like IPython - supports runtime embed. But: 1) It's way lighter; 2) Other threads can still print things when user is inputting commands; 3) Tab auto-completes your phrase, even under Windows! 4) secret ctrl+R feature. ", 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#console" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#console" ], 
     ], 
   }, 
   {
@@ -783,7 +791,7 @@ const portfolio_root = [
     description : 'For counting votes and ranking the counts.  ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#countpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#countpy" ], 
     ], 
   }, 
   {
@@ -794,7 +802,7 @@ const portfolio_root = [
     description : 'Compare the shape of two dicts. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#dict_shapepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#dict_shapepy" ], 
     ], 
   }, 
   {
@@ -805,7 +813,7 @@ const portfolio_root = [
     description : 'A simple ascii game. ', 
     img : 'find_vera.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/Find%20Vera/Find_Vera%20V2.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/Find%20Vera/Find_Vera%20V2.py" ], 
     ], 
   }, 
   {
@@ -816,7 +824,7 @@ const portfolio_root = [
     description : 'Play .swf files with a browser. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#flashplayer" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#flashplayer" ], 
     ], 
   }, 
   {
@@ -827,7 +835,7 @@ const portfolio_root = [
     description : 'Transmit a folder over the internet.  ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#folder_gopy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#folder_gopy" ], 
     ], 
   }, 
   {
@@ -838,7 +846,7 @@ const portfolio_root = [
     description : 'Like dummy.Pool.map, but no limit on number of threads. Useful when IO-bound.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#forcemappy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#forcemappy" ], 
     ], 
   }, 
   {
@@ -849,7 +857,7 @@ const portfolio_root = [
     description : 'I use this frequently for Finance problem sets. ', 
     img : 'formula.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/formula.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/formula.py" ], 
     ], 
   }, 
   {
@@ -860,7 +868,7 @@ const portfolio_root = [
     description : 'Obviously a wheel re-invted', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#friendly_timepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#friendly_timepy" ], 
     ], 
   }, 
   {
@@ -871,7 +879,7 @@ const portfolio_root = [
     description : 'Tools to do graphics in the terminal.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#graphic_terminalpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#graphic_terminalpy" ], 
     ], 
   }, 
   {
@@ -882,7 +890,7 @@ const portfolio_root = [
     description : 'HTTP man in middle. Prints all traffic. Useful for investigating how http works. Although Chrome Dev Tools prolly have something like this already.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#httpmimpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#httpmimpy" ], 
     ], 
   }, 
   {
@@ -893,7 +901,7 @@ const portfolio_root = [
     description : 'Broadcast messages from any client to all clients. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#hubpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#hubpy" ], 
     ], 
   }, 
   {
@@ -904,29 +912,29 @@ const portfolio_root = [
     description : 'A python context to indent print outputs. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#indentprinterpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#indentprinterpy" ], 
     ], 
   }, 
   {
     title : 'Android interactive file explorer', 
     year : 2018, 
     pride : 2, 
-    tags : [python, lib, hci], 
+    tags : [python, lib, ui], 
     description : 'An android-friendly terminal file explorer. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#interactiveconsole_explorerpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#interactiveconsole_explorerpy" ], 
     ], 
   }, 
   {
     title : 'Terminal interactivity utils', 
     year : 2019, 
     pride : 6, 
-    tags : [python, lib, hci], 
+    tags : [python, lib, ui], 
     description : 'Thicc and powerful. See the source code for documentation. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/interactive/__init__.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/interactive/__init__.py" ], 
     ], 
   }, 
   {
@@ -937,18 +945,18 @@ const portfolio_root = [
     description : 'Converts jupyter notebook file to python script. Works even when Jupyter is not installed.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#ipynb_to_pypy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#ipynb_to_pypy" ], 
     ], 
   }, 
   {
     title : 'python progress bar', 
     year : 2018, 
     pride : 3, 
-    tags : [python, lib, hci], 
+    tags : [python, lib, ui], 
     description : 'Progress bar. Supports python context. Computes transmition speed too. ', 
     img : 'jdt.png', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#jdtpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#jdtpy" ], 
     ], 
   }, 
   {
@@ -959,7 +967,7 @@ const portfolio_root = [
     description : 'A simple database solution, but highly scalable.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#linked_file_listpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#linked_file_listpy" ], 
     ], 
   }, 
   {
@@ -970,7 +978,7 @@ const portfolio_root = [
     description : 'Find out local IP addr on Windows. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#local_ippy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#local_ippy" ], 
     ], 
   }, 
   {
@@ -981,7 +989,7 @@ const portfolio_root = [
     description : 'Record, play, save, and load macros. Think AFK bot. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#macro" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#macro" ], 
     ], 
   }, 
   {
@@ -992,7 +1000,7 @@ const portfolio_root = [
     description : 'Translate markdown .md file to html file.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#md2htmlmainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#md2htmlmainpy" ], 
     ], 
   }, 
   {
@@ -1003,7 +1011,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#minecraft_afkpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#minecraft_afkpy" ], 
     ], 
   }, 
   {
@@ -1014,7 +1022,7 @@ const portfolio_root = [
     description : "Your laptop has no numpad? Can't play Cataclysm:DDA? No worries. Use your phone as a numpad!", 
     img : 'numpad.gif', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#mobilenumpad" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#mobilenumpad" ], 
     ], 
   }, 
   {
@@ -1025,18 +1033,18 @@ const portfolio_root = [
     description : 'MsgBox, InputBox, other util functions…', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#moretkpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#moretkpy" ], 
     ], 
   }, 
   {
     title : 'Multi Terminal', 
     year : 2019, 
     pride : 5, 
-    tags : [python, lib, 'multi_process', hci, 'multi_thread'], 
+    tags : [python, lib, 'multi_process', ui, 'multi_thread'], 
     description : 'Provides an interface to multiple terminal windows. E.g. for output of difference levels (debug, info, warning, error...)', 
     img : 'multi_term.png', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#multi_term" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#multi_term" ], 
     ], 
   }, 
   {
@@ -1047,7 +1055,7 @@ const portfolio_root = [
     description : 'HTTP server in python. Each request is handled by a thread. Global event loop and message queue. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#myhttppy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#myhttppy" ], 
     ], 
   }, 
   {
@@ -1058,7 +1066,7 @@ const portfolio_root = [
     description : "Prints QR code to terminal. How useful. I can't imagine why nobody built this", 
     img : 'qr.png', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#myqrpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#myqrpy" ], 
     ], 
   }, 
   {
@@ -1069,7 +1077,7 @@ const portfolio_root = [
     description : 'My socket utils', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#mysocketpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#mysocketpy" ], 
     ], 
   }, 
   {
@@ -1080,7 +1088,7 @@ const portfolio_root = [
     description : 'For an NYU person, convert their netID to personal profile.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#netid2profilepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#netid2profilepy" ], 
     ], 
   }, 
   {
@@ -1091,7 +1099,7 @@ const portfolio_root = [
     description : 'Transmit a file over the internet / LAN. I frequently use it with friends. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#oneshippy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#oneshippy" ], 
     ], 
   }, 
   {
@@ -1102,7 +1110,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#pdf_litouzhibeipy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#pdf_litouzhibeipy" ], 
     ], 
   }, 
   {
@@ -1113,7 +1121,7 @@ const portfolio_root = [
     description : 'Preview a pickle file. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#pickle_previewmainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#pickle_previewmainpy" ], 
     ], 
   }, 
   {
@@ -1124,7 +1132,7 @@ const portfolio_root = [
     description : 'Send objects over sockets. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#pickle_socketpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#pickle_socketpy" ], 
     ], 
   }, 
   {
@@ -1135,7 +1143,7 @@ const portfolio_root = [
     description : 'Light-weight wav player. (Why does Windows Media Player take so long to launch?)', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#playwavpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#playwavpy" ], 
     ], 
   }, 
   {
@@ -1146,7 +1154,7 @@ const portfolio_root = [
     description : 'Forward socket traffic. Useful as a firewall. Is not thread safe - expect unexpected behaviors. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#port_forwardpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#port_forwardpy" ], 
     ], 
   }, 
   {
@@ -1157,7 +1165,7 @@ const portfolio_root = [
     description : 'Interactive git commit and push.  ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#push_gitpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#push_gitpy" ], 
     ], 
   }, 
   {
@@ -1168,7 +1176,7 @@ const portfolio_root = [
     description : 'Sets up a server, displays a QR code. Scan it to go to a web page. Exchange raw texts!  ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#qrchatmainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#qrchatmainpy" ], 
     ], 
   }, 
   {
@@ -1179,7 +1187,7 @@ const portfolio_root = [
     description : 'Creates a react component file containing boilerplate code. Prints code that imports this component. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#reactnewpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#reactnewpy" ], 
     ], 
   }, 
   {
@@ -1190,7 +1198,7 @@ const portfolio_root = [
     description : 'A simple file server. Serves files in a folder. Has a simple HTML page interface.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#safeserver" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#safeserver" ], 
     ], 
   }, 
   {
@@ -1201,7 +1209,7 @@ const portfolio_root = [
     description : 'An HTTP backend server baseclass. Really tries to be safe against injection attacks. Intentionally uses single thread only.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#safe_httppy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#safe_httppy" ], 
     ], 
   }, 
   {
@@ -1212,7 +1220,7 @@ const portfolio_root = [
     description : 'Immediately opens a port, accepts a connection and does nothing. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#serve_nowpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#serve_nowpy" ], 
     ], 
   }, 
   {
@@ -1223,7 +1231,7 @@ const portfolio_root = [
     description : 'Examines a directory of .py files and find all imports. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#summarize_dependenciespy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#summarize_dependenciespy" ], 
     ], 
   }, 
   {
@@ -1234,7 +1242,7 @@ const portfolio_root = [
     description : 'A hard-core ascii-graphic adventure game in python. Tremendous eastereggs. ', 
     img : 'to_the_earth.png', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#to-the-earthto-the-earth-v8py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#to-the-earthto-the-earth-v8py" ], 
     ], 
   }, 
   {
@@ -1245,7 +1253,7 @@ const portfolio_root = [
     description : 'I came up with an algorithm that fixes typos. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#typofix" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#typofix" ], 
     ], 
   }, 
   {
@@ -1256,7 +1264,7 @@ const portfolio_root = [
     description : 'Reading papers? Hands off. Scroll down with your voice. ', 
     img : 'voice_scroll.png', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#voice_scrollpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#voice_scrollpy" ], 
     ], 
   }, 
   {
@@ -1267,7 +1275,7 @@ const portfolio_root = [
     description : 'Downloads a web resource.', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#wgetpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#wgetpy" ], 
     ], 
   }, 
   {
@@ -1278,7 +1286,7 @@ const portfolio_root = [
     description : "Force copy a file even when it's locked", 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/ForceCopy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/ForceCopy" ], 
     ], 
   }, 
   {
@@ -1289,7 +1297,7 @@ const portfolio_root = [
     description : 'Dodge game. I made the OST. ', 
     img : 'gloper.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Gloper%20-%20Win" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Gloper%20-%20Win" ], 
     ], 
   }, 
   {
@@ -1300,7 +1308,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Hack/Digit-For" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Hack/Digit-For" ], 
     ], 
   }, 
   {
@@ -1311,8 +1319,8 @@ const portfolio_root = [
     description : 'MCM project. Simulate traffic in front of my school. Colab with Erwin Yonghao Xu, Andy Zhiyuan Le, and Yi Zhu. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/HIMCM%E8%A5%BF%E6%B1%9F%E6%B9%BE%E8%B7%AF%E6%A8%A1%E6%8B%9F%E5%99%A8" ], 
-      [ "Paper", INTERNAL, "mcm_traffic.pdf" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/HIMCM%E8%A5%BF%E6%B1%9F%E6%B9%BE%E8%B7%AF%E6%A8%A1%E6%8B%9F%E5%99%A8" ], 
+      [ PAPER, INTERNAL, "mcm_traffic.pdf" ], 
     ], 
   }, 
   {
@@ -1324,7 +1332,7 @@ const portfolio_root = [
     img : '', 
     links: [
       [ "MP3", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/HeChangQi/History/ViVa%20Fail%20Vida/all.mp3" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/HeChangQi" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/HeChangQi" ], 
     ], 
   }, 
   {
@@ -1335,9 +1343,9 @@ const portfolio_root = [
     description : 'I had to write an algorithm to render 3D wireframe in VB using `line()` only. ', 
     img : 'calc.gif', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/W7YVeT05_f0" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/W7YVeT05_f0" ], 
       [ "Baidu TieBa Post", EXTERNAL, "https://tieba.baidu.com/p/3899952413?fid=1177&pid=71695149496&cid=0&red_tag=2838761547#71695149496" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/How%202%20Become%20A%20Calculater" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/How%202%20Become%20A%20Calculater" ], 
     ], 
   }, 
   {
@@ -1348,19 +1356,19 @@ const portfolio_root = [
     description : 'Related words form a path. ', 
     img : 'intelink.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Intelink" ], 
-      [ "YouTube", EXTERNAL, "https://youtu.be/WTeQVXSBILE" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Intelink" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/WTeQVXSBILE" ], 
     ], 
   }, 
   {
     title : 'Phonebook', 
     year : 2015, 
     pride : 6, 
-    tags : ['vb', high_school, sonification, hci], 
+    tags : ['vb', high_school, sonification, ui], 
     description : "Lookup my friends' phone number by typing into a rolling buffer. Phone number is read out loud using Javis, so I can dial while listening. ", 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Jack23" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Jack23" ], 
     ], 
   }, 
   {
@@ -1371,7 +1379,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/JackTimer" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/JackTimer" ], 
     ], 
   }, 
   {
@@ -1382,7 +1390,7 @@ const portfolio_root = [
     description : 'A Chinese text-to-speech bot that has my voice. I recorded myself speaking Chinese. Wrote a Matlab script to auto-annotate the audio and normalized it. VB had really bad audio control latency, so I had to have two audio players running simultaneously to pronounce characters in an alternating fashion. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Javis%E8%B4%BE%E7%BB%B4%E6%96%AF" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Javis%E8%B4%BE%E7%BB%B4%E6%96%AF" ], 
     ], 
   }, 
   {
@@ -1393,7 +1401,7 @@ const portfolio_root = [
     description : 'Evolution of Johns. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/LetsRock" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/LetsRock" ], 
     ], 
   }, 
   {
@@ -1404,8 +1412,8 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/LifeGame%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F" ], 
-      [ "Paper", INTERNAL, "lifegame.pdf" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/LifeGame%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F" ], 
+      [ PAPER, INTERNAL, "lifegame.pdf" ], 
     ], 
   }, 
   {
@@ -1416,7 +1424,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/locker" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/locker" ], 
     ], 
   }, 
   {
@@ -1427,7 +1435,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/M1%E5%86%A5%E7%8E%8B%E6%98%9F%E5%8A%A0%E5%AF%861%E4%BB%A3" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/M1%E5%86%A5%E7%8E%8B%E6%98%9F%E5%8A%A0%E5%AF%861%E4%BB%A3" ], 
     ], 
   }, 
   {
@@ -1438,7 +1446,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/ManualServer" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/ManualServer" ], 
     ], 
   }, 
   {
@@ -1449,7 +1457,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/miaobiao%E6%9D%B0%E5%85%8B%E7%A7%92%E8%A1%A8" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/miaobiao%E6%9D%B0%E5%85%8B%E7%A7%92%E8%A1%A8" ], 
     ], 
   }, 
   {
@@ -1460,18 +1468,18 @@ const portfolio_root = [
     description : 'Implements MIX from TAOCP in VB. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/MIX" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/MIX" ], 
     ], 
   }, 
   {
     title : 'Notepad', 
     year : 2014, 
     pride : 2, 
-    tags : ['vb', high_school, hci], 
+    tags : ['vb', high_school, ui], 
     description : '', 
     img : 'notepad.gif', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/NotePad" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/NotePad" ], 
     ], 
   }, 
   {
@@ -1482,7 +1490,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/3Sun%E5%A4%AA%E9%98%B3%E5%8A%A0%E5%AF%867" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/3Sun%E5%A4%AA%E9%98%B3%E5%8A%A0%E5%AF%867" ], 
     ], 
   }, 
   {
@@ -1493,7 +1501,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/cewangsu%E6%B5%8B%E7%BD%91%E9%80%9F" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/cewangsu%E6%B5%8B%E7%BD%91%E9%80%9F" ], 
     ], 
   }, 
   {
@@ -1504,7 +1512,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/cezhishang%E6%B5%8B%E6%99%BA%E5%95%86" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/cezhishang%E6%B5%8B%E6%99%BA%E5%95%86" ], 
     ], 
   }, 
   {
@@ -1515,7 +1523,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/D2" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/D2" ], 
     ], 
   }, 
   {
@@ -1526,7 +1534,7 @@ const portfolio_root = [
     description : '', 
     img : 'doufugan.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/doufugan%E8%B1%86%E8%85%90%E5%B9%B2%E5%9B%9B%E5%AD%90%E6%A3%8B" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/doufugan%E8%B1%86%E8%85%90%E5%B9%B2%E5%9B%9B%E5%AD%90%E6%A3%8B" ], 
     ], 
   }, 
   {
@@ -1537,7 +1545,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/jindu%E8%BF%9B%E5%BA%A6%E6%9D%A1" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/jindu%E8%BF%9B%E5%BA%A6%E6%9D%A1" ], 
     ], 
   }, 
   {
@@ -1548,7 +1556,7 @@ const portfolio_root = [
     description : 'Inject code into MATLAB startup script. A joke. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/Matlab%E5%8A%A9%E6%89%8B" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/Matlab%E5%8A%A9%E6%89%8B" ], 
     ], 
   }, 
   {
@@ -1559,7 +1567,7 @@ const portfolio_root = [
     description : '', 
     img : 'matrix.gif', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/Matrix" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/Matrix" ], 
     ], 
   }, 
   {
@@ -1570,7 +1578,7 @@ const portfolio_root = [
     description : 'Opens a random gamepedia page every 5 minutes. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/MCstudy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/MCstudy" ], 
     ], 
   }, 
   {
@@ -1581,7 +1589,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/MC%E5%90%8D%E5%AD%97%E4%BF%AE%E6%94%B9%E5%99%A8" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/MC%E5%90%8D%E5%AD%97%E4%BF%AE%E6%94%B9%E5%99%A8" ], 
     ], 
   }, 
   {
@@ -1592,7 +1600,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/nainai%E5%A5%B6%E5%A5%B6%E6%B8%B8%E6%88%8F" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/nainai%E5%A5%B6%E5%A5%B6%E6%B8%B8%E6%88%8F" ], 
     ], 
   }, 
   {
@@ -1603,7 +1611,7 @@ const portfolio_root = [
     description : 'Highlight/block part of the screen. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/p%E5%B1%8F%E5%B9%95%E5%BD%95%E5%83%8F%E5%8A%A9%E6%89%8B" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/p%E5%B1%8F%E5%B9%95%E5%BD%95%E5%83%8F%E5%8A%A9%E6%89%8B" ], 
     ], 
   }, 
   {
@@ -1614,7 +1622,7 @@ const portfolio_root = [
     description : 'Does Pi contain your qq id? ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/qq%E5%8F%B7%E4%B8%8E%E5%9C%86%E5%91%A8%E7%8E%87/Form1.frm" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/qq%E5%8F%B7%E4%B8%8E%E5%9C%86%E5%91%A8%E7%8E%87/Form1.frm" ], 
     ], 
   }, 
   {
@@ -1625,7 +1633,7 @@ const portfolio_root = [
     description : '', 
     img : 'stanley_light.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/SII" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/SII" ], 
     ], 
   }, 
   {
@@ -1636,7 +1644,7 @@ const portfolio_root = [
     description : '', 
     img : 'hex_gomoku.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/Six%E6%A3%8B" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/Six%E6%A3%8B" ], 
     ], 
   }, 
   {
@@ -1647,7 +1655,7 @@ const portfolio_root = [
     description : 'Bad HCI', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/VB%20HIS/%E5%B8%83%E6%9C%97%E8%BF%90%E5%8A%A8.exe" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/VB%20HIS/%E5%B8%83%E6%9C%97%E8%BF%90%E5%8A%A8.exe" ], 
     ], 
   }, 
   {
@@ -1658,7 +1666,7 @@ const portfolio_root = [
     description : 'A prank. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/W.o.w" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/W.o.w" ], 
     ], 
   }, 
   {
@@ -1669,7 +1677,7 @@ const portfolio_root = [
     description : "I tried Pascal's triangle MOD n. At that time I didn't know it was Sierpinski's triangle. But hey, here is a family of them. ", 
     img : 'sir_triangle.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/y" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/y" ], 
     ], 
   }, 
   {
@@ -1680,7 +1688,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E7%9C%8B%E7%9C%8B%E4%BD%A0%E8%83%BD%E5%9D%9A%E6%8C%81%E5%87%A0%E7%A7%92" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E7%9C%8B%E7%9C%8B%E4%BD%A0%E8%83%BD%E5%9D%9A%E6%8C%81%E5%87%A0%E7%A7%92" ], 
     ], 
   }, 
   {
@@ -1691,7 +1699,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E6%83%85%E4%B9%A6%E5%8A%A0%E5%AF%86" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E6%83%85%E4%B9%A6%E5%8A%A0%E5%AF%86" ], 
     ], 
   }, 
   {
@@ -1702,7 +1710,7 @@ const portfolio_root = [
     description : 'School pride and eastereggs. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E4%B8%89%E8%A7%92%E5%BD%A2%E9%9D%A2%E7%A7%AF%E6%B1%82%E8%A7%A3%E5%99%A8%20%E6%B5%B7%E4%BC%A6%E5%85%AC%E5%BC%8F%2020100717/images" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E4%B8%89%E8%A7%92%E5%BD%A2%E9%9D%A2%E7%A7%AF%E6%B1%82%E8%A7%A3%E5%99%A8%20%E6%B5%B7%E4%BC%A6%E5%85%AC%E5%BC%8F%2020100717/images" ], 
     ], 
   }, 
   {
@@ -1713,7 +1721,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E6%89%8B%E9%80%9F" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E6%89%8B%E9%80%9F" ], 
     ], 
   }, 
   {
@@ -1725,7 +1733,7 @@ const portfolio_root = [
     img : 'gomoku_tie.png', 
     links: [
       [ "Baidu TieBa Post", EXTERNAL, "https://tieba.baidu.com/p/2549495225?pid=37769614768&cid=0&red_tag=3024125774#37769614768" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%B9%B3%E5%B1%80%E6%A6%82%E7%8E%87" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Old%E5%85%88%E5%89%8D%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%84VB/%E4%BA%94%E5%AD%90%E6%A3%8B%E5%B9%B3%E5%B1%80%E6%A6%82%E7%8E%87" ], 
     ], 
   }, 
   {
@@ -1736,7 +1744,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Ox%E7%89%9B%E6%B4%A5%E5%AD%A6%E8%80%85%E5%AD%97%E5%85%B8" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Ox%E7%89%9B%E6%B4%A5%E5%AD%A6%E8%80%85%E5%AD%97%E5%85%B8" ], 
     ], 
   }, 
   {
@@ -1747,7 +1755,7 @@ const portfolio_root = [
     description : 'Failsafe. Many demos.', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/PixelWater/Form1.frm" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/PixelWater/Form1.frm" ], 
     ], 
   }, 
   {
@@ -1758,7 +1766,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/riji" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/riji" ], 
     ], 
   }, 
   {
@@ -1769,7 +1777,7 @@ const portfolio_root = [
     description : 'Stock + Market = Stocket… It also resembles "socket"… ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Stocket%E8%82%A1%E5%B8%82%E6%A8%A1%E6%8B%9F" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Stocket%E8%82%A1%E5%B8%82%E6%A8%A1%E6%8B%9F" ], 
     ], 
   }, 
   {
@@ -1780,7 +1788,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Stream" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Stream" ], 
     ], 
   }, 
   {
@@ -1792,7 +1800,7 @@ const portfolio_root = [
     img : '', 
     links: [
       [ "The Idea", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/blob/master/SuperCode/%E8%AF%B4%E6%98%8E/ReadMe.txt#L43" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/SuperCode" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/SuperCode" ], 
     ], 
   }, 
   {
@@ -1803,7 +1811,7 @@ const portfolio_root = [
     description : 'ASUS had an extra button. I used it as the panic button. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/TimeClicker" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/TimeClicker" ], 
     ], 
   }, 
   {
@@ -1814,7 +1822,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/UplinkBible" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/UplinkBible" ], 
     ], 
   }, 
   {
@@ -1825,7 +1833,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/UplinkBreaker" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/UplinkBreaker" ], 
     ], 
   }, 
   {
@@ -1836,7 +1844,7 @@ const portfolio_root = [
     description : 'Uses my T2S lib to say cursor coordinates. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Win8FullscreenFixer" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/Win8FullscreenFixer" ], 
     ], 
   }, 
   {
@@ -1847,7 +1855,7 @@ const portfolio_root = [
     description : 'I used to make lets play videos with Windows 7 Media Editor. It did not support batch edit. This macro formats all close captions in a project using a hotkey loop. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/ZiMu%E5%AD%97%E5%B9%95%E5%8A%A0%E6%A1%86" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/ZiMu%E5%AD%97%E5%B9%95%E5%8A%A0%E6%A1%86" ], 
     ], 
   }, 
   {
@@ -1858,7 +1866,7 @@ const portfolio_root = [
     description : 'User can transform a shape in real-time by manipulating a matrix. I wrote it to help me get the intuition of linear tranformation. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5" ], 
     ], 
   }, 
   {
@@ -1869,7 +1877,7 @@ const portfolio_root = [
     description : '', 
     img : 'vine.gif', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E7%AA%97%E8%8A%B1%E5%AE%9E%E9%AA%8C" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E7%AA%97%E8%8A%B1%E5%AE%9E%E9%AA%8C" ], 
     ], 
   }, 
   {
@@ -1880,7 +1888,7 @@ const portfolio_root = [
     description : '"Randomly" select a classmate. I used it to cold-call Erwin in a class presentation. ', 
     img : 'random_producer.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%90%8C%E5%AD%A6%E8%B0%83%E5%8F%96%E6%9C%BA" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%90%8C%E5%AD%A6%E8%B0%83%E5%8F%96%E6%9C%BA" ], 
     ], 
   }, 
   {
@@ -1891,7 +1899,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E8%99%9A%E6%95%B0%E4%BD%9C%E5%9B%BE" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E8%99%9A%E6%95%B0%E4%BD%9C%E5%9B%BE" ], 
     ], 
   }, 
   {
@@ -1902,7 +1910,7 @@ const portfolio_root = [
     description : 'Simulate a bi-sexual world evolution with sexual traits and sexual orientation traits inheritable. ', 
     img : 'bi_sex_evo.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%8E%8B%E5%80%92%E6%80%A7%E4%BC%98%E5%8A%BF" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%8E%8B%E5%80%92%E6%80%A7%E4%BC%98%E5%8A%BF" ], 
     ], 
   }, 
   {
@@ -1913,8 +1921,8 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%BB%B6%E8%BF%9F%E6%96%A9%E6%9D%80" ], 
-      [ "Paper", INTERNAL, "yanchizhansha.pdf" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/VB-Projects-Middleschool/tree/master/%E5%BB%B6%E8%BF%9F%E6%96%A9%E6%9D%80" ], 
+      [ PAPER, INTERNAL, "yanchizhansha.pdf" ], 
     ], 
   }, 
   {
@@ -1925,7 +1933,7 @@ const portfolio_root = [
     description : 'Built with GDX. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/tetris-android" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/tetris-android" ], 
       [ "APK Installer", INTERNAL, "tetris.apk" ], 
     ], 
   }, 
@@ -1937,7 +1945,7 @@ const portfolio_root = [
     description : '', 
     img : 'moments_data.png', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Wechat-Moments-data-scrape-and-client-viewer" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Wechat-Moments-data-scrape-and-client-viewer" ], 
     ], 
   }, 
   {
@@ -1948,7 +1956,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/4eWzu_1WSgM" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/4eWzu_1WSgM" ], 
     ], 
   }, 
   {
@@ -1959,7 +1967,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/SdJcBPuh-UA" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/SdJcBPuh-UA" ], 
     ], 
   }, 
   {
@@ -1992,7 +2000,7 @@ const portfolio_root = [
     description : 'MCM project. Models people flow in a metro station. Colab with Erwin Yonghao Xu, Andy Zhiyuan Le, and Yi Zhu. I contributed relatively little work. ', 
     img : '', 
     links: [
-      [ "Paper", INTERNAL, "metro_station.pdf" ], 
+      [ PAPER, INTERNAL, "metro_station.pdf" ], 
     ], 
   }, 
   {
@@ -2003,7 +2011,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/mY1fbKmzurI" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/mY1fbKmzurI" ], 
     ], 
   }, 
   {
@@ -2014,7 +2022,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/Y4pmvQ_O0ac" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/Y4pmvQ_O0ac" ], 
     ], 
   }, 
   {
@@ -2025,7 +2033,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/js6Ix7vczis" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/js6Ix7vczis" ], 
     ], 
   }, 
   {
@@ -2036,7 +2044,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/M-KpYGP4gL8" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/M-KpYGP4gL8" ], 
     ], 
   }, 
   {
@@ -2047,7 +2055,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Paper", INTERNAL, "mutal_random.pdf" ], 
+      [ PAPER, INTERNAL, "mutal_random.pdf" ], 
     ], 
   }, 
   {
@@ -2058,7 +2066,7 @@ const portfolio_root = [
     description : 'Modified YIN and Crepe to real-time. Proposed SFT (Slow Fourier Transform)-based cepstrum peak interpolation. Benchmarked the three. ', 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Real-time-Benchmarking-of-Pitch-Estimators" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Real-time-Benchmarking-of-Pitch-Estimators" ], 
     ], 
   }, 
   {
@@ -2069,7 +2077,7 @@ const portfolio_root = [
     description : '', 
     img : 'spectral_leak.gif', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Interactively-VIsualize-Spectral-Leakage" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Interactively-VIsualize-Spectral-Leakage" ], 
     ], 
   }, 
   {
@@ -2080,8 +2088,8 @@ const portfolio_root = [
     description : 'Efficiently find local minima of 1D functions without gradient. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/python_lib#blinddescendpy" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/blindDescend.py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/python_lib#blinddescendpy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/blindDescend.py" ], 
     ], 
   }, 
   {
@@ -2092,8 +2100,8 @@ const portfolio_root = [
     description : 'Real-time Cepstrogram visualization in Processing 3. ', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/aEuAKBlFn0w" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Cepstrogram-Microphone-Short-time-Cepstrum" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/aEuAKBlFn0w" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Cepstrogram-Microphone-Short-time-Cepstrum" ], 
     ], 
   }, 
   {
@@ -2104,7 +2112,7 @@ const portfolio_root = [
     description : 'To do list, as Android notifications. ', 
     img : 'notax.jpg', 
     links: [
-      [ "Source Code", INTERNAL, "notax.aia" ], 
+      [ SOURCE_CODE, INTERNAL, "notax.aia" ], 
     ], 
   }, 
   {
@@ -2115,7 +2123,7 @@ const portfolio_root = [
     description : 'The light switch was too far away from my bed, but I wanted to go into my bed while being able to see. This app turns the flashlight on, counts down, and turns it off. ', 
     img : 'sleep_fire.png', 
     links: [
-      [ "Source Code", INTERNAL, "sleep_fire.aia" ], 
+      [ SOURCE_CODE, INTERNAL, "sleep_fire.aia" ], 
     ], 
   }, 
   {
@@ -2126,8 +2134,8 @@ const portfolio_root = [
     description : 'Re-encodes to utf-8 and removes MS Outlook-specific metadata. Shrinks file size by ~60%. I use it to publish blogs on my personal website. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#cleanwordhtmlpy" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/cleanWordHtml.py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#cleanwordhtmlpy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/cleanWordHtml.py" ], 
     ], 
   }, 
   {
@@ -2138,7 +2146,7 @@ const portfolio_root = [
     description : 'A React component that animate texts as a canvas. ', 
     img : '__ink_leak__', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/InkLeak#ink-leak" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/InkLeak#ink-leak" ], 
     ], 
   }, 
   {
@@ -2149,7 +2157,7 @@ const portfolio_root = [
     description : 'Profiles the computation time of a series of actions in a real-time stream-base application. ', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#streamprofilerpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#streamprofilerpy" ], 
     ], 
   }, 
   {
@@ -2162,8 +2170,8 @@ const portfolio_root = [
     links: [
       [ "YouTube 1", EXTERNAL, "https://youtu.be/PxjjnCc7VJw" ], 
       [ "YouTube 2", EXTERNAL, "https://youtu.be/9ino2go_F9k" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice#sustain-pedal-for-voice" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice#sustain-pedal-for-voice" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Sustain-Pedal-for-Voice" ], 
     ], 
   }, 
   {
@@ -2174,9 +2182,9 @@ const portfolio_root = [
     description : 'Tool for my LA job. ', 
     img : 'imalading.png', 
     links: [
-      [ "Go", EXTERNAL, "https://wonderful-meninsky-5e3135.netlify.app/" ], 
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/imalading#imalading" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/imalading" ], 
+      [ GO, EXTERNAL, "https://wonderful-meninsky-5e3135.netlify.app/" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/imalading#imalading" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/imalading" ], 
     ], 
   }, 
   {
@@ -2187,7 +2195,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "/#/documentation/sound_of_calligraphy" ], 
+      [ READ_MORE, EXTERNAL, "/#/documentation/sound_of_calligraphy" ], 
     ], 
   }, 
   {
@@ -2198,8 +2206,8 @@ const portfolio_root = [
     description : 'Simulate a soup of positive and negative masses. ', 
     img : 'soup.gif', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/BERUmHHRzA0" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/daniel-chin/soup" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/BERUmHHRzA0" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/soup" ], 
     ], 
   }, 
   {
@@ -2210,7 +2218,7 @@ const portfolio_root = [
     description : 'Speaker in a shoe. Supervised by Eric Parren. ', 
     img : 'xie_yin.jpg', 
     links: [
-      [ "Read More", EXTERNAL, "/#/documentation/xie_yin" ], 
+      [ READ_MORE, EXTERNAL, "/#/documentation/xie_yin" ], 
     ], 
   }, 
   {
@@ -2221,8 +2229,8 @@ const portfolio_root = [
     description : 'This sketch produces a sketch editor containing its own source code. ', 
     img : '', 
     links: [
-      [ "Demo", INTERNAL, "processing_quine.zip" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Processing/tree/master/quine" ], 
+      [ DEMO, INTERNAL, "processing_quine.zip" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Processing/tree/master/quine" ], 
     ], 
   }, 
   {
@@ -2235,7 +2243,7 @@ const portfolio_root = [
     links: [
       [ "Sample 0", INTERNAL, "sierpinski_sonification_demo_0.mp3" ], 
       [ "Sample 1", INTERNAL, "sierpinski_sonification_demo_1.mp3" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Sonification-of-Sierpinski-triangle/blob/main/sierpinski.ipynb" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Sonification-of-Sierpinski-triangle/blob/main/sierpinski.ipynb" ], 
     ], 
   }, 
   {
@@ -2246,8 +2254,8 @@ const portfolio_root = [
     description : 'Map gesture to sound. Primitive prototype. Supervised by Eric Parren. ', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/uBThrG-zqPM?list=PLNb0mNThMXblG0dK-Nn2zbvm8S2aK1iqc" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/NIME-with-Parren/tree/main/better_ins" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/uBThrG-zqPM?list=PLNb0mNThMXblG0dK-Nn2zbvm8S2aK1iqc" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/NIME-with-Parren/tree/main/better_ins" ], 
       [ "WP.NYU", EXTERNAL, "https://wp.nyu.edu/nyushanghai-dcdt/2021/04/28/weekly-performance-better-instruments/" ], 
     ], 
   }, 
@@ -2259,7 +2267,7 @@ const portfolio_root = [
     description : 'Generate angry signals with analog circuits. Supervised by Eric Parren. ', 
     img : 'chord_swiper.jpg', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/lYIWHZsMQYQ" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/lYIWHZsMQYQ" ], 
       [ "WP.NYU", EXTERNAL, "https://wp.nyu.edu/nyushanghai-dcdt/2021/05/14/signal-is-noise-chord-swiper-with-leds/" ], 
     ], 
   }, 
@@ -2271,11 +2279,11 @@ const portfolio_root = [
     description : "Published in NIME 2021. A new interface which can be toggled between its electronic mode and its acoustic mode. In its acoustic mode, the interface is identical to the regular six-hole recorder. In its electronic mode, the interface detects the player's fingering and breath velocity and translates them to MIDI messages. Specifically, it maps higher breath velocity to higher octaves, with the modulo remainder controlling the microtonal pitch bend. This novel mapping reproduces a highly realistic flute-playing experience. Furthermore, changing the parameters easily augments the interface into a hyperinstrument that allows the player to control microtones more expressively via breathing techniques. Colab with Ian Zhang. Supervised by Gus Xia. ", 
     img : 'hhf.jpg', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/UIqsYK9F4xo" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/UIqsYK9F4xo" ], 
       [ "Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV19U4y1V74e" ], 
       [ "Poster", INTERNAL, "hhf.pdf" ], 
       [ "Keyboard-and-Mouse Demo", EXTERNAL, "https://github.com/Daniel-Chin/HHF_NIME2021" ], 
-      [ "Paper", EXTERNAL, "https://nime.pubpub.org/pub/eshr" ], 
+      [ PAPER, EXTERNAL, "https://nime.pubpub.org/pub/eshr" ], 
       [ "More YouTube", EXTERNAL, "https://youtu.be/Qd3r8vkchTA?list=PLNb0mNThMXbmgJnrexhxPXHmCnZRUUFPY" ], 
       [ "More Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1Ay4y1n7LP" ], 
     ], 
@@ -2288,8 +2296,8 @@ const portfolio_root = [
     description : "Playback a section of your screen. Useful for sharing PPT (with speaker notes on) over Tencent (VooV) Meeting. ", 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/daniel-chin/python_lib#screencablemainpy" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/screenCable/__main__.py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#screencablemainpy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/screenCable/__main__.py" ], 
     ], 
   }, 
   {
@@ -2300,7 +2308,7 @@ const portfolio_root = [
     description : "Uses HarmonicSynth (precise) for the lower pitches; and IfftSynth (fast) for the higher pitches. ", 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/hybridSynth.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/hybridSynth.py" ], 
       [ "HarmonicSynth", EXTERNAL, "https://github.com/daniel-chin/python_lib#harmonicsynthpy" ], 
       [ "ifftSynth", EXTERNAL, "https://github.com/daniel-chin/python_lib#ifftsynthpy" ], 
     ], 
@@ -2313,7 +2321,7 @@ const portfolio_root = [
     description : "Assignes hotkey to planet prev/next buttons and pop growth specification buttons. ", 
     img : '', 
     links: [
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/stellaris/__main__.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/stellaris/__main__.py" ], 
     ], 
   }, 
   {
@@ -2329,7 +2337,7 @@ const portfolio_root = [
       [ "Video Explanation YouTube", EXTERNAL, "https://youtu.be/uKA5eqZypM0" ], 
       [ "Video Explanation Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1cf4y157ux/" ], 
       [ "How it Works", EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live/blob/main/demos/technicalDetails.pptx?raw=true" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live" ], 
     ], 
   }, 
   {
@@ -2340,8 +2348,8 @@ const portfolio_root = [
     description : "A mini Python interpreter, written in Python 3. ", 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/mini-Python#mini-python" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/mini-Python" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/mini-Python#mini-python" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/mini-Python" ], 
     ], 
   }, 
   {
@@ -2352,8 +2360,8 @@ const portfolio_root = [
     description : "Forked from Kyle Willett, added user interactivity.", 
     img : '', 
     links: [
-      [ "Read More", EXTERNAL, "https://github.com/Daniel-Chin/common_language#common_language" ], 
-      [ "Source Code", EXTERNAL, "https://github.com/Daniel-Chin/common_language" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/common_language#common_language" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/common_language" ], 
     ], 
   }, 
   {
@@ -2364,7 +2372,31 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ "YouTube", EXTERNAL, "https://youtu.be/sGtptSO12UU" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/sGtptSO12UU" ], 
+    ], 
+  }, 
+  {
+    title : 'Pokemon type interactive chart', 
+    year : 2022, 
+    pride : 4, 
+    tags : [game_tool, react, ui], 
+    description : '', 
+    img : 'poke_type.png', 
+    links: [
+      [ GO, EXTERNAL, "https://elastic-wilson-e832cb.netlify.app/" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Pokemon-Type-Chart-Interactive" ], 
+    ], 
+  }, 
+  {
+    title : 'Self-sync with locality on sphere and torus', 
+    year : 2022, 
+    pride : 4, 
+    tags : [visualization, processing, simulation, inquiry], 
+    description : 'Self synchronization with finite light speed (locality) and closed boundaries (sphere, torus). ', 
+    img : 'pulsation.gif', 
+    links: [
+      [ DEMO, EXTERNAL, "/#/blog/self_sync_locality" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/self-sync-w-finite-light-speed-and-closed-boundary" ], 
     ], 
   }, 
 ];
