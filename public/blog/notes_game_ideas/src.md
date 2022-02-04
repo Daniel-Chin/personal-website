@@ -281,3 +281,12 @@ Meta game where character disguises as the game
     主观唯心地图。
     player basically supply constraints. 
     world topologies. 
+
+## Hack the game
+  You play the game in a Python runtime.  
+````
+Enemy Wizard: I'm going to clear your inventory!!!
+>> del inventory.clear
+* Enemy Wizard killed by: AttributeError('list' object has no attribute 'clear')
+````
+  Or, imagine writing a thread to `breath` periodically. 
