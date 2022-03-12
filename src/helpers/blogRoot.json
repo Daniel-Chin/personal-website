@@ -1,5 +1,11 @@
 [
   {
+    "id": "bells_inequality_manhattan_distance",
+    "title": "Quantum entanglement preserves Bell's inequality under Manhattan distance",
+    "build_type": "html",
+    "time": 1647109549.3644423
+  },
+  {
     "id": "notes_game_ideas",
     "title": "Notes: game ideas (continuously updated)",
     "build_type": "html",
@@ -10,12 +16,6 @@
     "title": "Self synchronization with locality and closed boundaries",
     "build_type": "html",
     "time": 1647108478.7675264
-  },
-  {
-    "id": "bells_inequality_manhattan_distance",
-    "title": "Bell's inequality disappears under Manhattan distance",
-    "build_type": "html",
-    "time": 1647108345.0548875
   },
   {
     "id": "free_will_answer_nothing",
