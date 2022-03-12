@@ -290,3 +290,9 @@ Enemy Wizard: I'm going to clear your inventory!!!
 * Enemy Wizard killed by: AttributeError('list' object has no attribute 'clear')
 ````
   Or, imagine writing a thread to `breath` periodically. 
+
+## 把钱亏光
+You face investment opportunities. Your goal: lose all your money. The catch: higher risk higher return.  
+The game: for rich people, the projects are relatively small, and as the player go for risky projects, they find out they get richer and richer.  
+The message: 高风险高回报，但对于有钱人高风险就是低风险，因为有钱人有钱。  
+Message 2: Rich people can be dumb but as long as they invest in CAPM efficient frontier it's actually very hard to become poor. 
