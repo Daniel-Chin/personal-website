@@ -1,15 +1,21 @@
 [
   {
+    "id": "notes_game_ideas",
+    "title": "Notes: game ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1647108346.1198847
+  },
+  {
+    "id": "bells_inequality_manhattan_distance",
+    "title": "Bell's inequality disappears under Manhattan distance",
+    "build_type": "html",
+    "time": 1647108345.0548875
+  },
+  {
     "id": "self_sync_locality",
     "title": "Self synchronization with locality and closed boundaries",
     "build_type": "html",
     "time": 1643942807.340814
-  },
-  {
-    "id": "notes_game_ideas",
-    "title": "Notes: game ideas (continuously updated)",
-    "build_type": "html",
-    "time": 1643835918.9332047
   },
   {
     "id": "free_will_answer_nothing",
