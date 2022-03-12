@@ -20,6 +20,8 @@ You can run the demo with Processing 3. Source code is at [https://github.com/Da
 ## Motivation
 In computer networks, when TCP end hosts do congestion control, they need to synchronize with other hosts to modulate the queue length in gateways. Ideally, the globe should pulsate as a whole. But when information travels at finite speed, how can the hosts synchronize? 
 
+(Later, I noticed the BBR this problem actually does not exist. But the firefly case still applies.)
+
 I thought the torus surface would be easier. Imagine uni-directional waves. For the sphere though, I can't imagine any stable pattern, so the Earth's internet may have some trouble finding equilibrium. However, experiments showed the sphere actually did better than the torus. 
 
 ## If you are on GitHub

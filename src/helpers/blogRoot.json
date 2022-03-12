@@ -1,5 +1,11 @@
 [
   {
+    "id": "self_sync_locality",
+    "title": "Self synchronization with locality and closed boundaries",
+    "build_type": "html",
+    "time": 1647108478.7675264
+  },
+  {
     "id": "notes_game_ideas",
     "title": "Notes: game ideas (continuously updated)",
     "build_type": "html",
@@ -10,12 +16,6 @@
     "title": "Bell's inequality disappears under Manhattan distance",
     "build_type": "html",
     "time": 1647108345.0548875
-  },
-  {
-    "id": "self_sync_locality",
-    "title": "Self synchronization with locality and closed boundaries",
-    "build_type": "html",
-    "time": 1643942807.340814
   },
   {
     "id": "free_will_answer_nothing",
