@@ -1,15 +1,15 @@
 [
   {
+    "id": "notes_game_ideas",
+    "title": "Notes: game ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1647188509.505715
+  },
+  {
     "id": "bells_inequality_manhattan_distance",
     "title": "Quantum entanglement preserves Bell's inequality under Manhattan distance",
     "build_type": "html",
     "time": 1647109549.3644423
-  },
-  {
-    "id": "notes_game_ideas",
-    "title": "Notes: game ideas (continuously updated)",
-    "build_type": "html",
-    "time": 1647109052.351958
   },
   {
     "id": "self_sync_locality",
