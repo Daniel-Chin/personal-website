@@ -1,5 +1,11 @@
 [
   {
+    "id": "notable_games",
+    "title": "Notable games",
+    "build_type": "html",
+    "time": 1648175065.9314954
+  },
+  {
     "id": "notes_game_ideas",
     "title": "Notes: game ideas (continuously updated)",
     "build_type": "html",

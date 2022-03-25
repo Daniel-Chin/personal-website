@@ -1,0 +1,59 @@
+# Notable games
+A list of notable games I played. 
+
+In the game comments, by "structural beauty" I mean some artistic layout of structure. The structure can be of rooms, levels, stories, etc. Many GEB-related artistic expressions can be thought of as structural beauty. 
+
+- Dr. Stanley's House
+  - Appealing story. 
+- Anti chamber
+  - Creative gameplay. Good vibe. Structural beauty. Deep puzzles. Organic pacing. 
+- Undertale
+  - Creative storytelling. Yes music. Good writing. Well paced. Metagame. Unusual engagement. 
+- A dance of fire and ice
+  - Yes music. Satisfying rhythm gameplay. 
+- Rhythm Doctor
+  - Yes music. Very satisfying rhythm gameplay. Surprising level design. 
+- Keep talking and nobody explodes
+  - Creative multiplayer gameplay. 
+- OneShot
+  - Good writing. Metagame. Unusual engagement. Creative gameplay. Good vibe. AI theme. Clever suspensions. Niko. 
+    - An RPG is successful if it makes me easily *suspend my disbelief*. OneShot made me *believe*. 
+- RONIN
+  - Proper stealth. Creative gameplay. Good vibe. 
+- Portal 2
+  - Creative gameplay. Cinematic moments. Good vibe. Well paced. 
+- Half-life 2
+  - I'm too young to judge. 
+- Ori and the will of the wisps
+  - Good music. Cinematic moments. 
+- Phasmophobia
+  - Creative gameplay. 
+    - In most horror games, the horror is the unwanted, the boundary condition of gameplay, and the to-be-avoided. In Phasmophobia, the horror is your central subject, the focal of gameplay, and the to-be-confronted. A simple twist, but an clever one. 
+- Earthbound/Mother 3
+  - Good music. Cute and laughable. 
+- SCP: secret lab
+  - A creative game about chatting. 
+- Toribash
+  - Creative gameplay. 
+- Cataclysm DDA
+  - Unusual realism. Systemic game. Emerging solutions. 
+    - I never thought a game would let me: 
+      - Throw sandwich bags out from the window when driving a car (that I built); 
+      - Have my shaving time be interrupted by intruding zombies; 
+      - Reload rounds into magazines, then magazines into guns; 
+      - Apply vibrators to NPCs; 
+      - Play with keyboard only. 
+- The Stanley Parable
+  - Metagame. Creative gameplay. Structural beauty. 
+- Outer Wilds
+  - Good vibe. Memorable moments. Engaging story. Structural beauty. Giant's Deep. 
+- 坑爸诈骗犯 (humbugger) trilogy (by Clockwork Monster)
+  - Metagame. Creative gameplay. 
+- rrrrthatsfiveRs
+  - A collection of creative, thought-provoking Flash games. 
+- Introversion games
+  - Uplink. 
+  - Prison Architect. 
+  - Defcon. 
+- Alan Wake
+  - Beautiful story. GEB-style structural beauty. Clever pacing. Satisfying gameplay. 
