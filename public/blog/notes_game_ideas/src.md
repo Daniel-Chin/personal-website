@@ -307,3 +307,9 @@ You face investment opportunities. Your goal: lose all your money. The catch: hi
 The game: for rich people, the projects are relatively small, and as the player go for risky projects, they find out they get richer and richer.  
 The message: 高风险高回报，但对于有钱人高风险就是低风险，因为有钱人有钱。  
 Message 2: Rich people can be dumb but as long as they invest in CAPM efficient frontier it's actually very hard to become poor. 
+
+## 回转僵尸
+you are in a tower. You fight against waves of zombies.  
+The zombie corpses pile up. That's how you ascend the tower.  
+You get supplies (weapons, ammo) from 回转寿司-style conveyor belts. conveyor belts higher in the tower has better supplies.  
+The bottom of the tower is narrow. the space gradually opens up as you ascend. There are floating platforms to lay items on. But once your items are submerged you can't get them back.  
