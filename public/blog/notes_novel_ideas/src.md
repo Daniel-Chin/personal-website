@@ -4,3 +4,22 @@ Instead of sending spys to other nations, nations send their best spys to the Sp
 
 ## Dropout 训练专注力
 用电磁波对大脑进行 dropout. 平时一直 dropout, 关键时刻关掉。
+
+## 实验性小说
+每个章节换一个体裁。  
+体裁：
+- 小说
+- 议论文
+- 对话
+- 日记
+- 录音
+- 聊天记录
+- SCP 文档
+- 报告、文档、申请书...
+- 源代码
+- 作文题目 （e.g. 六、作文 请以“六、作文”为开头撰写一个作文题目，
+50字以下。）
+- 章节标题
+- 章节提纲 / brainstorm 图
+- 章节草稿，含作者脚注
+- 体裁

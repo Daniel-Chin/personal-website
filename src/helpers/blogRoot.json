@@ -1,5 +1,17 @@
 [
   {
+    "id": "notes_novel_ideas",
+    "title": "Notes: Novel ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1650115785.73224
+  },
+  {
+    "id": "notes_game_ideas",
+    "title": "Notes: game ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1650115785.4252398
+  },
+  {
     "id": "grad_diminish_and_fate",
     "title": "\u68af\u5ea6\u6d88\u5931\u4e0e\u547d\u4e2d\u6ce8\u5b9a",
     "build_type": "html",
@@ -10,12 +22,6 @@
     "title": "Notable games",
     "build_type": "html",
     "time": 1648175065.9314954
-  },
-  {
-    "id": "notes_game_ideas",
-    "title": "Notes: game ideas (continuously updated)",
-    "build_type": "html",
-    "time": 1647188509.505715
   },
   {
     "id": "bells_inequality_manhattan_distance",
@@ -46,12 +52,6 @@
     "title": "\u975e\u6211\u9886\u57df\u7684\u5b9e\u9a8c\u70b9\u5b50 (continuously updated)",
     "build_type": "html",
     "time": 1642616861.5669293
-  },
-  {
-    "id": "notes_novel_ideas",
-    "title": "Notes: Novel ideas (continuously updated)",
-    "build_type": "html",
-    "time": 1638137573.3627489
   },
   {
     "id": "a_poem",
