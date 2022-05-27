@@ -177,15 +177,16 @@ const portfolio_root = [
     ], 
   }, 
   {
-    title : 'Moving contact lines with Immersed Boundary method', 
+    title : 'Simulating liquid-gas interfaces and MCL with the IB method', 
     year : 2020, 
     pride : 6, 
     tags : [inquiry, 'physics'], 
-    description : 'Wait for the paper...', 
+    description : 'Extend the Immersed Boundary method to simulate Moving Contact Lines (MCL).', 
     img : 'ib.gif', 
     links: [
       [ "Short Video Demo", EXTERNAL, "https://youtu.be/lbv9AeI2el4" ], 
       [ "Presentation", EXTERNAL, "https://youtu.be/-dizYKs2uFI?t=5" ], 
+      [ "Paper", EXTERNAL, "https://doi.org/10.1063/5.0086452" ], 
       [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/droplet" ], 
     ], 
   }, 
