@@ -30,3 +30,6 @@ Instead of sending spys to other nations, nations send their best spys to the Sp
 第三章。人们性交，用微生物的方法。四季紊乱。世界末日。  
 第四章。管家发现烧水壶背面一块霉渍，擦除。  
 尽量简短。不出现 explicit 解释或关联。 微生物都有姓名。 人类只用代词/身份。  
+
+## 超短 sketch 集合
+- “真是的，舔舔牙就知道他们盘子没洗干净。” “你说刚才的餐厅？怎么知道？” “有 two-day old 的油味儿。”
