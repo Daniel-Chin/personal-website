@@ -1,5 +1,5 @@
 # Notable games
-A list of notable games I played. 
+An (unordered) list of notable games I played. 
 
 In the game comments, by "structural beauty" I mean some artistic layout of structure. The structure can be of rooms, levels, stories, etc. Many GEB-related artistic expressions can be thought of as structural beauty. 
 
