@@ -313,3 +313,6 @@ you are in a tower. You fight against waves of zombies.
 The zombie corpses pile up. That's how you ascend the tower.  
 You get supplies (weapons, ammo) from 回转寿司-style conveyor belts. conveyor belts higher in the tower has better supplies.  
 The bottom of the tower is narrow. the space gradually opens up as you ascend. There are floating platforms to lay items on. But once your items are submerged you can't get them back.  
+
+## A collection of one-liner game ideas
+- 把回收站拖进回收站， like Patrick's Parabox  
