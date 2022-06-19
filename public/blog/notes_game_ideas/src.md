@@ -316,3 +316,17 @@ The bottom of the tower is narrow. the space gradually opens up as you ascend. T
 
 ## A collection of one-liner game ideas
 - 把回收站拖进回收站， like Patrick's Parabox  
+
+## Low Dynamic Range
+玩家的镜头是 Low Dynamic Range (LDR)! 与 HDR 相反，过亮会 clip 成纯白，过暗会 clip 成纯黑。  
+The player moves light sources. The platforming physics follows the LDR-shown world. 是主观唯心。  
+就可以做到如下：  
+- 类似 Echoes of the Eye 的开门方式： 不要照到门，门被 clip 为纯黑，与背景融为一体，玩家可以穿过。  
+  - 这样一来，一定情况下，门就自带 Portal's fizzler 功效，不让光源穿过。  
+- 有 long-range 光源。首次出现时，作为谜题，玩家一开始觉得这是一个坏了的光源，直到找到它发光的 boundary.  
+- 随着玩家 remove 越来越多的 long-range 光源， starting area 暴露出一层又一层新的谜题，文字，和画作。  
+- 黑光灯！降低周遭亮度。  
+- 玩家形象，一开始是剪影。后来出现彩色，你才知道，一开始只是 clip 了。  
+
+一些细节。  
+- 荧光表面。不论周遭多暗，都会显示出轮廓。多用作地面。  
