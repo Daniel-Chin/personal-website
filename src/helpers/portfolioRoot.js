@@ -2337,6 +2337,7 @@ const portfolio_root = [
       [ "Bohemian Rhapsody Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1Xq4y1W7aL/" ], 
       [ "Video Explanation YouTube", EXTERNAL, "https://youtu.be/uKA5eqZypM0" ], 
       [ "Video Explanation Bilibili", EXTERNAL, "https://www.bilibili.com/video/BV1cf4y157ux/" ], 
+      [ "Video Presentation YouTube", EXTERNAL, "https://youtu.be/QOtcpMk6jT0" ], 
       [ "How it Works", EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live/blob/main/demos/technicalDetails.pptx?raw=true" ], 
       [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/one-person-a-cappella-live" ], 
     ], 
