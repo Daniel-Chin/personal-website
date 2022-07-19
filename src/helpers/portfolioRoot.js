@@ -42,6 +42,9 @@ const game_tool = 'game_tool';
 const voice = 'voice';
 const vm = 'vm';
 const ui = 'ui';
+const game = 'game';
+const godot = 'godot';
+const game_jam = 'game_jam';
 
 const portfolio_root = [
   {
@@ -300,7 +303,7 @@ const portfolio_root = [
     title : 'Incubus M.D.', 
     year : 2019, 
     pride : 4, 
-    tags : ['game', 'game_maker_lang', colab, 'game_jam'], 
+    tags : [game, 'game_maker_lang', colab, game_jam], 
     description : 'Colab with Zane Fadul, Andrew Liu, Vera Zhong, Thomas Tai', 
     img : 'incubus.gif', 
     links: [
@@ -2399,6 +2402,20 @@ const portfolio_root = [
     links: [
       [ DEMO, EXTERNAL, "/#/blog/self_sync_locality" ], 
       [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/self-sync-w-finite-light-speed-and-closed-boundary" ], 
+    ], 
+  }, 
+  {
+    title : 'Dice Evolution', 
+    year : 2022, 
+    pride : 5, 
+    tags : [game, godot, game_jam, colab], 
+    description : 'A game made in 48 hours during GMTK game jam 2022. Uou have a powerful ability to alter the dice that decide your fate. Colab with Alith.', 
+    img : 'dice_evolution.png', 
+    links: [
+      [ GO, EXTERNAL, "https://alith.itch.io/dice-evolution" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/Alith-Game-Studio/Dice-Evolution#dice-evolution" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Alith-Game-Studio/Dice-Evolution" ], 
+      [ 'GMTK Jam 2022', EXTERNAL, "https://itch.io/jam/gmtk-jam-2022" ], 
     ], 
   }, 
 ];
