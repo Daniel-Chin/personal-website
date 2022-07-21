@@ -44,10 +44,6 @@ D.超空间
 .多驾驶员操作飞船，吃鸡  
 .3 languages: English, Chinese, Mix. Code时候先用Mix，然后Localize成En, Ch.   
   
-  
-## Failsafe  
-玩家编写机器人打地牢  
-  
 ## 黑客游戏  
 限制鼠标移速。键盘消息故意超慢地缓冲。  
   
@@ -335,3 +331,38 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
 - 灵感来源： Antichamber 需要向上惯性才能通过的门。  
 - Biomass to Wave 宿舍之间的垃圾房，两扇门对开，可以互相架住。  
 - Level selection screen 不应当抽象成 level selection.  
+
+## Failsafe  
+- 玩家编写机器人打地牢。  
+- 编写 failsafe, 自定义 condition 触发，比如受伤，血条低，看见不认识的敌人...  
+- failsafe 激活，机器人的控制权移交给玩家 10 回合。
+  - 故事： failsafe 可以减慢时间，让地牢变成回合制。正常情况下，你需要机器人的反应速度。你可以慢放或会看机器人的行动。  
+- 3-shot learning  
+  - CV: 提供三个示例 tiles, 学出 concept. 
+    - 存在抽象 concept, 比如 敌人系列，元素，颜色...
+  - Audio event detection  
+- 每回合算力有限。  
+  - 保险方法是一边计算一边更新各个模块的当前指令。  
+  - 敌人有 emp 武器，大幅降低算力。如何识别是否被 emp? 一边运算一边检测当前时间。  
+- 蓄力武器。不同攻击范围的武器。  
+- 机器人有动量。  
+  - 引擎提供加速度。  
+  - 有动量时撞到门会打开，惊醒敌人。  
+  - 播放机器人行动时，移动仿佛不是回合制，而是匀加速减速。  
+  - wall kick 来弹性地保持动能、改变朝向。  
+    - 可以躲敌人预测机器人轨迹的 projectiles.  
+  - 有不同种类的 actuator, 轮子，脚，悬浮...
+- 元素。火，电，毒，冰。  
+- 多模态。radio wave as info medium?  
+- 各种传感器。  
+- 护盾。  
+- 是否加入 repetitive farming? 
+  - 更吻合我最初写脚本打 pixel dungeon (oversprout) 的体验。  
+  - 但现在想出了 10回合 failsafe 的机制，其实不需要鼓励玩家自动化了。
+- 玩家使用 `input()` 或者其他 io 作弊？言语谴责。或者， runtime 超时。  
+
+## Quantum dungeon
+- 使用 wave function collapse 生成地牢。  
+- 但是每回合都会根据现有视野重新生成！包括道具，敌人。  
+- 门开两次之后变成墙。  
+- 开局就有目的地和宝物的视野，你需要多次尝试让走廊连过去。  
