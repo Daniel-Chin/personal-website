@@ -376,7 +376,10 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
     - 这样就鼓励节能打怪法，会 less 酷。可能解决方法：见到敌人会使你暂时神奇地获得功率。  
 - 商店。 
   - 走近了才能看见货品。  
-  - 可以击杀老板。通过计算货品对你的总价值，货品卖价，以及你击杀老板的成本，来做决定。    
+  - 可以击杀老板。通过计算货品对你的总价值，货品卖价，以及你击杀老板的成本，来做决定。  
+- 获得加密设备，需要暴力破解。  
+  - 暴搜。考验你 AI 本身能否快速结束一回合的运算。  
+  - Timing attack. 如果你知道这个，就可以用。  
 
 ## Quantum dungeon
 - 使用 wave function collapse 生成地牢。  
