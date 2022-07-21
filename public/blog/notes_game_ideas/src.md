@@ -356,6 +356,7 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
 - 多模态。radio wave as info medium?  
 - 各种传感器。  
 - 护盾。  
+- 反射激光的镜子。躲避导弹的闪现。防御动能武器的虫洞。  
 - 是否加入 repetitive farming? 
   - 更吻合我最初写脚本打 pixel dungeon (overgrown) 的体验。  
   - 但现在想出了 10回合 failsafe 的机制，其实不需要鼓励玩家自动化了。
@@ -363,9 +364,19 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
 - 不要像 FTL 一样限制机器人模块总数。一个高级的 AI 应该能灵活运用各个模块，操作流畅，视觉效果好。  
   - 每局的 variation 怎么来？ FTL 中商店富足，因此需要限制飞船模块总数。 Failsafe 中可以通过刷出有限的宝物来决定玩家能有的模块组合。  
 - 像 FTL, 搞个能量分配系统。(CPU 也能分配，增强算力？)  
+  - 为什么要这样？一堆系统，有 CD, 都能无损地用，会不会更爽？怎样让 AI 更有趣？  
 - 一个敌人（忍者？）  
   - 简单的 variation: 教你怎么躲/防他攻击。  
   - 难的 variation: 攻击 pattern 不变，但见到玩家会扔烟雾弹。AI 需要根据 timing 自己 perform 躲避序列。  
+- 游戏的 prerequisite 是初级编程能力。这不是一个教育游戏，除非有人想写这个 MOD.  
+- AI 和机器人对接的 API 有 documentation, 在网页上，比如用 ReadTheDoc 排版。  
+- Inventory 要不要每个物品都有重量？影响移动加速度。
+- 如何防止玩家在一层无限刷？  
+  - 能量递减？  
+    - 这样就鼓励节能打怪法，会 less 酷。可能解决方法：见到敌人会使你暂时神奇地获得功率。  
+- 商店。 
+  - 走近了才能看见货品。  
+  - 可以击杀老板。通过计算货品对你的总价值，货品卖价，以及你击杀老板的成本，来做决定。    
 
 ## Quantum dungeon
 - 使用 wave function collapse 生成地牢。  
