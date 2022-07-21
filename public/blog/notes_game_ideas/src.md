@@ -334,7 +334,7 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
 
 ## Failsafe  
 - 玩家编写机器人打地牢。  
-- 编写 failsafe, 自定义 condition 触发，比如受伤，血条低，看见不认识的敌人...  
+- 编写 failsafe, 自定义 condition 触发，比如受伤，血条低，看见不认识的敌人... failsafe 总数有限，可作为宝物刷出。  
 - failsafe 激活，机器人的控制权移交给玩家 10 回合。
   - 故事： failsafe 可以减慢时间，让地牢变成回合制。正常情况下，你需要机器人的反应速度。你可以慢放或会看机器人的行动。  
 - 3-shot learning  
@@ -357,9 +357,15 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
 - 各种传感器。  
 - 护盾。  
 - 是否加入 repetitive farming? 
-  - 更吻合我最初写脚本打 pixel dungeon (oversprout) 的体验。  
+  - 更吻合我最初写脚本打 pixel dungeon (overgrown) 的体验。  
   - 但现在想出了 10回合 failsafe 的机制，其实不需要鼓励玩家自动化了。
 - 玩家使用 `input()` 或者其他 io 作弊？言语谴责。或者， runtime 超时。  
+- 不要像 FTL 一样限制机器人模块总数。一个高级的 AI 应该能灵活运用各个模块，操作流畅，视觉效果好。  
+  - 每局的 variation 怎么来？ FTL 中商店富足，因此需要限制飞船模块总数。 Failsafe 中可以通过刷出有限的宝物来决定玩家能有的模块组合。  
+- 像 FTL, 搞个能量分配系统。(CPU 也能分配，增强算力？)  
+- 一个敌人（忍者？）  
+  - 简单的 variation: 教你怎么躲/防他攻击。  
+  - 难的 variation: 攻击 pattern 不变，但见到玩家会扔烟雾弹。AI 需要根据 timing 自己 perform 躲避序列。  
 
 ## Quantum dungeon
 - 使用 wave function collapse 生成地牢。  
