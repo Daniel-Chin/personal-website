@@ -331,3 +331,4 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
 - 灵感来源： Antichamber 需要向上惯性才能通过的门。  
 - Biomass to Wave 宿舍之间的垃圾房，两扇门对开，可以互相架住。  
 - Level selection screen 不应当抽象成 level selection.  
+- 奇怪的小冒险： 偷西瓜 （狗拴在树上）
