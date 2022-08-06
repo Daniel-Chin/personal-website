@@ -29,7 +29,7 @@ We may increase the classification accuracy by providing an ensemble of tpmorps 
 
 When we classify, we can use the weighted average likelihood of tpmorps to estimate the likelihood of an event. We can learn the weights of each tpmorp by gradient descend, as long as we have a dataset of tuples `(free-input text, outcome)`.  
 
-# learned tpmorp
+## learned tpmorp
 Next, we don't want to come up with tpmorps manually. Suppose we have a mechanism to propose tpmorps. It's easy to tell whether it's a good tpmorp, since we can run it over the dataset and check the correlation between the tpmorp likelihood and the ground truth outcome. This way, the system can automatically improve the ensembles of tpmorps and maintain suitable weights for them. At the end, humans can inspect the ensembles to interpret how the system does classification. 
 
 How to propose tpmorps? We can ask an LM to continue "Similar sentences follow. {known tpmorp 0} {known tpmorp 1} ... \<mask\>". 
