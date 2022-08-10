@@ -334,3 +334,8 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
 - 奇怪的小冒险： 偷西瓜 （狗拴在树上）
 - 类似 echoes of the eye: 站在电梯顶上
 - grid-based VS continuous coords. 具体怎么搞？不知道
+- 加油站
+  - 传闻： 有加油站很坑， 先收钱再加油， 而且 request 不卖的汽油号时， 不会退款。
+  - 抵达，尝试。 汽油号数是手输的。 Request 98 号汽油，成功。
+  - Request 95 号汽油， 不卖，吞钱。
+  - Request -99 号汽油， 单价变负。 加钱，实现财富自由。
