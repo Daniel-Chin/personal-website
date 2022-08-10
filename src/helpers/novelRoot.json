@@ -1,5 +1,14 @@
 [
   {
+    "title": "\u6d78\u7684\u7406\u8bba\u5217",
+    "year": 2022,
+    "language": "Chinese",
+    "prerequisites": [],
+    "src": "build.html",
+    "id": "TheorySeq_2022",
+    "build_name": "build.html"
+  },
+  {
     "title": "\u6b7b\u661f\u53db\u5f92",
     "year": 2020,
     "language": "Chinese",
