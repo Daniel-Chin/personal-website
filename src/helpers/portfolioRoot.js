@@ -45,6 +45,7 @@ const ui = 'ui';
 const game = 'game';
 const godot = 'godot';
 const game_jam = 'game_jam';
+const performance = 'performance';
 
 const portfolio_root = [
   {
@@ -2416,6 +2417,17 @@ const portfolio_root = [
       [ READ_MORE, EXTERNAL, "https://github.com/Alith-Game-Studio/Dice-Evolution#dice-evolution" ], 
       [ SOURCE_CODE, EXTERNAL, "https://github.com/Alith-Game-Studio/Dice-Evolution" ], 
       [ 'GMTK Jam 2022', EXTERNAL, "https://itch.io/jam/gmtk-jam-2022" ], 
+    ], 
+  }, 
+  {
+    title : 'Music from far lands and near future', 
+    year : 2022, 
+    pride : 5, 
+    tags : [performance, music, colab], 
+    description : 'A concert Music X lab held in Dubai. Enjoy our music and understand our vision.', 
+    img : 'concertDubai.png', 
+    links: [
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/Ahfk0hvpCzM" ], 
     ], 
   }, 
 ];
