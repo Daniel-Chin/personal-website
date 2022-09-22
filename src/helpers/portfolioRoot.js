@@ -46,6 +46,8 @@ const game = 'game';
 const godot = 'godot';
 const game_jam = 'game_jam';
 const performance = 'performance';
+const scp = 'scp';
+const physics = 'physics';
 
 const portfolio_root = [
   {
@@ -158,7 +160,7 @@ const portfolio_root = [
     title : 'Dice Simulation', 
     year : 2019, 
     pride : 6, 
-    tags : [matlab, 'physics', processing, visualization, simulation, colab, 'peskin', inquiry], 
+    tags : [matlab, physics, processing, visualization, simulation, colab, 'peskin', inquiry], 
     description : 'Can human cheat with perfect dice? I simulated dice rolls in Matlab and colored the initial condition space according to roll outcome. Colab with Michael Li. Supervise by Charles Peskin. ', 
     img : 'dice_sim.png', 
     links: [
@@ -184,7 +186,7 @@ const portfolio_root = [
     title : 'Simulating liquid-gas interfaces and MCL with the IB method', 
     year : 2020, 
     pride : 6, 
-    tags : [inquiry, 'physics'], 
+    tags : [inquiry, physics], 
     description : 'Extend the Immersed Boundary method to simulate Moving Contact Lines (MCL).', 
     img : 'ib.gif', 
     links: [
@@ -291,7 +293,7 @@ const portfolio_root = [
     title : 'SCP 294 NLP AI', 
     year : 2020, 
     pride : 5, 
-    tags : ['ai', 'nlp', 'scp', 'gpt-2', hci], 
+    tags : ['ai', 'nlp', scp, 'gpt-2', hci], 
     description : 'Predicts the result of consuming liquid from SCP 294 using GPT-2. ', 
     img : 'drink_lava.png', 
     links: [
@@ -1524,7 +1526,7 @@ const portfolio_root = [
     title : 'Threebody simulation', 
     year : 2013, 
     pride : 3, 
-    tags : ['vb', 'physics', 'middle_school', simulation], 
+    tags : ['vb', physics, 'middle_school', simulation], 
     description : '', 
     img : '', 
     links: [
@@ -2428,6 +2430,17 @@ const portfolio_root = [
     img : 'concertDubai.png', 
     links: [
       [ YOUTUBE, EXTERNAL, "https://youtu.be/Ahfk0hvpCzM" ], 
+    ], 
+  }, 
+  {
+    title : 'SCP draft: not-inverse square law', 
+    year : 2021, 
+    pride : 5, 
+    tags : [scp, physics], 
+    description : 'An SCP draft. Note that sharing a sandbox page as a finished document is discouraged. Feedback welcome.', 
+    img : 'notInverseSquareLaw.jpg', 
+    links: [
+      [ GO, EXTERNAL, "http://scp-sandbox-3.wikidot.com/daniel-chin" ], 
     ], 
   }, 
 ];
