@@ -17,7 +17,7 @@ In the game comments, by "structural beauty" I mean some artistic layout of stru
   - Creative multiplayer gameplay. 
 - OneShot
   - Good writing. Metagame. Unusual engagement. Creative gameplay. Good vibe. AI theme. Clever suspensions. Niko. 
-    - An RPG is successful if it makes me easily *suspend my disbelief*. OneShot made me *believe*. 
+    - An RPG is successful if it makes me easily [*suspend my disbelief*](https://en.wikipedia.org/wiki/Suspension_of_disbelief). OneShot made me *believe*. 
 - RONIN
   - Proper stealth. Creative gameplay. Good vibe. 
 - Portal 2
@@ -28,7 +28,7 @@ In the game comments, by "structural beauty" I mean some artistic layout of stru
   - Good music. Cinematic moments. 
 - Phasmophobia
   - Creative gameplay. 
-    - In most horror games, the horror is the unwanted, the boundary condition of gameplay, and the to-be-avoided. In Phasmophobia, the horror is your central subject, the focal of gameplay, and the to-be-confronted. A simple twist, but an clever one. 
+    - In most horror games, the horror is the unwanted, the boundary condition of gameplay, and the to-be-avoided. In Phasmophobia, the horror is your central subject, the foci of gameplay, and the to-be-confronted. A simple twist, but an clever one. 
 - Earthbound/Mother 3
   - Good music. Cute and laughable. 
 - SCP: secret lab
