@@ -79,10 +79,19 @@ const LandingPage = () => {
         a lot of fun! (almost as fun as IMA.) 
       </p>
       <p>
-        I'm starting my research in Computer Music. 
+        Now, my research is in Computer Music. 
       </p>
       <h2>Publications</h2>
       <ol className='publications'>
+        <li>
+        <b>Chin, Daniel</b> and Gus Xia.{' '}
+        <a href='https://nime.pubpub.org/pub/bchhb87h/'>
+          "A Computer-aided Multimodal Music Learning System with Curriculum: A Pilot Study."
+        </a> <i>Proceedings of the International 
+        Conference on New Interfaces for Musical 
+        Expression (NIME)</i>, 2022. 
+        </li>
+
         <li>
           Li, Michael Yue, <b>Daniel Chin</b>, Charles Puelz and 
           Pejman Sanaei.{' '}
