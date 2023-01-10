@@ -339,3 +339,11 @@ The player moves light sources. The platforming physics follows the LDR-shown wo
   - 抵达，尝试。 汽油号数是手输的。 Request 98 号汽油，成功。
   - Request 95 号汽油， 不卖，吞钱。
   - Request -99 号汽油， 单价变负。 加钱，实现财富自由。
+
+## 质能守恒 -> 质能转换
+历史上，人们先认为质量守恒、能量守恒，后来发现 E=mC^2.  
+真是震撼的发现！  
+让玩家重复这一过程！  
+
+游戏中本来有两种资源，互不转换。玩家自行通过科研（科技树/逻辑退思锁）解锁转换的本领，然后变得核爆 OP (literally).  
+e.g. 代码游戏的空间和时间？
