@@ -1,27 +1,33 @@
 [
   {
+    "id": "notes_game_ideas",
+    "title": "Notes: game ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1673855408.7890515
+  },
+  {
+    "id": "notable_games",
+    "title": "Notable games",
+    "build_type": "html",
+    "time": 1673855408.45905
+  },
+  {
+    "id": "convenience_and_consistency",
+    "title": "UI: Convenience and Consistency",
+    "build_type": "html",
+    "time": 1673855407.3780522
+  },
+  {
     "id": "learned_tmorp_ensemble",
     "title": "Learned tpmorp ensemble",
     "build_type": "html",
     "time": 1659774552.6480138
   },
   {
-    "id": "notes_game_ideas",
-    "title": "Notes: game ideas (continuously updated)",
-    "build_type": "html",
-    "time": 1659774315.4350042
-  },
-  {
     "id": "notes_novel_ideas",
     "title": "Notes: Novel ideas (continuously updated)",
     "build_type": "html",
     "time": 1655613615.1982675
-  },
-  {
-    "id": "notable_games",
-    "title": "Notable games",
-    "build_type": "html",
-    "time": 1655613614.5753512
   },
   {
     "id": "inbetween_2_and_3",
