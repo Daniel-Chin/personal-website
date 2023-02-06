@@ -298,6 +298,12 @@ Enemy Wizard: I'm going to clear your inventory!!!
 ````
 Or, imagine writing a thread to `breath` periodically. 
 
+### Diagonal method
+minigame: I have a list of sets of natural numbers. Who can give me a set that appears very late in the list?  
+Leaderboard: #1 Jack, 48295.  
+You can use the diagonal method to win "#1 Player, Aleph0".  
+Get 48295 to tie with Jack and talk to Jack to get secret content.  
+
 ## 把钱亏光
 You face investment opportunities. Your goal: lose all your money. The catch: higher risk higher return.  
 The game: for rich people, the projects are relatively small, and as the player go for risky projects, they find out they get richer and richer.  
