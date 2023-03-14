@@ -2452,8 +2452,9 @@ const portfolio_root = [
     description : 'A game about magic, gems, math, and computer science.', 
     img : 'mana_circuit.png', 
     links: [
-      [ GO, EXTERNAL, "MISSING ITCHIO LINK" ], 
+      [ GO, EXTERNAL, "https://daniel-chin.itch.io/mana-circuit" ], 
       [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Mana-Circuit" ], 
+      [ "Web Version", INTERNAL, "manaCircuit/index.html" ], 
     ], 
   }, 
 ];
