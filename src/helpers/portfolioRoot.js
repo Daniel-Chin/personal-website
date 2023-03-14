@@ -48,6 +48,7 @@ const game_jam = 'game_jam';
 const performance = 'performance';
 const scp = 'scp';
 const physics = 'physics';
+const geb = 'geb';
 
 const portfolio_root = [
   {
@@ -2441,6 +2442,18 @@ const portfolio_root = [
     img : 'notInverseSquareLaw.jpg', 
     links: [
       [ GO, EXTERNAL, "http://scp-sandbox-3.wikidot.com/daniel-chin" ], 
+    ], 
+  }, 
+  {
+    title : 'Mana Circuit', 
+    year : 2023, 
+    pride : 6, 
+    tags : [game, godot, geb, math], 
+    description : 'A game about magic, gems, math, and computer science.', 
+    img : 'mana_circuit.png', 
+    links: [
+      [ GO, EXTERNAL, "MISSING ITCHIO LINK" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Mana-Circuit" ], 
     ], 
   }, 
 ];
