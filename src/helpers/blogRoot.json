@@ -3,7 +3,13 @@
     "id": "notes_game_ideas",
     "title": "Notes: game ideas (continuously updated)",
     "build_type": "html",
-    "time": 1673855408.7890515
+    "time": 1679732130.8240702
+  },
+  {
+    "id": "carbon_accounting",
+    "title": "Carbon emission accounting",
+    "build_type": "html",
+    "time": 1679732129.9564319
   },
   {
     "id": "notable_games",
@@ -364,12 +370,6 @@
     "title": "CNN and Light Cone",
     "build_type": "html",
     "time": 1610113524.5977778
-  },
-  {
-    "id": "carbon_accounting",
-    "title": "Carbon emission accounting",
-    "build_type": "html",
-    "time": 1610113524.2392182
   },
   {
     "id": "brownian_fixed_point_and_latent_space",
