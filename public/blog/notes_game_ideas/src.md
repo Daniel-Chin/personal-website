@@ -298,6 +298,8 @@ Enemy Wizard: I'm going to clear your inventory!!!
 ````
 Or, imagine writing a thread to `breath` periodically. 
 
+Multi-singleton. e.g. respawn the protagonist while the protagonist has not actually died, to produce two instances. 
+
 ### Diagonal method
 minigame: I have a list of sets of natural numbers. Who can give me a set that appears very late in the list?  
 Leaderboard: #1 Jack, 48295.  
