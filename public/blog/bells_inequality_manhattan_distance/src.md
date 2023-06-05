@@ -16,3 +16,11 @@ In an L1 world,
 - Triangle wave is pure tone. 
 
 Our world is L2, which is very crooked. 
+
+## Related
+New video by 3b1b:  
+[https://youtu.be/cy8r7WSuT1I](https://youtu.be/cy8r7WSuT1I)  
+
+Evidently, there's something very circular about the normal distribution, and it's related to Pi, and related to sin and cos.  
+
+In the alternate reality, the normal distribution would not be so circular, and the hidden variable theory would work.  

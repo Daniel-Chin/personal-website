@@ -1,5 +1,23 @@
 [
   {
+    "id": "notes_novel_ideas",
+    "title": "Notes: Novel ideas (continuously updated)",
+    "build_type": "html",
+    "time": 1685934307.9774067
+  },
+  {
+    "id": "finance_is_acc_struct_change",
+    "title": "Finance is the acceleration of structural change",
+    "build_type": "html",
+    "time": 1685934306.6601677
+  },
+  {
+    "id": "bells_inequality_manhattan_distance",
+    "title": "Quantum entanglement preserves Bell's inequality under Manhattan distance",
+    "build_type": "html",
+    "time": 1685934305.3624513
+  },
+  {
     "id": "water_maze",
     "title": "Water solving mazes",
     "build_type": "html",
@@ -42,12 +60,6 @@
     "time": 1659774552.6480138
   },
   {
-    "id": "notes_novel_ideas",
-    "title": "Notes: Novel ideas (continuously updated)",
-    "build_type": "html",
-    "time": 1655613615.1982675
-  },
-  {
     "id": "inbetween_2_and_3",
     "title": "Between 2 and 3",
     "build_type": "html",
@@ -64,12 +76,6 @@
     "title": "\u68af\u5ea6\u6d88\u5931\u4e0e\u547d\u4e2d\u6ce8\u5b9a",
     "build_type": "html",
     "time": 1648957063.7717636
-  },
-  {
-    "id": "bells_inequality_manhattan_distance",
-    "title": "Quantum entanglement preserves Bell's inequality under Manhattan distance",
-    "build_type": "html",
-    "time": 1647109549.3644423
   },
   {
     "id": "self_sync_locality",
@@ -124,12 +130,6 @@
     "title": "Bill Wurtz and Douglas Hofstadter",
     "build_type": "html",
     "time": 1624155904.3261025
-  },
-  {
-    "id": "finance_is_acc_struct_change",
-    "title": "Finance is the acceleration of structural change",
-    "build_type": "html",
-    "time": 1624155741.9946847
   },
   {
     "id": "real_life_as_proxy_for_game_model",
