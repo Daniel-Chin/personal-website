@@ -32,7 +32,8 @@ Instead of sending spys to other nations, nations send their best spys to the Sp
 尽量简短。不出现 explicit 解释或关联。 微生物都有姓名。 人类只用代词/身份。  
 
 ## 超短 sketch 集合
-- “真是的，舔舔牙就知道他们盘子没洗干净。” “你说刚才的餐厅？怎么知道？” “有 two-day old 的油味儿。”
+- “真是的，舔舔牙就知道他们盘子没洗干净。” “你说刚才的餐厅？怎么知道？” “有 two-day old 的油味儿。”  
+- "I found a way to tail-optimize the Ackerman function."  
 
 ## The story of a writer
 A/B/C 三side齐头并进，讲三名作家的故事。  
