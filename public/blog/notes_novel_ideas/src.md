@@ -53,6 +53,7 @@ misc:
     - I am the universe.  
     - 物即我，我即物。
     - 注意以上两条似乎必须知道循环才能悟出，因此 ABC 不能悟出？
+    - 因果链可以横跨小说 level. A 经历了 x, 导致 A 有 y 想法，导致 A 给小说安排了 z 设定/情节，导致 B 经历 u... 可以形成闭环。
 
 ## Random city writing challenge
 真人秀：邀请20名作家，参加写作挑战。AI City Generator 随机采样 20 个 city 表征，生成随机 city. 作家用 VR 接入这些 city 的拟真，花 30 天在 city 中生活、写作。  
