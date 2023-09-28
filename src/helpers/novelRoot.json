@@ -1,5 +1,14 @@
 [
   {
+    "title": "The Final Compiler",
+    "year": 2023,
+    "language": "English",
+    "prerequisites": [],
+    "src": "build.html",
+    "id": "TheFinalCompiler_2023",
+    "build_name": "build.html"
+  },
+  {
     "title": "\u6d78\u7684\u7406\u8bba\u5217",
     "year": 2022,
     "language": "Chinese",
