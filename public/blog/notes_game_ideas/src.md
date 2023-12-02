@@ -240,6 +240,9 @@ Think about how Bach did the 12-loop. It's about changing the context/ground
 **The opposite of fashion.**  
 Fashion: we are always getting into fashion! And you get back. (shifting metrics)  
 This game: you are always getting weaker!   
+
+Related:  
+[https://youtu.be/dYseOwfa7Vc](https://youtu.be/dYseOwfa7Vc)
   
 ## Meta game where character disguises as the game  
 you see an instruciton / a schema. You think it's what the game / developers tell you, but it's actually from a character in the game.   
