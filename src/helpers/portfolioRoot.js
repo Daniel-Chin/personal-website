@@ -49,6 +49,7 @@ const performance = 'performance';
 const scp = 'scp';
 const physics = 'physics';
 const geb = 'geb';
+const _3d_print = '3d_print';
 
 const portfolio_root = [
   {
@@ -400,7 +401,7 @@ const portfolio_root = [
     title : 'Simplinstrument', 
     year : 2019, 
     pride : 6, 
-    tags : [colab, music, 'arduino', computer_music, processing, python, 'distributed_app', 'gui_2_api', '3d_print', hci, real_time, fabrication, nime], 
+    tags : [colab, music, 'arduino', computer_music, processing, python, 'distributed_app', 'gui_2_api', _3d_print, hci, real_time, fabrication, nime], 
     description : 'You control the electronic musical instrument by moving your hand while breathing into a mouthpiece. Colab with Tristan Murdoch. ', 
     img : 'simplinstrument.png', 
     links: [
@@ -434,7 +435,7 @@ const portfolio_root = [
     title : 'laser arcade', 
     year : 2019, 
     pride : 6, 
-    tags : [colab, 'arduino', processing, 'distributed_app', '3d_print', 'fusion_360', 'audacity', 'game', hci, fabrication], 
+    tags : [colab, 'arduino', processing, 'distributed_app', _3d_print, 'fusion_360', 'audacity', 'game', hci, fabrication], 
     description : 'An arcade machine. Do watch all videos in the demo. Colab with Tristan Murdoch. ', 
     img : 'laser_arcade.jpg', 
     links: [
@@ -551,7 +552,7 @@ const portfolio_root = [
     title : 'Mouse adaptor', 
     year : 2019, 
     pride : 4, 
-    tags : ['3d_model', 'maya', '3d_print'], 
+    tags : ['3d_model', 'maya', _3d_print], 
     description : '', 
     img : 'mouse_shell.jpg', 
     links: [
@@ -2283,7 +2284,7 @@ const portfolio_root = [
     title : 'Hyper-hybrid Flute', 
     year : 2021, 
     pride : 4, 
-    tags : [computer_music, nime, fabrication, hci, '3d_print', colab], 
+    tags : [computer_music, nime, fabrication, hci, _3d_print, colab], 
     description : "Published in NIME 2021. A new interface which can be toggled between its electronic mode and its acoustic mode. In its acoustic mode, the interface is identical to the regular six-hole recorder. In its electronic mode, the interface detects the player's fingering and breath velocity and translates them to MIDI messages. Specifically, it maps higher breath velocity to higher octaves, with the modulo remainder controlling the microtonal pitch bend. This novel mapping reproduces a highly realistic flute-playing experience. Furthermore, changing the parameters easily augments the interface into a hyperinstrument that allows the player to control microtones more expressively via breathing techniques. Colab with Ian Zhang. Supervised by Gus Xia. ", 
     img : 'hhf.jpg', 
     links: [
@@ -2455,6 +2456,18 @@ const portfolio_root = [
       [ GO, EXTERNAL, "https://daniel-chin.itch.io/mana-circuit" ], 
       [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Mana-Circuit" ], 
       [ "Web Version", INTERNAL, "manaCircuit/index.html" ], 
+    ], 
+  }, 
+  {
+    title : 'Oasis balcony clip', 
+    year : 2023, 
+    pride : 5, 
+    tags : [_3d_print, fabrication], 
+    description : 'This 3D model clips onto the balcony walls to provide privot points for the clothe hanging rope. For Oasis residences in Masdar City, Abu Dhabi. ', 
+    img : 'masdar_oasis_balcony_clip.jpg', 
+    links: [
+      [ "3D model (STL)", INTERNAL, "masdar_oasis_balcony_clip.stl" ], 
+      [ YOUTUBE, EXTERNAL, "https://youtu.be/KLx6O4MpSIY?si=74VNJJaYbPHsiYqr" ], 
     ], 
   }, 
 ];
