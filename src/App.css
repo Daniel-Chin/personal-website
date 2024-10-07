@@ -134,6 +134,7 @@ p {
   background-color: #0a0;
   cursor: pointer;
   position: absolute;
+  top: 0;
   left: 0;
   transform: translateX(-100%);
 } .tag-positive:hover {
@@ -146,6 +147,7 @@ p {
   background-color: #a00;
   cursor: pointer;
   position: absolute;
+  top: 0;
   z-index: 1;
 } .tag-negative:hover {
   background-color: #c00;
