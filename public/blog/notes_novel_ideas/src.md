@@ -23,6 +23,8 @@ Instead of sending spys to other nations, nations send their best spys to the Sp
 - 章节提纲 / brainstorm 图
 - 章节草稿，含作者脚注
 - 体裁
+- chatGPT chat  
+  - e.g. [https://chatgpt.com/share/6710cc02-ccd0-8008-9594-f0baadeac4af](https://chatgpt.com/share/6710cc02-ccd0-8008-9594-f0baadeac4af)  
 
 ## 奶奶的一年四季
 第一章。地理课。老师叫同学们背下一年四季的温度周期。学生：“我听说四季开始紊乱”  
