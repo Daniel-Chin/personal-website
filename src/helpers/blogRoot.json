@@ -1,5 +1,11 @@
 [
   {
+    "id": "laui_landing_page",
+    "title": "LAUI: LLM-Agent User Interface",
+    "build_type": "html",
+    "time": 1731322504.1483326
+  },
+  {
     "id": "bounded_interpretability",
     "title": "Bounded Interpretability",
     "build_type": "html",
