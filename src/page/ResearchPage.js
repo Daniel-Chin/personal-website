@@ -3,12 +3,14 @@ import YoutubeEmbed from '../component/YoutubeEmbed';
 
 const ResearchPage = () => {
   const videos = [
-    [ 'jfkcDi0UJz4', 'Flute X GPT' ],
-    [ '5B_6gtv5crM', 'Concert with CNSO (Our ChatPiano demo at 23:40)'],
-    [ 'rpd-D5y02p8', 'LAUI: LLM-Agent User Interface' ],
-    [ 'DifOKvH1ErQ', 'A+V+H x curriculum' ],
-    [ 'YHPQSsr0SwI', 'Adaptive haptic guidance' ],
-    [ 'xKvCnMw3-4E', 'Haptic guidance (by precursors before me)' ],
+    [ 'jfkcDi0UJz4', 'Flute X GPT.' ],
+    [ '5B_6gtv5crM', 'Concert with CNSO (Our ChatPiano demo at 23:40).' ],
+    [ 'rpd-D5y02p8', 'LAUI: LLM-Agent User Interface.' ],
+    [ 'DifOKvH1ErQ', 'A+V+H x curriculum.' ],
+    [ 'UIqsYK9F4xo', 'Hyper-hybrid flute' ],
+    [ '-t-u0V-27ng', 'Wearable breath guidance (Yinmiao et al.)' ],
+    [ 'YHPQSsr0SwI', 'Adaptive haptic guidance.' ],
+    [ 'xKvCnMw3-4E', 'Haptic guidance (Xia et al.)' ],
   ];
 
   return (
@@ -16,11 +18,15 @@ const ResearchPage = () => {
       <h1 className='center-text'>
       Research
       </h1>
+      <p>
+      Here lists materials from research done by my teammates at Music X Lab.
+      </p>
 
       <h2>Blogs</h2>
       <p>Under construction...</p>
 
       <h2>Videos</h2>
+      <p>(Sorted from recent to old.)</p>
       {videos.map(([ video_id, desc ], i) => (
         <>
           <h3 className='normal-weight'>{desc}</h3>
@@ -30,6 +36,14 @@ const ResearchPage = () => {
 
       <h2>Publications</h2>
       <ol className='publications'>
+        <li>
+        <b>Chin, Daniel</b>, Yuxuan Wang and Gus Xia.{' '}
+        <a href='https://arxiv.org/abs/2405.13050'>
+          "Human-Centered LLM-Agent User Interface: A Position Paper."
+        </a> <i>ArtsIT, Interactivity and Game Creation: 12th 
+        EAI International Conference, ArtsIT 2024, Proceedings</i>, 2024.
+        </li>
+
         <li>
         <b>Chin, Daniel</b> and Gus Xia.{' '}
         <a href='https://nime.pubpub.org/pub/bchhb87h/'>
