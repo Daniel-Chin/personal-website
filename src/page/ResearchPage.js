@@ -3,11 +3,12 @@ import YoutubeEmbed from '../component/YoutubeEmbed';
 
 const ResearchPage = () => {
   const videos = [
-    'jfkcDi0UJz4', 
-    'rpd-D5y02p8', 
-    'DifOKvH1ErQ',
-    'YHPQSsr0SwI',
-    'xKvCnMw3-4E',
+    [ 'jfkcDi0UJz4', 'Flute X GPT' ],
+    [ '5B_6gtv5crM', 'Concert with CNSO (Our ChatPiano demo at 23:40)'],
+    [ 'rpd-D5y02p8', 'LAUI: LLM-Agent User Interface' ],
+    [ 'DifOKvH1ErQ', 'A+V+H x curriculum' ],
+    [ 'YHPQSsr0SwI', 'Adaptive haptic guidance' ],
+    [ 'xKvCnMw3-4E', 'Haptic guidance (by precursors before me)' ],
   ];
 
   return (
@@ -20,8 +21,11 @@ const ResearchPage = () => {
       <p>Under construction...</p>
 
       <h2>Videos</h2>
-      {videos.map((video_id, i) => (
-        <YoutubeEmbed key={i} video_id={video_id} height={200} />
+      {videos.map(([ video_id, desc ], i) => (
+        <>
+          <h3 className='normal-weight'>{desc}</h3>
+          <YoutubeEmbed key={i} video_id={video_id} height={200} />
+        </>
       ))}
 
       <h2>Publications</h2>

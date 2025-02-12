@@ -328,3 +328,7 @@ td {
 .youtube-embed {
   margin: 0.2em;
 }
+
+.normal-weight {
+  font-weight: normal;
+}
