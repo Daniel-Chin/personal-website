@@ -9,6 +9,7 @@ const ResearchPage = () => {
     [ 'DifOKvH1ErQ', 'A+V+H x curriculum.' ],
     [ 'UIqsYK9F4xo', 'Hyper-hybrid flute.' ],
     [ '-t-u0V-27ng', 'Wearable breath guidance (Yinmiao et al.)' ],
+    [ 'MiBfqQpaiPQ', 'Singing tutor (Ziyue et al.)' ],
     [ 'YHPQSsr0SwI', 'Adaptive haptic guidance.' ],
     [ 'xKvCnMw3-4E', 'Haptic guidance (Xia et al.)' ],
   ];
