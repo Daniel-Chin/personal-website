@@ -38,7 +38,7 @@ const InkLeak = ({
     clear_density, back_color, fore_color, width, 
   ]);
 
-  const onClick = () => {
+  const onMouseDown = () => {
     prompt(`Here's the plain text for you to copy:`, text);
   };
 
@@ -67,7 +67,7 @@ const InkLeak = ({
       alt={text} ref={canvas} 
       width={width} height={height} 
       className={className}
-      onClick={onClick}
+      onMouseDown={onMouseDown}
     />
   );
 };
