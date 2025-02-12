@@ -18,9 +18,6 @@ const ResearchPage = () => {
       <h1 className='center-text'>
       Research
       </h1>
-      <p>
-      Here lists materials from research done by my teammates at Music X Lab.
-      </p>
 
       <h2>Blogs</h2>
       <p>Under construction...</p>
