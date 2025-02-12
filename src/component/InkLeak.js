@@ -38,6 +38,10 @@ const InkLeak = ({
     clear_density, back_color, fore_color, width, 
   ]);
 
+  const onClick = () => {
+    prompt(`Here's the plain text for you to copy:`, text);
+  };
+
   useEffect(() => {
     const current = canvas.current;
     if (! current) return;
@@ -63,6 +67,7 @@ const InkLeak = ({
       alt={text} ref={canvas} 
       width={width} height={height} 
       className={className}
+      onClick={onClick}
     />
   );
 };
