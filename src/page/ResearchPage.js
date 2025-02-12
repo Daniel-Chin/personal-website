@@ -7,7 +7,7 @@ const ResearchPage = () => {
     [ '5B_6gtv5crM', 'Concert with CNSO (Our ChatPiano demo at 23:40).' ],
     [ 'rpd-D5y02p8', 'LAUI: LLM-Agent User Interface.' ],
     [ 'DifOKvH1ErQ', 'A+V+H x curriculum.' ],
-    [ 'UIqsYK9F4xo', 'Hyper-hybrid flute' ],
+    [ 'UIqsYK9F4xo', 'Hyper-hybrid flute.' ],
     [ '-t-u0V-27ng', 'Wearable breath guidance (Yinmiao et al.)' ],
     [ 'YHPQSsr0SwI', 'Adaptive haptic guidance.' ],
     [ 'xKvCnMw3-4E', 'Haptic guidance (Xia et al.)' ],
