@@ -8,6 +8,7 @@ const Hat = () => {
         <Link to='/'><li className='ma-left-07em'>
           <b>Daniel Chin</b>
         </li></Link>
+        <Link to='/research'><li>Research</li></Link>
         <Link to='/portfolio'><li>Portfolio</li></Link>
         <Link to='/blogs'><li>Blogs</li></Link>
         <Link to='/novels'><li>Novels</li></Link>

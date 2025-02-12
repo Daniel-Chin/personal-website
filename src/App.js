@@ -4,6 +4,7 @@ import './App.css';
 
 import TempPage         from './page/TempPage';
 import LandingPage      from './page/LandingPage';
+import ResearchPage     from './page/ResearchPage';
 import PortfolioPage    from './page/PortfolioPage';
 import BlogPage         from './page/BlogPage';
 import BlogListPage     from './page/BlogListPage';
@@ -28,6 +29,9 @@ const App = () => {
       <Switch>
         <Route exact path='/'>
           <LandingPage />
+        </Route>
+        <Route exact path='/research'>
+          <ResearchPage />
         </Route>
         <Route exact path='/portfolio'>
           <PortfolioPage />

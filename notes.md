@@ -1,8 +1,5 @@
 ## todo
-- research tab
-  - blogs
-  - videos
-  - papers
+- research tab.blogs
 
 ## far todo
 - ChatGPT responds to blogs

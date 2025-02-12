@@ -324,3 +324,7 @@ td {
 .cursor-help {
   cursor: help;
 }
+
+.youtube-embed {
+  margin: 0.2em;
+}
