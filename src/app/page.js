@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import './page.css';
 
 import TempPage         from './page/TempPage';
 import LandingPage      from './page/LandingPage';
@@ -19,7 +19,7 @@ import Hat              from './component/Hat';
 import TopOfEverything  from './page/TopOfEverything';
 import QuestionPage from './page/QuestionPage';
 
-const App = () => {
+const Home = () => {
   return (
     <>
       <Route exact path='/'>
@@ -77,4 +77,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
