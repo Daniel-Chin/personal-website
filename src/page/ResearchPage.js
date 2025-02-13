@@ -8,10 +8,10 @@ const ResearchPage = () => {
     [ 'rpd-D5y02p8', 'LAUI: LLM-Agent User Interface.' ],
     [ 'DifOKvH1ErQ', 'A+V+H x curriculum.' ],
     [ 'UIqsYK9F4xo', 'Hyper-hybrid flute.' ],
-    [ '-t-u0V-27ng', 'Wearable breath guidance (Yinmiao et al.)' ],
-    [ 'MiBfqQpaiPQ', 'Singing tutor (Ziyue et al.)' ],
+    [ '-t-u0V-27ng', 'Wearable breath guidance (Yinmiao Li et al.)' ],
+    [ 'MiBfqQpaiPQ', 'Singing tutor (Ziyue Piao et al.)' ],
     [ 'YHPQSsr0SwI', 'Adaptive haptic guidance.' ],
-    [ 'xKvCnMw3-4E', 'Haptic guidance (Xia et al.)' ],
+    [ 'xKvCnMw3-4E', 'Haptic guidance (Gus Xia et al.)' ],
   ];
 
   return (
