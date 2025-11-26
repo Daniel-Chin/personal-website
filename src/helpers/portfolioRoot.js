@@ -602,7 +602,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#24solverpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#24solverpy" ], 
     ], 
   }, 
   {
@@ -613,7 +613,7 @@ const portfolio_root = [
     description : 'A python alarm clock, written only because the Win10 Alarm App UI is trash.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#alarmpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#alarmpy" ], 
     ], 
   }, 
   {
@@ -624,7 +624,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archiveresponse-generator" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#archiveresponse-generator" ], 
     ], 
   }, 
   {
@@ -635,7 +635,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivearchive_rrrrpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#archivearchive_rrrrpy" ], 
     ], 
   }, 
   {
@@ -646,7 +646,7 @@ const portfolio_root = [
     description : 'Scans the NYUSH LAN', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivelan_scan" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#archivelan_scan" ], 
     ], 
   }, 
   {
@@ -657,7 +657,7 @@ const portfolio_root = [
     description : 'A man-in-middle to figure out how Wechat PC client works. It failed. ', 
     img : '', 
     links: [
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/Archive/legacy_archive/WechatMirror.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/python-alt-stdlib/blob/master/Archive/legacy_archive/WechatMirror.py" ], 
     ], 
   }, 
   {
@@ -668,7 +668,7 @@ const portfolio_root = [
     description : 'An attempt to implement SSH when I was young.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivelenovoshipping" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#archivelenovoshipping" ], 
     ], 
   }, 
   {
@@ -679,7 +679,7 @@ const portfolio_root = [
     description : 'Atomic database access immune to power-outage. Inspired by Undertale', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archiverobust_persistent_data_solutionpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#archiverobust_persistent_data_solutionpy" ], 
     ], 
   }, 
   {
@@ -690,7 +690,7 @@ const portfolio_root = [
     description : 'Keeps beeping, until the computer sleeps. Useful in rare occasions. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#archivesleepprober" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#archivesleepprober" ], 
     ], 
   }, 
   {
@@ -701,7 +701,7 @@ const portfolio_root = [
     description : 'A beautiful script. Next time you need to look at the ascii table, run this. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#ascii_tablepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#ascii_tablepy" ], 
     ], 
   }, 
   {
@@ -712,7 +712,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#beer-on-the-wall" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#beer-on-the-wall" ], 
     ], 
   }, 
   {
@@ -723,7 +723,7 @@ const portfolio_root = [
     description : 'A file system. Encrypted system-wise with Fernet. ', 
     img : 'book.jpg', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#bookpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#bookpy" ], 
     ], 
   }, 
   {
@@ -734,7 +734,7 @@ const portfolio_root = [
     description : 'Cache function returns without hashing inputs. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#cache_no_hashpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#cache_no_hashpy" ], 
     ], 
   }, 
   {
@@ -745,7 +745,7 @@ const portfolio_root = [
     description : 'A python context to temporarily cd to another directory.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#chdir_contextpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#chdir_contextpy" ], 
     ], 
   }, 
   {
@@ -756,7 +756,7 @@ const portfolio_root = [
     description : 'Use your phone to send UP and DOWN to your computer! You can finally read papers with arms relaxed. ', 
     img : 'clicker.jpg', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#clickermainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#clickermainpy" ], 
     ], 
   }, 
   {
@@ -767,7 +767,7 @@ const portfolio_root = [
     description : 'The minigame from Undertale, implemented in python. ', 
     img : 'color_tile.png', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#color_tiles" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#color_tiles" ], 
     ], 
   }, 
   {
@@ -778,7 +778,7 @@ const portfolio_root = [
     description : 'Iterate through all  files in my python repo and build a readme.md for the repo', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#compile_readmepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#compile_readmepy" ], 
     ], 
   }, 
   {
@@ -789,7 +789,7 @@ const portfolio_root = [
     description : "Just like IPython - supports runtime embed. But: 1) It's way lighter; 2) Other threads can still print things when user is inputting commands; 3) Tab auto-completes your phrase, even under Windows! 4) secret ctrl+R feature. ", 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#console" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#console" ], 
     ], 
   }, 
   {
@@ -800,7 +800,7 @@ const portfolio_root = [
     description : 'For counting votes and ranking the counts.  ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#countpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#countpy" ], 
     ], 
   }, 
   {
@@ -811,7 +811,7 @@ const portfolio_root = [
     description : 'Compare the shape of two dicts. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#dict_shapepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#dict_shapepy" ], 
     ], 
   }, 
   {
@@ -822,7 +822,7 @@ const portfolio_root = [
     description : 'A simple ascii game. ', 
     img : 'find_vera.png', 
     links: [
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/Find%20Vera/Find_Vera%20V2.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/python-alt-stdlib/blob/master/Find%20Vera/Find_Vera%20V2.py" ], 
     ], 
   }, 
   {
@@ -833,7 +833,7 @@ const portfolio_root = [
     description : 'Play .swf files with a browser. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#flashplayer" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#flashplayer" ], 
     ], 
   }, 
   {
@@ -844,7 +844,7 @@ const portfolio_root = [
     description : 'Transmit a folder over the internet.  ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#folder_gopy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#folder_gopy" ], 
     ], 
   }, 
   {
@@ -855,7 +855,7 @@ const portfolio_root = [
     description : 'Like dummy.Pool.map, but no limit on number of threads. Useful when IO-bound.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#forcemappy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#forcemappy" ], 
     ], 
   }, 
   {
@@ -866,7 +866,7 @@ const portfolio_root = [
     description : 'I use this frequently for Finance problem sets. ', 
     img : 'formula.png', 
     links: [
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/formula.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib/blob/master/formula.py" ], 
     ], 
   }, 
   {
@@ -877,7 +877,7 @@ const portfolio_root = [
     description : 'Obviously a wheel re-invted', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#friendly_timepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#friendly_timepy" ], 
     ], 
   }, 
   {
@@ -888,7 +888,7 @@ const portfolio_root = [
     description : 'Tools to do graphics in the terminal.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#graphic_terminalpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#graphic_terminalpy" ], 
     ], 
   }, 
   {
@@ -899,7 +899,7 @@ const portfolio_root = [
     description : 'HTTP man in middle. Prints all traffic. Useful for investigating how http works. Although Chrome Dev Tools prolly have something like this already.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#httpmimpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#httpmimpy" ], 
     ], 
   }, 
   {
@@ -910,7 +910,7 @@ const portfolio_root = [
     description : 'Broadcast messages from any client to all clients. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#hubpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#hubpy" ], 
     ], 
   }, 
   {
@@ -921,7 +921,7 @@ const portfolio_root = [
     description : 'A python context to indent print outputs. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#indentprinterpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#indentprinterpy" ], 
     ], 
   }, 
   {
@@ -932,7 +932,7 @@ const portfolio_root = [
     description : 'An android-friendly terminal file explorer. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#interactiveconsole_explorerpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#interactiveconsole_explorerpy" ], 
     ], 
   }, 
   {
@@ -943,7 +943,7 @@ const portfolio_root = [
     description : 'Thicc and powerful. See the source code for documentation. ', 
     img : '', 
     links: [
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/interactive/__init__.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib/blob/master/interactive/__init__.py" ], 
     ], 
   }, 
   {
@@ -954,7 +954,7 @@ const portfolio_root = [
     description : 'Converts jupyter notebook file to python script. Works even when Jupyter is not installed.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#ipynb_to_pypy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#ipynb_to_pypy" ], 
     ], 
   }, 
   {
@@ -965,7 +965,7 @@ const portfolio_root = [
     description : 'Progress bar. Supports python context. Computes transmition speed too. ', 
     img : 'jdt.png', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#jdtpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#jdtpy" ], 
     ], 
   }, 
   {
@@ -976,7 +976,7 @@ const portfolio_root = [
     description : 'A simple database solution, but highly scalable.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#linked_file_listpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#linked_file_listpy" ], 
     ], 
   }, 
   {
@@ -987,7 +987,7 @@ const portfolio_root = [
     description : 'Find out local IP addr on Windows. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#local_ippy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#local_ippy" ], 
     ], 
   }, 
   {
@@ -998,7 +998,7 @@ const portfolio_root = [
     description : 'Record, play, save, and load macros. Think AFK bot. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#macro" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#macro" ], 
     ], 
   }, 
   {
@@ -1009,7 +1009,7 @@ const portfolio_root = [
     description : 'Translate markdown .md file to html file.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#md2htmlmainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#md2htmlmainpy" ], 
     ], 
   }, 
   {
@@ -1020,7 +1020,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#minecraft_afkpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#minecraft_afkpy" ], 
     ], 
   }, 
   {
@@ -1031,7 +1031,7 @@ const portfolio_root = [
     description : "Your laptop has no numpad? Can't play Cataclysm:DDA? No worries. Use your phone as a numpad!", 
     img : 'numpad.gif', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#mobilenumpad" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#mobilenumpad" ], 
     ], 
   }, 
   {
@@ -1042,7 +1042,7 @@ const portfolio_root = [
     description : 'MsgBox, InputBox, other util functions…', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#moretkpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#moretkpy" ], 
     ], 
   }, 
   {
@@ -1053,7 +1053,7 @@ const portfolio_root = [
     description : 'Provides an interface to multiple terminal windows. E.g. for output of difference levels (debug, info, warning, error...)', 
     img : 'multi_term.png', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#multi_term" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#multi_term" ], 
     ], 
   }, 
   {
@@ -1064,7 +1064,7 @@ const portfolio_root = [
     description : 'HTTP server in python. Each request is handled by a thread. Global event loop and message queue. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#myhttppy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#myhttppy" ], 
     ], 
   }, 
   {
@@ -1075,7 +1075,7 @@ const portfolio_root = [
     description : "Prints QR code to terminal. How useful. I can't imagine why nobody built this", 
     img : 'qr.png', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#myqrpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#myqrpy" ], 
     ], 
   }, 
   {
@@ -1086,7 +1086,7 @@ const portfolio_root = [
     description : 'My socket utils', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#mysocketpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#mysocketpy" ], 
     ], 
   }, 
   {
@@ -1097,7 +1097,7 @@ const portfolio_root = [
     description : 'For an NYU person, convert their netID to personal profile.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#netid2profilepy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#netid2profilepy" ], 
     ], 
   }, 
   {
@@ -1108,7 +1108,7 @@ const portfolio_root = [
     description : 'Transmit a file over the internet / LAN. I frequently use it with friends. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#oneshippy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#oneshippy" ], 
     ], 
   }, 
   {
@@ -1119,7 +1119,7 @@ const portfolio_root = [
     description : '', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#pdf_litouzhibeipy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#pdf_litouzhibeipy" ], 
     ], 
   }, 
   {
@@ -1130,7 +1130,7 @@ const portfolio_root = [
     description : 'Preview a pickle file. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#pickle_previewmainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#pickle_previewmainpy" ], 
     ], 
   }, 
   {
@@ -1141,7 +1141,7 @@ const portfolio_root = [
     description : 'Send objects over sockets. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#pickle_socketpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#pickle_socketpy" ], 
     ], 
   }, 
   {
@@ -1152,7 +1152,7 @@ const portfolio_root = [
     description : 'Light-weight wav player. (Why does Windows Media Player take so long to launch?)', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#playwavpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#playwavpy" ], 
     ], 
   }, 
   {
@@ -1163,7 +1163,7 @@ const portfolio_root = [
     description : 'Forward socket traffic. Useful as a firewall. Is not thread safe - expect unexpected behaviors. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#port_forwardpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#port_forwardpy" ], 
     ], 
   }, 
   {
@@ -1174,7 +1174,7 @@ const portfolio_root = [
     description : 'Interactive git commit and push.  ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#push_gitpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#push_gitpy" ], 
     ], 
   }, 
   {
@@ -1185,7 +1185,7 @@ const portfolio_root = [
     description : 'Sets up a server, displays a QR code. Scan it to go to a web page. Exchange raw texts!  ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#qrchatmainpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#qrchatmainpy" ], 
     ], 
   }, 
   {
@@ -1196,7 +1196,7 @@ const portfolio_root = [
     description : 'Creates a react component file containing boilerplate code. Prints code that imports this component. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#reactnewpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#reactnewpy" ], 
     ], 
   }, 
   {
@@ -1207,7 +1207,7 @@ const portfolio_root = [
     description : 'A simple file server. Serves files in a folder. Has a simple HTML page interface.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#safeserver" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#safeserver" ], 
     ], 
   }, 
   {
@@ -1218,7 +1218,7 @@ const portfolio_root = [
     description : 'An HTTP backend server baseclass. Really tries to be safe against injection attacks. Intentionally uses single thread only.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#safe_httppy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#safe_httppy" ], 
     ], 
   }, 
   {
@@ -1229,7 +1229,7 @@ const portfolio_root = [
     description : 'Immediately opens a port, accepts a connection and does nothing. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#serve_nowpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#serve_nowpy" ], 
     ], 
   }, 
   {
@@ -1240,7 +1240,7 @@ const portfolio_root = [
     description : 'Examines a directory of .py files and find all imports. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#summarize_dependenciespy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#summarize_dependenciespy" ], 
     ], 
   }, 
   {
@@ -1251,7 +1251,7 @@ const portfolio_root = [
     description : 'A hard-core ascii-graphic adventure game in python. Tremendous eastereggs. ', 
     img : 'to_the_earth.png', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#to-the-earthto-the-earth-v8py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#to-the-earthto-the-earth-v8py" ], 
     ], 
   }, 
   {
@@ -1262,7 +1262,7 @@ const portfolio_root = [
     description : 'I came up with an algorithm that fixes typos. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#typofix" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#typofix" ], 
     ], 
   }, 
   {
@@ -1273,7 +1273,7 @@ const portfolio_root = [
     description : 'Reading papers? Hands off. Scroll down with your voice. ', 
     img : 'voice_scroll.png', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#voice_scrollpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#voice_scrollpy" ], 
     ], 
   }, 
   {
@@ -1284,7 +1284,7 @@ const portfolio_root = [
     description : 'Downloads a web resource.', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#wgetpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#wgetpy" ], 
     ], 
   }, 
   {
@@ -2097,8 +2097,8 @@ const portfolio_root = [
     description : 'Efficiently find local minima of 1D functions without gradient. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/Daniel-Chin/python_lib#blinddescendpy" ], 
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/blindDescend.py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#blinddescendpy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib/blob/master/blindDescend.py" ], 
     ], 
   }, 
   {
@@ -2143,8 +2143,8 @@ const portfolio_root = [
     description : 'Re-encodes to utf-8 and removes MS Outlook-specific metadata. Shrinks file size by ~60%. I use it to publish blogs on my personal website. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#cleanwordhtmlpy" ], 
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/cleanWordHtml.py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#cleanwordhtmlpy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib/blob/master/cleanWordHtml.py" ], 
     ], 
   }, 
   {
@@ -2166,7 +2166,7 @@ const portfolio_root = [
     description : 'Profiles the computation time of a series of actions in a real-time stream-base application. ', 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#streamprofilerpy" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#streamprofilerpy" ], 
     ], 
   }, 
   {
@@ -2305,8 +2305,8 @@ const portfolio_root = [
     description : "Playback a section of your screen. Useful for sharing PPT (with speaker notes on) over Tencent (VooV) Meeting. ", 
     img : '', 
     links: [
-      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python_lib#screencablemainpy" ], 
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/screenCable/__main__.py" ], 
+      [ READ_MORE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#screencablemainpy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib/blob/master/screenCable/__main__.py" ], 
     ], 
   }, 
   {
@@ -2317,9 +2317,9 @@ const portfolio_root = [
     description : "Uses HarmonicSynth (precise) for the lower pitches; and IfftSynth (fast) for the higher pitches. ", 
     img : '', 
     links: [
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/hybridSynth.py" ], 
-      [ "HarmonicSynth", EXTERNAL, "https://github.com/daniel-chin/python_lib#harmonicsynthpy" ], 
-      [ "ifftSynth", EXTERNAL, "https://github.com/daniel-chin/python_lib#ifftsynthpy" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib/blob/master/hybridSynth.py" ], 
+      [ "HarmonicSynth", EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#harmonicsynthpy" ], 
+      [ "ifftSynth", EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib#ifftsynthpy" ], 
     ], 
   }, 
   {
@@ -2330,7 +2330,7 @@ const portfolio_root = [
     description : "Assignes hotkey to planet prev/next buttons and pop growth specification buttons. ", 
     img : '', 
     links: [
-      [ SOURCE_CODE, EXTERNAL, "https://github.com/Daniel-Chin/Python_Lib/blob/master/stellaris/__main__.py" ], 
+      [ SOURCE_CODE, EXTERNAL, "https://github.com/daniel-chin/python-alt-stdlib/blob/master/stellaris/__main__.py" ], 
     ], 
   }, 
   {
