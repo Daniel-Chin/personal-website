@@ -17,7 +17,7 @@ try:
 except ImportError:
     from build import all_blog_ids, get_src_name_info   # type: ignore
 
-MAX_N_BLOGS: int | None = 5 # throttle
+MAX_N_BLOGS: int | None = 10 # throttle
 MODEL = 'gpt-5.2'
 
 ENDPOINT = '/v1/responses'
@@ -176,7 +176,10 @@ def all_blogs() -> tuple[tuple[str, str, str, LLMCommentInfo], ...]:
     return tuple(iter_all_blogs())
 
 @functools.lru_cache(maxsize=1)
-def to_comment() -> tp.Generator[tuple[str, str, str, LLMCommentInfo], None, None]:
+def to_comment():
+    return tuple(iter_to_comment())
+
+def iter_to_comment() -> tp.Generator[tuple[str, str, str, LLMCommentInfo], None, None]:
     acc = 0
     for blog_id, blog_content, blog_content_hash, info in all_blogs():
         match info.status:
@@ -327,13 +330,13 @@ def main():
     with contextlib.chdir(os.path.dirname(__file__)):
         open_ai = OpenAI()
         
-        # pprint(all_blogs())
+        # print(*[x[0] for x in to_comment()], sep='\n')
         # submit_job(open_ai)
 
-        batch_id = 'batch_695c1e77953481908e145d24a481cdb8'
+        batch_id = 'batch_695c31d685f48190ab556962aae1a197'
 
-        # check_job(open_ai, batch_id)
-        retrieve_job(open_ai, batch_id)
+        check_job(open_ai, batch_id)
+        # retrieve_job(open_ai, batch_id)
 
 if __name__ == '__main__':
     main()
