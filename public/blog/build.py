@@ -14,6 +14,7 @@ from daniel_chin_python_alt_stdlib.indentprinter import indentPrinter
 EXCLUDE_EXT = [
     'py', 'json', 'css', '__pycache__', 
     'gitignore', 'lnk', 'js', 'json', 'node_modules', 
+    'md',
 ]
 
 HASH_FILENAME = 'hash.txt'
@@ -45,7 +46,7 @@ def main(ignore_hash: bool = False):
                 src_name_info = get_src_name_info()
                 try:
                     src_name, build_type = src_name_info
-                except TypeError:
+                except ValueError:
                     continue
                 meta = extract(blog_id, src_name, prev_root, build_type)
                 modified = handle_folder(src_name, meta, ignore_hash)
@@ -68,7 +69,7 @@ def get_src_name_info() -> tuple[str, str]:
         return 'build.html', 'html'
     if 'build.pdf' in list_dir:
         return 'build.pdf', 'pdf'
-    raise TypeError(f'Cannot recognize: {list_dir}. ')
+    raise ValueError(f'Cannot recognize: {list_dir}. ')
 
 def extract(blog_id: str, src_name: str, prev_root, build_type: str):
     def open_src():
@@ -87,7 +88,7 @@ def extract(blog_id: str, src_name: str, prev_root, build_type: str):
         with open('title.txt', 'r', encoding='utf-8') as f:
             title = f.read().strip()
     else:
-        raise TypeError(f'Unknown src type "{src_name}". ')
+        raise ValueError(f'Unknown src type "{src_name}". ')
     times = [x['time'] for x in prev_root if x['id'] == blog_id]
     if times:
         time_ = times[0]
@@ -147,7 +148,7 @@ def build_blog(src_name: str, p: tp.Callable[..., None]):
     # elif src_name.endswith('.docx'):
     #     p('.docx should be compiled with MS Word. ')
     else:
-        raise TypeError(f'Unknown src type "{src_name}". ')
+        raise ValueError(f'Unknown src type "{src_name}". ')
 
 # def translateCodeBlock(src):
 #     parts = src.split('\n```')
