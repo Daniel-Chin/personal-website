@@ -315,6 +315,7 @@ def digest(
                     raise RuntimeError('Content hash mismatch!?')
                 if info.latest.prompt_hash != prompt_hash():
                     raise RuntimeError('Prompt hash mismatch!?')
+                    # pass
                 info.save()
             else:
                 if old_info.latest is not None and old_info.latest.comment == comment:
@@ -335,8 +336,8 @@ def main():
 
         batch_id = 'batch_695c31d685f48190ab556962aae1a197'
 
-        check_job(open_ai, batch_id)
-        # retrieve_job(open_ai, batch_id)
+        # check_job(open_ai, batch_id)
+        retrieve_job(open_ai, batch_id)
 
 if __name__ == '__main__':
     main()
