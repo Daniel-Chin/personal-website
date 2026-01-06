@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "latest": {
+    "blog_content_hash": "acc297caa741bd807fa6152fae0145cd62db531643d598f567eb4364a7ff4fb6",
+    "prompt_hash": "c1ab290966ff0b4fa893f7868f77bb7ea2cf2dba7c7f2bbb67a7be3028709d1a",
+    "comment": "Daniel’s “joke” works because it exposes a hidden rule people learn by osmosis rather than principle: in C, `#include` is not “just a function-like statement,” it’s a *preprocessing directive* and (per the language grammar) it must begin a logical line—optionally preceded by whitespace, but not by any other token. That leading `1` means the line is no longer a directive, so the `#` becomes a stray character and VSCode’s parser correctly flags it; the compiler would, too. This is one of those moments where the tool isn’t being fussy so much as reminding you that C is processed in distinct phases (preprocessing before compilation), and tiny lexical details—like what counts as “start of line”—matter in a way that surprises newcomers (the relevant framing is in the standard’s translation phases; a readable reference is [C11 rationale / overview](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)).\n\nWhat Daniel doesn’t quite name, but the example invites, is the broader failure mode: errors that look “mystical” in an editor are often artifacts of *context leakage*—copying code from a PDF with line numbers, from a blog with prompts, or from a REPL transcript. In other words, the bug isn’t in the programmer’s logic but in the boundary between representations. That’s not merely a beginner gotcha; it’s why serious toolchains lean on linters and format-aware code blocks, and why pedagogy that embeds line numbers inside copyable text reliably manufactures this exact mistake.",
+    "model_snapshot": "gpt-5.2-2025-12-11"
+  },
+  "old": null
+}
