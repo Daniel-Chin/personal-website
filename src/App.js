@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import TempPage         from './page/TempPage';
@@ -22,57 +22,60 @@ import QuestionPage from './page/QuestionPage';
 const App = () => {
   return (
     <>
-      <Route exact path='/'>
-        <TopOfEverything />
-      </Route>
+      <Routes>
+        <Route path='/' element={
+          <TopOfEverything />
+        } />
+        <Route path='*' element={null} />
+      </Routes>
       <Hat />
-      <Switch>
-        <Route exact path='/'>
+      <Routes>
+        <Route path='/' element={
           <LandingPage />
-        </Route>
-        <Route exact path='/research'>
+        } />
+        <Route path='/research' element={
           <ResearchPage />
-        </Route>
-        <Route exact path='/portfolio'>
+        } />
+        <Route path='/portfolio' element={
           <PortfolioPage />
-        </Route>
-        <Route exact path='/blogs'>
+        } />
+        <Route path='/blogs' element={
           <BlogListPage />
-        </Route>
-        <Route exact path='/blog/:id'>
+        } />
+        <Route path='/blog/:id' element={
           <BlogPage />
-        </Route>
-        <Route exact path='/novels'>
+        } />
+        <Route path='/novels' element={
           <NovelListPage />
-        </Route>
-        <Route exact path='/novel/:id'>
+        } />
+        <Route path='/novel/:id' element={
           <NovelPage />
-        </Route>
-        <Route exact path='/questions'>
+        } />
+        <Route path='/questions' element={
           <QuestionListPage />
-        </Route>
-        <Route exact path='/question/:id'>
+        } />
+        <Route path='/question/:id' element={
           <QuestionPage />
-        </Route>
-        <Route exact path='/about'>
+        } />
+        <Route path='/about' element={
           <AboutMePage />
-        </Route>
-        <Route exact path='/whoami'>
+        } />
+        <Route path='/whoami' element={
           <WhoamiPage />
-        </Route>
-        <Route exact path='/indie/:uri'>
+        } />
+        <Route path='/indie/:uri' element={
           <IndieIframePage />
-        </Route>
-        <Route exact path='/documentation/:id'>
+        } />
+        <Route path='/documentation/:id' element={
           <DocumentationPage />
-        </Route>
-        <Route exact path='/temp'>
+        } />
+        <Route path='/temp' element={
           <TempPage />
-        </Route>
-        <Route>
-          404 No such URL
-        </Route>
-      </Switch>
+        } />
+        <Route path='*' element={
+          <div>404 No such URL</div>
+        } />
+      </Routes>
     </>
   );
 };
