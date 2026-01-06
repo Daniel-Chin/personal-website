@@ -17,7 +17,7 @@ from pydantic import BaseModel, ConfigDict, model_validator
 
 from public.blog.build import all_blog_ids, get_src_name_info, ROOT_FILENAME
 
-MAX_N_BLOGS: int | None = 1 # throttle
+MAX_N_BLOGS: int | None = 30 # throttle
 MODEL = 'gpt-5.2'
 
 ENDPOINT = '/v1/responses'
@@ -178,8 +178,8 @@ def iter_all_blogs():
         key=lambda x: x[1],
         reverse=True,
     )
-    # for blog_id, _ in sorted_blog_ids:
-    for blog_id in all_blog_ids():
+    for blog_id, _ in sorted_blog_ids:
+    # for blog_id in all_blog_ids():
         with contextlib.chdir(blog_id):
             info = LLMCommentInfo.load()
             try:
@@ -377,7 +377,7 @@ def main():
         # input('Enter...')
         # submit_job(open_ai)
 
-        batch_id = 'batch_695cd93dd4148190a1f7bc22059f593b'
+        batch_id = 'batch_695cdf9b0bb48190879b3e8197524ff7'
 
         # check_job(open_ai, batch_id)
         retrieve_job(open_ai, batch_id)
