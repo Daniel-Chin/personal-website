@@ -377,7 +377,7 @@ def main():
         # input('Enter...')
         # submit_job(open_ai)
 
-        batch_id = 'batch_695cdf9b0bb48190879b3e8197524ff7'
+        batch_id = 'batch_695ce321de8c8190ace5871555c48de1'
 
         # check_job(open_ai, batch_id)
         retrieve_job(open_ai, batch_id)

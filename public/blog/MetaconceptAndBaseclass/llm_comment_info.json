@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "latest": {
+    "blog_content_hash": "dec514e227d275ee41aa0f64905f909eda1e62ae9ebc5d2ebc689aa53698908a",
+    "prompt_hash": "c1ab290966ff0b4fa893f7868f77bb7ea2cf2dba7c7f2bbb67a7be3028709d1a",
+    "comment": "Daniel’s “BaseClass/SubClass” test is a useful provocation, but it smuggles in a strong assumption: that moving to a more general term is mainly a rhetorical dodge (“hedging”), rather than often a change in *scope*. In practice, writers reach for a superordinate word for at least three legitimate reasons that aren’t evasive: (1) they’re making a claim intended to cover multiple subtypes (“mammals” rather than “dogs” because the mechanism is broader), (2) they’re naming the *type of thing* relevant to the argument rather than its instance (“institution” rather than “Congress” when the point is structural), or (3) they’re managing evidential limits (“an effect” rather than “a placebo effect” when the study can’t disentangle causes). Pinker’s complaint about “meta-concepts” is closer to a warning about vacuous abstraction—bureaucratic nouns and self-referential jargon that float above experience—than about abstraction per se; the target is language that avoids committing to concrete actors, actions, and falsifiable claims (see [The Sense of Style](https://en.wikipedia.org/wiki/The_Sense_of_Style)). The more discriminating test, then, isn’t just “is it a base class?,” but “does the generalization still constrain meaning and invite disconfirmation, or does it merely create the impression of seriousness?” That reframing also clarifies Bacon’s “Writing makes an exact man”: exactness isn’t synonymous with maximal specificity; it’s the discipline of making the level of abstraction match the level of evidence and responsibility—especially by keeping agents and verbs visible rather than disappearing them into metawords.",
+    "model_snapshot": "gpt-5.2-2025-12-11"
+  },
+  "old": null
+}

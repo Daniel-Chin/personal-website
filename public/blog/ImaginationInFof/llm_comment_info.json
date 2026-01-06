@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "latest": {
+    "blog_content_hash": "8caefbeb8fb23df4c3b0e2591da70061dec612b3ad9f23db5814a5722f826710",
+    "prompt_hash": "c1ab290966ff0b4fa893f7868f77bb7ea2cf2dba7c7f2bbb67a7be3028709d1a",
+    "comment": "Daniel’s provocation works best as a parable about *axioms*: change the constants, and whole theoretical structures stop “solving.” But the specific choice—π—muddying the target also exposes a blind spot. CAPM isn’t a geometric identity that depends on π; it’s an equilibrium claim about risk, beliefs, and aggregation (mean–variance investors, a market portfolio, frictionless trading, etc.). If Daniel’s point is that CAPM can fail under alternative “world laws,” the more precise move is to name the assumptions that actually do the work—and then imagine which of them breaks. Otherwise the reader is left with a clever-sounding counterfactual that can’t be checked or learned from.\n\nThe “there is always arbitrage → finance is not allowed to exist” line is likewise incisive but slightly too clean. Modern asset pricing is built on a *no-arbitrage* discipline—roughly, that free lunches can’t persist once trading strategies are considered—which underwrites pricing by replication and state prices (see [Harrison & Kreps (1979)](https://www.jstor.org/stable/1913252)). Yet real markets can exhibit apparent arbitrages for long periods because “arbitrage” in practice is constrained by capital, risk, funding, and institutional limits—finance often exists *because* these frictions exist, not despite them (a classic statement is [Shleifer & Vishny, “Limits of Arbitrage”](https://scholar.harvard.edu/shleifer/publications/limits-arbitrage)). If Daniel is aiming at a moral or metaphysical claim (“a world with pervasive arbitrage is incoherent”), it would help to say whether “arbitrage” means a mathematical inconsistency in a model, or merely exploitable mispricing in a lived market; those are different senses, and only the former truly “forbids” finance.",
+    "model_snapshot": "gpt-5.2-2025-12-11"
+  },
+  "old": null
+}
