@@ -7,17 +7,17 @@ import functools
 import io
 import hashlib
 import json
+import base64
+import mimetypes
+import time
 
 from openai import OpenAI
 import openai.types.responses as tp_r
 from pydantic import BaseModel, ConfigDict, model_validator
 
-try:
-    from .build import all_blog_ids, get_src_name_info
-except ImportError:
-    from build import all_blog_ids, get_src_name_info   # type: ignore
+from public.blog.build import all_blog_ids, get_src_name_info, ROOT_FILENAME
 
-MAX_N_BLOGS: int | None = 10 # throttle
+MAX_N_BLOGS: int | None = 1 # throttle
 MODEL = 'gpt-5.2'
 
 ENDPOINT = '/v1/responses'
@@ -130,9 +130,9 @@ def prompt_hash() -> str:
     hasher.update(prompt().encode('utf-8'))
     return hasher.hexdigest()
 
-def body(blog_content: str, content_hash: str) -> dict:
+def body(blog_content_rich: tp_r.ResponseInputParam, content_hash: str) -> dict:
     return dict(
-        input=blog_content,
+        input=blog_content_rich,
         instructions=prompt(),
         max_output_tokens=2000,
         model=MODEL,
@@ -145,15 +145,40 @@ def body(blog_content: str, content_hash: str) -> dict:
         metadata={CONTENT_HASH: content_hash},
     )
 
-def request(blog_id: str, blog_content: str, content_hash: str) -> dict:
+def request(blog_id: str, blog_content_rich: tp_r.ResponseInputParam, content_hash: str) -> dict:
     return dict(
         custom_id=blog_id,
         method='POST',
         url=ENDPOINT,
-        body=body(blog_content, content_hash),
+        body=body(blog_content_rich, content_hash),
     )
 
+def iter_images() -> tp.Generator[tuple[str, str, str], None, None]:
+    for fname in os.listdir():
+        _, ext = os.path.splitext(fname)
+        if ext.lower() not in ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp'):
+            continue
+        mime_type, _ = mimetypes.guess_type(fname)
+        with open(fname, 'rb') as f:
+            img_data = f.read(1024 * 1024 * 3)  # max 3MB
+            if f.read(1):
+                print(f'Image {os.path.abspath(fname)} too large (>2MB), skipping. ')
+                continue
+        img_b64 = base64.b64encode(img_data).decode('utf-8')
+        yield fname, mime_type or 'image/jpeg', img_b64
+
 def iter_all_blogs():
+    all_blogs_time = {id_: time.time() for id_ in all_blog_ids()}
+    with open(ROOT_FILENAME, 'r', encoding='utf-8') as f:
+        root = json.load(f)
+    for entry in root:
+        all_blogs_time[entry['id']] = entry['time']
+    sorted_blog_ids = sorted(
+        all_blogs_time.items(),
+        key=lambda x: x[1],
+        reverse=True,
+    )
+    # for blog_id, _ in sorted_blog_ids:
     for blog_id in all_blog_ids():
         with contextlib.chdir(blog_id):
             info = LLMCommentInfo.load()
@@ -166,27 +191,44 @@ def iter_all_blogs():
                 continue    # only supports md for now
             with open(src_name, 'r', encoding='utf-8') as f:
                 blog_content = f.read().strip()
+            content_parts = list[tp_r.ResponseInputContentParam]()
+            content_parts.append(tp_r.ResponseInputTextParam(
+                type='input_text',
+                text=blog_content,
+            ))
+            for _, mime_type, img_b64 in iter_images():
+                content_parts.append(tp_r.ResponseInputImageParam(
+                    type='input_image',
+                    image_url=f"data:{mime_type};base64,{img_b64}",
+                    detail='auto',
+                ))
+            blog_content_rich: list[tp_r.ResponseInputItemParam] = [tp_r.EasyInputMessageParam(
+                type='message',
+                role='user',
+                content=content_parts,
+            )]
             hasher = hashlib.sha256()
-            hasher.update(blog_content.encode('utf-8'))
+            hasher.update(json.dumps(blog_content_rich).encode('utf-8'))
             blog_content_hash = hasher.hexdigest()
-            yield blog_id, blog_content, blog_content_hash, info
+            yield blog_id, blog_content_rich, blog_content_hash, info
 
 @functools.lru_cache(maxsize=1)
-def all_blogs() -> tuple[tuple[str, str, str, LLMCommentInfo], ...]:
+def all_blogs() -> tuple[tuple[str, tp_r.ResponseInputParam, str, LLMCommentInfo], ...]:
     return tuple(iter_all_blogs())
 
 @functools.lru_cache(maxsize=1)
 def to_comment():
     return tuple(iter_to_comment())
 
-def iter_to_comment() -> tp.Generator[tuple[str, str, str, LLMCommentInfo], None, None]:
+def iter_to_comment() -> tp.Generator[tuple[str, tp_r.ResponseInputParam, str, LLMCommentInfo], None, None]:
     acc = 0
-    for blog_id, blog_content, blog_content_hash, info in all_blogs():
+    for blog_id, blog_content_rich, blog_content_hash, info in all_blogs():
         match info.status:
             case 'not_requested':
                 pass
             case 'in_progress':
                 raise RuntimeError('Duplicate in-progress jobs detected. ')
+                # pass
             case 'completed':
                 if (
                     info.latest is not None 
@@ -194,15 +236,15 @@ def iter_to_comment() -> tp.Generator[tuple[str, str, str, LLMCommentInfo], None
                     and info.latest.prompt_hash == prompt_hash()
                 ):
                     continue    # already up-to-date
-        yield blog_id, blog_content, blog_content_hash, info
+        yield blog_id, blog_content_rich, blog_content_hash, info
         acc += 1
         if MAX_N_BLOGS is not None and acc >= MAX_N_BLOGS:
             break
 
 def jsonl() -> io.BytesIO:
     buf = io.BytesIO()
-    for blog_id, blog_content, blog_content_hash, _ in to_comment():
-        req = request(blog_id, blog_content, blog_content_hash)
+    for blog_id, blog_content_rich, blog_content_hash, _ in to_comment():
+        req = request(blog_id, blog_content_rich, blog_content_hash)
         buf.write(json.dumps(req).encode('utf-8'))
         buf.write(b'\n')
     buf.seek(0)
@@ -331,10 +373,11 @@ def main():
     with contextlib.chdir(os.path.dirname(__file__)):
         open_ai = OpenAI()
         
-        # print(*[x[0] for x in to_comment()], sep='\n')
+        # print(f'Pending blogs (capped {MAX_N_BLOGS}):', *[x[0] for x in to_comment()], sep='\n')
+        # input('Enter...')
         # submit_job(open_ai)
 
-        batch_id = 'batch_695c31d685f48190ab556962aae1a197'
+        batch_id = 'batch_695cd93dd4148190a1f7bc22059f593b'
 
         # check_job(open_ai, batch_id)
         retrieve_job(open_ai, batch_id)
