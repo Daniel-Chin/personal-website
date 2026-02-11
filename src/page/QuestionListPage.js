@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import InkLeak from '../component/InkLeak';
 
 const QuestionListPage = () => {
@@ -12,9 +12,12 @@ const QuestionListPage = () => {
       <p>
         This is where I list questions I need assistance with. 
       </p>
+      <p>
+        Ugh, LLMs cleared all of them.  
+      </p>
       <table className='margin-hori-auto'>
         <tbody>
-          <tr className='zebra'>
+          {/* <tr className='zebra'>
             <td>
               <Link to={'/question/picardTheorem'}>
               A "counter example" to Picard–Lindelöf theorem
@@ -23,7 +26,7 @@ const QuestionListPage = () => {
             <td>
               Jul. 2021
             </td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     </div>
