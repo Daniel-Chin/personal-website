@@ -82,16 +82,6 @@ const LandingPage = () => {
         Now, my research is in Computer Music. 
       </p>
     </div>
-    <div className='landing-bottom dark-context'>
-      <p>
-        Bottom stuff:
-      </p>
-      <ul>
-        <li>
-          <Link to='/whoami'>Why is my URL so weird?</Link>
-        </li>
-      </ul>
-    </div>
     </>
   );
 };
