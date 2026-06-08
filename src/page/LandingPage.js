@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import InkLeak from '../component/InkLeak';
 
 const LandingPage = () => {
@@ -78,7 +79,7 @@ const LandingPage = () => {
         a lot of fun! (almost as fun as IMA.) 
       </p>
       <p>
-        Now, my research is in Computer Music. 
+        Now, my research is in <Link to="/research">Computer Music</Link>.
       </p>
     </div>
     </>
