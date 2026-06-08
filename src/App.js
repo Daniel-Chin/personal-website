@@ -16,16 +16,16 @@ import IndieIframePage  from './page/IndieIframePage';
 import DocumentationPage    from './page/DocumentationPage';
 import NovelPage        from './page/NovelPage';
 import Hat              from './component/Hat';
-import TopOfEverything  from './page/TopOfEverything';
+// import TopOfEverything  from './page/TopOfEverything';
 import QuestionPage from './page/QuestionPage';
 
 const App = () => {
   return (
     <>
       <Routes>
-        <Route path='/' element={
+        {/* <Route path='/' element={
           <TopOfEverything />
-        } />
+        } /> */}
         <Route path='*' element={null} />
       </Routes>
       <Hat />
