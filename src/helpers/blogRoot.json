@@ -1,5 +1,11 @@
 [
   {
+    "id": "abstraction_boundary_in_puzzle_game",
+    "title": "Abstraction boundary in puzzle games",
+    "build_type": "html",
+    "time": 1793344823.3905635
+  },
+  {
     "id": "laui_landing_page",
     "title": "LAUI: LLM-Agent User Interface",
     "build_type": "html",
@@ -184,12 +190,6 @@
     "title": "Real life as the proxy of a game's world model",
     "build_type": "html",
     "time": 1618729645.9172451
-  },
-  {
-    "id": "abstraction_boundary_in_puzzle_game",
-    "title": "Abstraction boundary in puzzle games",
-    "build_type": "html",
-    "time": 1618393791.9497418
   },
   {
     "id": "caiyuanpei",
